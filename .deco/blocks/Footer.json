@@ -1,3 +1,106 @@
 {
-  "__resolveType": "site/sections/Footer.tsx"
+  "__resolveType": "site/sections/Footer.tsx",
+  "columns": [
+    {
+      "links": [
+        {
+          "text": "AI Agents",
+          "disabled": true
+        },
+        {
+          "text": "Enterprise",
+          "disabled": true
+        },
+        {
+          "text": "Agencies",
+          "disabled": true
+        },
+        {
+          "text": "AI Chatbots",
+          "disabled": true
+        },
+        {
+          "text": "Internal Tools",
+          "disabled": true
+        },
+        {
+          "text": "Whitelabel",
+          "disabled": true
+        }
+      ],
+      "title": "Solutions"
+    },
+    {
+      "links": [
+        {
+          "text": "Pricing",
+          "disabled": true
+        },
+        {
+          "text": "Documentation",
+          "disabled": true
+        },
+        {
+          "text": "Tutorials",
+          "disabled": true
+        },
+        {
+          "text": "Status Page",
+          "disabled": true
+        },
+        {
+          "text": "Changelog",
+          "disabled": true
+        }
+      ],
+      "title": "Support"
+    },
+    {
+      "links": [
+        {
+          "text": "About",
+          "disabled": true
+        },
+        {
+          "text": "Blog",
+          "disabled": false,
+          "url": "/blog"
+        },
+        {
+          "disabled": true,
+          "text": "Security"
+        }
+      ],
+      "title": "Company"
+    },
+    {
+      "links": [
+        {
+          "text": "Privacy",
+          "disabled": true
+        },
+        {
+          "text": "Terms",
+          "disabled": true
+        }
+      ],
+      "title": "Legal"
+    },
+    {
+      "links": [
+        {
+          "text": "LinkedIn",
+          "disabled": false,
+          "url": "https://www.linkedin.com/company/getdeco/"
+        },
+        {
+          "text": "Instagram",
+          "disabled": false,
+          "url": "https://www.instagram.com/deco.chat/"
+        }
+      ],
+      "title": "Social"
+    }
+  ],
+  "logo": "https://assets.decocache.com/decochatweb/ae498333-e9ff-4364-90da-50d0b5a4b79c/decochatmid.svg"
 }

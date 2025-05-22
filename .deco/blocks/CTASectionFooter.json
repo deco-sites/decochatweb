@@ -1,0 +1,9 @@
+{
+  "__resolveType": "site/sections/CTASection.tsx",
+  "title": "Finally, your team leveraging AI productivity without the risks",
+  "button": {
+    "text": "Book a Demo"
+  },
+  "backgroundImage": "https://assets.decocache.com/decochatweb/9f603bb3-3904-4fb9-929c-adb6592b256e/bg-cta.png",
+  "capyImage": "https://assets.decocache.com/decochatweb/0df78a8b-e0c8-4821-98ac-1731afd78b1a/capy.png"
+}

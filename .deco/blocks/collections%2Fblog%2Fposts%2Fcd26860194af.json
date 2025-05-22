@@ -2,13 +2,47 @@
   "name": "collections/blog/posts/cd26860194af",
   "__resolveType": "blog/loaders/Blogpost.ts",
   "post": {
-    "authors": [{ "name": "Name of the Author", "email": "author@deco.cx" }],
-    "categories": [{ "name": "Customization", "slug": "customization" }],
-    "title": "Spice Up Your Text: Formatting Options in Deco.cx",
+    "authors": [
+      {
+        "name": "Muriel Dias",
+        "email": "muri@deco.cx",
+        "avatar": "https://assets.decocache.com/decochatweb/f54dc0a1-e22c-43d8-959f-1ecacee3cf51/muri.png"
+      },
+      {
+        "name": "Lucis",
+        "email": "lucis@deco.cx",
+        "avatar": "https://assets.decocache.com/decochatweb/e303b012-a894-4e1e-9d9d-d277e846bd6c/lucis.png"
+      }
+    ],
+    "categories": [
+      {
+        "name": "Customization",
+        "slug": "customization"
+      },
+      {
+        "name": "Performance",
+        "slug": "performance"
+      }
+    ],
+    "title": "Chat Log: Audite Cada Mensagem e Assuma o Controle da Sua IA! 💬",
     "excerpt": "Master bold, italics, strikethrough, underline, and code snippets to give your Deco.cx blog posts emphasis and clarity.",
     "date": "2024-04-10",
-    "content": "<h1>Spice Up Your Text: Formatting Options in Deco.cx</h1><p>Plain text can get a bit monotonous. Let's add some flair to your Deco.cx blog posts with formatting tools like bold, italics, and more! T</p><p></p><h2>Essential Formatting Options</h2><ul><li><p><strong>Bold:</strong> Makes text stand out for key points.</p></li><li><p><em>Italics:</em> Emphasizes words or phrases.</p></li><li><p><s>Strikethrough:</s> Indicates edits or deleted content.</p></li><li><p>Underline: Use sparingly, as it can be mistaken for links.</p></li><li><p><code>Code Snippets:</code> Formats code blocks clearly.</p></li></ul><h2>How to Format Text in Deco.cx <strong>Highlight the text</strong> you want to format.</h2><ol><li><p><strong>Use the Editor toolbar:</strong> Click the icons for bold, italics, etc.</p></li><li><p><strong>Keyboard Shortcuts:</strong> Learn the shortcuts for power users (e.g., Ctrl+B for bold).</p></li></ol><h2>Formatting in Action: Recipe Example</h2><p>Let's format a recipe excerpt to see the difference:</p><h3>Before:</h3><p>Add 2 cups all-purpose flour, 1 teaspoon salt, and 1 cup warm water to a bowl. Mix until a dough forms.</p><h3>After:</h3><p>Add <strong>2 cups all-purpose flour</strong>, <strong>1 teaspoon salt</strong>, and <strong>1 cup warm water</strong> to a bowl. Mix until a dough forms.</p><h2>Best Practices</h2><ul><li><p><strong>Don't Overdo It:</strong> Too much formatting is distracting.</p></li><li><p><strong>Accessibility:</strong> Use formatting with screen readers in mind (e.g., emphasize with headings before bold).</p></li></ul><h2>Now, Get Writing!</h2><p>Use these formatting options strategically to make your Deco.cx blog posts more engaging and informative!</p>",
+    "content": "<p>Você sabe exatamente o que seus agentes de IA estão respondendo e quanto isso custa? 🤔🔍 Em um mundo cada vez mais movido por inteligência artificial, ter visibilidade e controle sobre as interações dos seus assistentes virtuais é crucial.</p><p>Com o <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://deco.chat\"><strong>deco.chat</strong></a>, você tem inovação com IA sem perder o controle, escalabilidade com segurança e autonomia para o seu time, mas com responsabilidade. E é aqui que entra o <strong>Chat Logs do </strong><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://deco.chat\"><strong>deco.chat</strong></a>: um painel único que grava, filtra e audita cada mensagem trocada entre seu time e seus agentes, em tempo real.</p><p><strong>Por que o Chat Logs do </strong><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://deco.chat\"><strong>deco.chat</strong></a><strong> é Essencial?</strong></p><p>Imagine ter uma lupa poderosa sobre todas as conversas da sua IA. O Chat Logs oferece exatamente isso, permitindo que você:</p><p>• 🔍 <strong>Tenha Visibilidade Total:</strong> Pesquise conversas por agente ou usuário, entenda cada resposta e encontre falhas em segundos. Chega de pontos cegos!</p><p>• 🛡️ <strong>Garanta a Governança:</strong> Conte com logs versionados, regras de acesso granulares e um histórico completo para auditoria. Mantenha tudo em conformidade e seguro.</p><p>• 📊 <strong>Mantenha o Custo Sob Controle:</strong> Acompanhe o gasto de tokens por agente, time ou integração. Otimize seus investimentos e evite surpresas na fatura.</p><p>• ⚙️ <strong>Realize Debug Sem Drama:</strong> Reproduza qualquer thread, ajuste prompts na hora e publique a melhoria em um clique. Resolver problemas nunca foi tão fácil e rápido.</p><p><strong>Pronto para Revolucionar a IA no Seu Produto?</strong></p><p>Se você lidera Produto ou Tecnologia e quer colocar IA no seu produto <strong>NESTE TRIMESTRE</strong>, o <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://deco.chat\">deco.chat</a> é a solução.</p><p>🚀 <strong>Mande uma mensagem para marcarmos uma demonstração</strong> e descubra como o Chat Logs pode transformar a maneira como você gerencia seus agentes de IA!</p>",
     "slug": "spice-up-text-deco",
-    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9"
+    "image": "https://assets.decocache.com/decochatweb/ba92a2e4-f07a-4bf6-8b83-fb2aada8deaa/Frame-2147223821.png",
+    "imageCarousel": {
+      "banners": []
+    },
+    "extraProps": [],
+    "aggregateRating": {
+      "@type": "AggregateRating"
+    },
+    "review": [],
+    "contentRating": [],
+    "interactionStatistic": {
+      "@type": "InteractionCounter",
+      "video": null,
+      "image": null
+    }
   }
 }

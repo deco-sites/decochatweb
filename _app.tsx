@@ -23,6 +23,12 @@ export const Layout = ({ children, revision, hmrUniqueId }: {
           rel="stylesheet"
         />
 
+        {/* Material Design Icons - Filled Version */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,1,0"
+        />
+
         {/* Web Manifest */}
         <link rel="manifest" href={asset("/site.webmanifest")} />
       </Head>

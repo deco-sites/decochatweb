@@ -1,0 +1,7 @@
+{
+  "__resolveType": "blog/loaders/Author.ts",
+  "author": {
+    "name": "Pedro França",
+    "email": "pedro@deco.cx"
+  }
+}
