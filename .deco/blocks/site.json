@@ -6,13 +6,14 @@
     }
   ],
   "seo": {
-    "titleTemplate": "%s | deco.cx",
-    "descriptionTemplate": "%s | Deco.cx",
+    "titleTemplate": "%s | deco.chat",
+    "descriptionTemplate": "%s | deco.chat",
     "type": "website",
-    "title": "Blog",
-    "description": "Improve your page performance with deco.cx",
-    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/5018/c8188deb-9ed0-4394-8ede-af8fb4263ba4",
-    "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/5018/71c97b9c-b94a-4cf5-8120-4bb7b99b21bb"
+    "description": "Become AI-First with Autonomy, Context and Governance",
+    "image": "https://assets.decocache.com/decochatweb/2566bd99-e6b1-4afd-a7fe-70e7cd8481bc/thumb2.png",
+    "favicon": "https://assets.decocache.com/decochatweb/145ac722-ab22-4096-97f5-353c11b86da8/neg-d-logo.svg",
+    "title": "deco.chat | Open Source Whitelabel AI Workspace",
+    "themeColor": "#D0EC1A"
   },
   "global": [
     {
