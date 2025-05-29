@@ -1,0 +1,25 @@
+{
+  "__resolveType": "site/sections/Hero.tsx",
+  "eyebrow": {
+    "text": "Opensource Whitelabel AI Workspace",
+    "iconName": "info",
+    "variant": "dc-50"
+  },
+  "title": "The fastest way to\nbecome AI-First company",
+  "description": "Everything you need to build, run, and scale AI across your\norganization with control and confidence.",
+  "ctas": [
+    {
+      "text": "Try it for free",
+      "href": "/signup",
+      "variant": "primary"
+    },
+    {
+      "text": "Book a Demo",
+      "href": "/demo",
+      "variant": "secondary"
+    }
+  ],
+  "backgroundImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff01967e-4617-4163-971f-165832658f77",
+  "mainImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff01967e-4617-4163-971f-165832658f77",
+  "backgroundColor": "dc-50"
+}

@@ -8,36 +8,52 @@ import * as $$$$$$$$$$$2 from "./apps/site.ts";
 import * as $$$$$$0 from "./sections/BlogCategories.tsx";
 import * as $$$$$$1 from "./sections/BlogPost.tsx";
 import * as $$$$$$2 from "./sections/BlogPosts.tsx";
+import * as $$$$$$4 from "./sections/Communications.tsx";
 import * as $$$$$$3 from "./sections/CTASection.tsx";
-import * as $$$$$$4 from "./sections/Faq.tsx";
-import * as $$$$$$5 from "./sections/Footer.tsx";
-import * as $$$$$$6 from "./sections/Header.tsx";
-import * as $$$$$$7 from "./sections/Hero.tsx";
-import * as $$$$$$8 from "./sections/IconDemo.tsx";
-import * as $$$$$$9 from "./sections/ImageWithParagraph.tsx";
-import * as $$$$$$10 from "./sections/Logos.tsx";
-import * as $$$$$$11 from "./sections/MainPost.tsx";
-import * as $$$$$$12 from "./sections/RelatedBlogPosts.tsx";
-import * as $$$$$$13 from "./sections/Testimonials.tsx";
-import * as $$$$$$14 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$5 from "./sections/FAQ.tsx";
+import * as $$$$$$6 from "./sections/FeaturesBento.tsx";
+import * as $$$$$$7 from "./sections/Footer.tsx";
+import * as $$$$$$8 from "./sections/Header.tsx";
+import * as $$$$$$9 from "./sections/Hero.tsx";
+import * as $$$$$$10 from "./sections/IconDemo.tsx";
+import * as $$$$$$11 from "./sections/ImageWithParagraph.tsx";
+import * as $$$$$$12 from "./sections/Integrations.tsx";
+import * as $$$$$$13 from "./sections/Logos.tsx";
+import * as $$$$$$14 from "./sections/MainPost.tsx";
+import * as $$$$$$15 from "./sections/Pricing.tsx";
+import * as $$$$$$16 from "./sections/PrivacySecurity.tsx";
+import * as $$$$$$17 from "./sections/RelatedBlogPosts.tsx";
+import * as $$$$$$18 from "./sections/Statement.tsx";
+import * as $$$$$$19 from "./sections/Testimonials.tsx";
+import * as $$$$$$20 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$21 from "./sections/UseCases.tsx";
+import * as $$$$$$22 from "./sections/Whitelabel.tsx";
 
 const manifest = {
   "sections": {
     "site/sections/BlogCategories.tsx": $$$$$$0,
     "site/sections/BlogPost.tsx": $$$$$$1,
     "site/sections/BlogPosts.tsx": $$$$$$2,
+    "site/sections/Communications.tsx": $$$$$$4,
     "site/sections/CTASection.tsx": $$$$$$3,
-    "site/sections/Faq.tsx": $$$$$$4,
-    "site/sections/Footer.tsx": $$$$$$5,
-    "site/sections/Header.tsx": $$$$$$6,
-    "site/sections/Hero.tsx": $$$$$$7,
-    "site/sections/IconDemo.tsx": $$$$$$8,
-    "site/sections/ImageWithParagraph.tsx": $$$$$$9,
-    "site/sections/Logos.tsx": $$$$$$10,
-    "site/sections/MainPost.tsx": $$$$$$11,
-    "site/sections/RelatedBlogPosts.tsx": $$$$$$12,
-    "site/sections/Testimonials.tsx": $$$$$$13,
-    "site/sections/Theme/Theme.tsx": $$$$$$14,
+    "site/sections/FAQ.tsx": $$$$$$5,
+    "site/sections/FeaturesBento.tsx": $$$$$$6,
+    "site/sections/Footer.tsx": $$$$$$7,
+    "site/sections/Header.tsx": $$$$$$8,
+    "site/sections/Hero.tsx": $$$$$$9,
+    "site/sections/IconDemo.tsx": $$$$$$10,
+    "site/sections/ImageWithParagraph.tsx": $$$$$$11,
+    "site/sections/Integrations.tsx": $$$$$$12,
+    "site/sections/Logos.tsx": $$$$$$13,
+    "site/sections/MainPost.tsx": $$$$$$14,
+    "site/sections/Pricing.tsx": $$$$$$15,
+    "site/sections/PrivacySecurity.tsx": $$$$$$16,
+    "site/sections/RelatedBlogPosts.tsx": $$$$$$17,
+    "site/sections/Statement.tsx": $$$$$$18,
+    "site/sections/Testimonials.tsx": $$$$$$19,
+    "site/sections/Theme/Theme.tsx": $$$$$$20,
+    "site/sections/UseCases.tsx": $$$$$$21,
+    "site/sections/Whitelabel.tsx": $$$$$$22,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,
