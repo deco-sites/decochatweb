@@ -12,7 +12,7 @@
         "iconName": "info",
         "variant": "dc-50"
       },
-      "title": "The fastest way to\nbecome AI-First company",
+      "title": "The fastest way to become an AI-First company",
       "description": "Everything you need to build, run, and scale AI across your\norganization with control and confidence.",
       "ctas": [
         {
@@ -29,7 +29,7 @@
     {
       "__resolveType": "site/sections/Statement.tsx",
       "eyebrow": {
-        "text": "Two ways to use AI Agents",
+        "text": "What is deco.chat",
         "iconName": "info",
         "variant": "primary-light"
       },
@@ -544,7 +544,7 @@
           "Custom agent design & deployment",
           "Support and iteration"
         ],
-        "cta": "Request consultation"
+        "cta": "Contact sales"
       },
       "backgroundColor": "dc-50",
       "defaultTeamSize": 5
