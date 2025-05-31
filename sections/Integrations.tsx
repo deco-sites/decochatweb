@@ -73,8 +73,8 @@ export default function Integrations({
   );
 
   return (
-    <div class="self-stretch px-4 md:px-8 lg:px-20 py-16 md:py-32 bg-dc-50 flex flex-col justify-center items-center gap-16 md:gap-32">
-      <div class="self-stretch flex flex-col justify-start items-center gap-8 md:gap-14">
+    <div class="self-stretch py-16 md:py-32 bg-dc-50 flex flex-col justify-center items-center gap-16 md:gap-32">
+      <div class="self-stretch flex flex-col justify-start items-center gap-8 md:gap-14 overflow-hidden">
         <div class="w-full max-w-[900px] flex flex-col justify-start items-center gap-6 md:gap-10">
           <FadeUp>
             <div class="self-stretch flex flex-col justify-start items-center gap-6">
@@ -95,7 +95,7 @@ export default function Integrations({
           <div class="self-stretch flex flex-col justify-center items-center gap-4 relative">
             {/* Top Row */}
             <div class="w-full overflow-hidden relative">
-              <div class="marquee-left flex gap-4 w-max">
+              <div class="marquee-left flex gap-2 w-max max-w-full">
                 {[...topLogos, ...topLogos, ...topLogos].map((logo, index) => (
                   <LogoCard key={`top-${index}`} logo={logo} />
                 ))}
@@ -110,7 +110,7 @@ export default function Integrations({
 
             {/* Middle Row */}
             <div class="w-full overflow-hidden relative">
-              <div class="marquee-right flex gap-4 w-max">
+              <div class="marquee-right flex gap-2 w-max max-w-full overflow-x-hidden">
                 {[...middleLogos, ...middleLogos, ...middleLogos].map((
                   logo,
                   index,
@@ -126,7 +126,7 @@ export default function Integrations({
 
             {/* Bottom Row */}
             <div class="w-full overflow-hidden relative">
-              <div class="marquee-left flex gap-4 w-max">
+              <div class="marquee-left flex gap-2 w-max max-w-full overflow-x-hidden">
                 {[...bottomLogos, ...bottomLogos, ...bottomLogos].map((
                   logo,
                   index,
