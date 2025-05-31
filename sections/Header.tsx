@@ -11,9 +11,14 @@ interface NavItem {
   label: string;
   /**
    * @title Link
-   * @description URL para onde o item irá direcionar
+   * @description URL para onde o item irá direcionar (opcional)
    */
-  href: string;
+  href?: string;
+  /**
+   * @title Desabilitado
+   * @description Se marcado, o item ficará desabilitado e sem link
+   */
+  disabled?: boolean;
 }
 
 interface Props {
@@ -60,14 +65,24 @@ export default function Header({
           {/* Desktop Navigation */}
           <div class="hidden md:flex justify-center items-center gap-2">
             {navItems.map((item) => (
-              <a
-                href={item.href}
-                class="px-3 sm:px-4 py-2 rounded-full flex justify-center items-center hover:bg-dc-100 transition-colors"
-              >
-                <div class="justify-center text-dc-800 text-sm sm:text-base font-medium font-manrope leading-tight">
-                  {item.label}
-                </div>
-              </a>
+              item.disabled
+                ? (
+                  <span class="px-3 sm:px-4 py-2 rounded-full flex justify-center items-center opacity-50 cursor-not-allowed select-none">
+                    <div class="justify-center text-dc-800 text-sm sm:text-base font-medium font-manrope leading-tight">
+                      {item.label}
+                    </div>
+                  </span>
+                )
+                : (
+                  <a
+                    href={item.href}
+                    class="px-3 sm:px-4 py-2 rounded-full flex justify-center items-center hover:bg-dc-100 transition-colors"
+                  >
+                    <div class="justify-center text-dc-800 text-sm sm:text-base font-medium font-manrope leading-tight">
+                      {item.label}
+                    </div>
+                  </a>
+                )
             ))}
           </div>
 
@@ -125,14 +140,24 @@ export default function Header({
                 {/* Navigation Links */}
                 <div class="flex flex-col gap-4 mb-8">
                   {navItems.map((item) => (
-                    <a
-                      href={item.href}
-                      class="px-4 py-3 rounded-lg flex items-center hover:bg-dc-100 transition-colors"
-                    >
-                      <div class="text-dc-800 text-base font-medium font-manrope">
-                        {item.label}
-                      </div>
-                    </a>
+                    item.disabled
+                      ? (
+                        <span class="px-4 py-3 rounded-lg flex items-center opacity-50 cursor-not-allowed select-none">
+                          <div class="text-dc-800 text-base font-medium font-manrope">
+                            {item.label}
+                          </div>
+                        </span>
+                      )
+                      : (
+                        <a
+                          href={item.href}
+                          class="px-4 py-3 rounded-lg flex items-center hover:bg-dc-100 transition-colors"
+                        >
+                          <div class="text-dc-800 text-base font-medium font-manrope">
+                            {item.label}
+                          </div>
+                        </a>
+                      )
                   ))}
                 </div>
 
@@ -167,6 +192,7 @@ const defaultProps: Props = {
     {
       label: "Agents",
       href: "/agents",
+      disabled: true,
     },
     {
       label: "Integrations",

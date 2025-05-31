@@ -470,45 +470,10 @@
       ]
     },
     {
-      "__resolveType": "site/sections/FAQ.tsx",
-      "eyebrow": "FAQ",
-      "title": "Frequently Asked Questions",
-      "description": "Everything you need to build, run, and scale AI across your\norganization with control and confidence.",
-      "answerLogo": "https://assets.decocache.com/decochatweb/cebb6b63-37c8-48a8-870e-0bad65e6e1fb/logo-agnet-deco.png",
-      "faqItems": [
-        {
-          "question": "What exactly is deco.chat?",
-          "answer": "deco.chat is an open-source AI workspace that helps organizations build and manage AI agents. It's designed to make AI implementation simple, whether for internal tools or customer-facing applications."
-        },
-        {
-          "question": "Is deco.chat suitable for my company size?",
-          "answer": "Yes! deco.chat is designed to scale from small teams to large enterprises. Whether you're a startup or a Fortune 500 company, our platform adapts to your needs."
-        },
-        {
-          "question": "Which platforms can I integrate with deco.chat?",
-          "answer": "deco.chat integrates with over 60+ platforms including Slack, Microsoft Teams, Google Workspace, Notion, GitHub, and many more through our MCP servers."
-        },
-        {
-          "question": "Do I need technical expertise to use deco.chat?",
-          "answer": "Not necessarily! While technical knowledge helps for advanced customizations, our platform is designed to be user-friendly for non-technical team members as well."
-        },
-        {
-          "question": "How secure is my company's data?",
-          "answer": "Security is our top priority. We offer enterprise-grade security with options for self-hosting, SOC 2 compliance, and granular permission controls."
-        },
-        {
-          "question": "Can I host deco.chat on my own servers?",
-          "answer": "Absolutely! deco.chat is open-source and can be self-hosted on your own infrastructure for maximum control and security."
-        },
-        {
-          "question": "How long does it take to implement deco.chat?",
-          "answer": "Implementation time varies based on your needs. Simple setups can be done in hours, while complex enterprise deployments may take a few weeks."
-        },
-        {
-          "question": "How can I try deco.chat?",
-          "answer": "You can start with our free trial or book a demo with our team. We also offer a sandbox environment to test the platform before committing."
-        }
-      ]
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Faq - default"
+      }
     },
     {
       "__resolveType": "site/sections/Pricing.tsx",

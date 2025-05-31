@@ -8,43 +8,29 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
  * @titleBy question
  */
 interface FAQItem {
-  /**
-   * @title Pergunta
-   * @description Pergunta do FAQ
-   */
+  /** @title Pergunta */
+  /** @description Pergunta do FAQ */
   question: string;
-  /**
-   * @title Resposta
-   * @description Resposta do FAQ
-   */
+  /** @title Resposta */
+  /** @description Resposta do FAQ */
   answer: string;
 }
 
 interface Props {
-  /**
-   * @title Eyebrow
-   * @description Texto pequeno que aparece acima do título
-   */
+  /** @title Eyebrow */
+  /** @description Texto pequeno que aparece acima do título */
   eyebrow?: string;
-  /**
-   * @title Título principal
-   * @description Título principal da seção
-   */
+  /** @title Título principal */
+  /** @description Título principal da seção */
   title: string;
-  /**
-   * @title Descrição
-   * @description Descrição da seção
-   */
+  /** @title Descrição */
+  /** @description Descrição da seção */
   description: string;
-  /**
-   * @title Logo das respostas
-   * @description Logo que aparece ao lado das respostas do FAQ
-   */
+  /** @title Logo das respostas */
+  /** @description Logo que aparece ao lado das respostas do FAQ */
   answerLogo: ImageWidget;
-  /**
-   * @title Perguntas frequentes
-   * @description Lista de perguntas e respostas
-   */
+  /** @title Perguntas frequentes */
+  /** @description Lista de perguntas e respostas */
   faqItems: FAQItem[];
 }
 
@@ -76,7 +62,7 @@ export default function FAQ({
       <FadeUp delay={400}>
         <div class="w-full max-w-[750px] flex flex-col justify-start items-start gap-4">
           {faqItems.map((item, index) => (
-            <div key={index} class="self-stretch faq-item">
+            <div class="self-stretch faq-item">
               {/* Question */}
               <div
                 class="self-stretch flex justify-end items-center gap-2.5 cursor-pointer faq-question"
@@ -125,32 +111,27 @@ export default function FAQ({
         type="module"
         dangerouslySetInnerHTML={{
           __html: useScript(() => {
-            console.log("FAQ script loaded");
-
             const init = () => {
-              console.log("FAQ init function called");
               const questions = document.querySelectorAll(".faq-question");
-              console.log("Found questions:", questions.length);
               let activeIndex = -1;
 
               questions.forEach((question, index) => {
-                console.log("Adding listener to question", index);
                 question.addEventListener("click", () => {
-                  console.log("Question clicked:", index);
                   const answer = document.querySelector(
-                    `.faq-answer[data-index="${index}"]`,
+                    `.faq-answer[data-index=\"${index}\"]`,
                   );
-                  const icon = question.querySelector(".faq-plus-vertical");
-                  console.log("Found answer:", !!answer, "Found icon:", !!icon);
+                  const icon = question.querySelector(
+                    ".faq-plus-vertical",
+                  ) as HTMLElement | null;
 
                   // Close previously opened answer
                   if (activeIndex !== -1 && activeIndex !== index) {
                     const prevAnswer = document.querySelector(
-                      `.faq-answer[data-index="${activeIndex}"]`,
+                      `.faq-answer[data-index=\"${activeIndex}\"]`,
                     );
                     const prevIcon = document.querySelector(
-                      `.faq-question[data-index="${activeIndex}"] .faq-plus-vertical`,
-                    );
+                      `.faq-question[data-index=\"${activeIndex}\"] .faq-plus-vertical`,
+                    ) as HTMLElement | null;
 
                     if (prevAnswer) {
                       prevAnswer.classList.add("hidden");
@@ -163,7 +144,6 @@ export default function FAQ({
                   // Toggle current answer
                   if (answer) {
                     const isHidden = answer.classList.contains("hidden");
-                    console.log("Answer is hidden:", isHidden);
 
                     if (isHidden) {
                       answer.classList.remove("hidden");

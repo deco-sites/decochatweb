@@ -62,17 +62,21 @@ export default function RelatedBlogPosts({
 
     return (
       <div className="flex flex-wrap justify-start items-start gap-2">
-        {post.categories.slice(0, 2).map((category, idx) => (
-          <a
-            key={idx}
-            href={`/blog/${category.slug}`}
-            className="px-4 py-1 bg-dc-50 rounded-full outline outline-1 outline-offset-[-1px] outline-dc-200 flex justify-center items-center hover:bg-dc-100 transition-colors"
-          >
-            <div className="justify-center text-dc-600 text-base font-semibold font-manrope leading-tight">
-              {category.name}
-            </div>
-          </a>
-        ))}
+        {post.categories.slice(0, 2).map((category, idx) =>
+          category && category.name
+            ? (
+              <a
+                key={idx}
+                href={`/blog/${category.slug}`}
+                className="px-4 py-1 bg-dc-50 rounded-full outline outline-1 outline-offset-[-1px] outline-dc-200 flex justify-center items-center hover:bg-dc-100 transition-colors"
+              >
+                <div className="justify-center text-dc-600 text-base font-semibold font-manrope leading-tight">
+                  {category.name}
+                </div>
+              </a>
+            )
+            : null
+        )}
       </div>
     );
   };

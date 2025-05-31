@@ -91,16 +91,20 @@ export default function BlogPosts({
 
     return (
       <div class="inline-flex flex-wrap justify-start items-start gap-2">
-        {post.categories.slice(0, 2).map((category) => (
-          <a
-            href={`/blog/${category.slug}`}
-            class="px-4 py-1 bg-dc-50 rounded-full outline outline-1 outline-offset-[-1px] outline-dc-200 flex justify-center items-center hover:bg-dc-100 transition-colors"
-          >
-            <div class="justify-center text-dc-600 text-base font-semibold font-manrope leading-tight">
-              {category.name}
-            </div>
-          </a>
-        ))}
+        {post.categories.slice(0, 2).map((category) =>
+          category && category.name
+            ? (
+              <a
+                href={`/blog/${category.slug}`}
+                class="px-4 py-1 bg-dc-50 rounded-full outline outline-1 outline-offset-[-1px] outline-dc-200 flex justify-center items-center hover:bg-dc-100 transition-colors"
+              >
+                <div class="justify-center text-dc-600 text-base font-semibold font-manrope leading-tight">
+                  {category.name}
+                </div>
+              </a>
+            )
+            : null
+        )}
       </div>
     );
   };
@@ -115,7 +119,7 @@ export default function BlogPosts({
         post.title?.toLowerCase().includes(searchLower) ||
         post.excerpt?.toLowerCase().includes(searchLower) ||
         post.authors?.some((author) =>
-          typeof author === "object" && "name" in author &&
+          author && typeof author === "object" && "name" in author &&
           (author.name as string)?.toLowerCase().includes(searchLower)
         )
       );

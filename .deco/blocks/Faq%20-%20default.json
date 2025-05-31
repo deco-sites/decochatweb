@@ -1,1 +1,24 @@
-{ "title": "FAQs", "__resolveType": "site/sections/Faq.tsx" }
+{
+  "title": "FAQs",
+  "__resolveType": "site/sections/Faq.tsx",
+  "faqItems": [
+    {
+      "question": "What exactly is deco.chat?",
+      "answer": "deco.chat is an open-source AI workspace that helps organizations build and manage AI agents. It's designed to make AI implementation simple, whether for internal tools or customer-facing applications."
+    },
+    {
+      "question": "Is deco.chat suitable for my company size?",
+      "answer": "Yes! deco.chat scales with your needs. Whether you're a startup or an enterprise, our platform adapts to your organization's size and requirements."
+    },
+    {
+      "question": "Which platforms can I integrate with deco.chat?",
+      "answer": "No. Our platform is designed to be user-friendly for both technical and non-technical team members. However, developers can access advanced features through our API."
+    },
+    {
+      "question": "How long does it take to implement deco.chat?",
+      "answer": "Basic setup can be completed in hours. Full enterprise implementation typically takes 1-2 weeks, depending on your requirements and integrations."
+    }
+  ],
+  "description": "Here are some frequently asked questions, to solve all your problems.",
+  "answerLogo": "https://assets.decocache.com/decochatweb/cebb6b63-37c8-48a8-870e-0bad65e6e1fb/logo-agnet-deco.png"
+}
