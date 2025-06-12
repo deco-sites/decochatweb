@@ -1,6 +1,7 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import FadeUp from "../components/ui/FadeUp.tsx";
+import Icon from "../components/ui/Icon.tsx";
 
 /**
  * @titleBy name
@@ -48,7 +49,7 @@ interface Props {
 }
 
 export default function Communications({
-  tag = "Communication",
+  tag = "Channels",
   title,
   description,
   phoneImage,
@@ -59,83 +60,86 @@ export default function Communications({
   return (
     <div
       id={sectionId}
-      class="self-stretch px-4 md:px-8 lg:px-20 py-16 md:py-32 bg-dc-50 flex flex-col justify-center items-center gap-16 md:gap-32"
+      class="w-full bg-dc-50 py-16 md:py-32 lg:py-48"
     >
-      <FadeUp>
-        <div class="self-stretch relative flex flex-col lg:flex-row justify-start items-center gap-4 lg:gap-2">
-          {/* Left Card */}
-          <div class="w-full lg:flex-1 h-auto lg:h-96 p-6 md:p-8 lg:pl-16 lg:pr-32 lg:py-16 bg-dc-100 rounded-2xl flex flex-col justify-between items-start gap-6 lg:gap-0">
-            <div class="self-stretch flex flex-col justify-start items-start gap-6 lg:gap-10">
-              <div class="self-stretch flex flex-col justify-start items-start gap-4 lg:gap-6">
-                <div class="px-4 py-1 bg-dc-200 rounded-full flex justify-center items-center gap-2">
-                  <div class="justify-center text-dc-700 text-sm lg:text-base font-semibold font-manrope leading-tight">
-                    {tag}
+      <div class="w-full max-w-[1440px] mx-auto px-4 md:px-8 flex flex-col justify-center items-center gap-16 md:gap-32">
+        <FadeUp>
+          <div class="self-stretch relative flex flex-col lg:flex-row justify-start items-center gap-4 lg:gap-2">
+            {/* Left Card */}
+            <div class="w-full lg:flex-1 h-auto p-6 md:p-8 lg:pl-16 lg:pr-16 lg:py-16 bg-primary-dark rounded-2xl flex flex-col justify-start items-start gap-6 lg:gap-10">
+              <div class="self-stretch md:pr-24 flex flex-col justify-start items-start gap-6 lg:gap-10">
+                <div class="self-stretch flex flex-col justify-start items-start gap-4 lg:gap-6">
+                  <div class="px-4 py-1 bg-primary-light rounded-full flex justify-center items-center gap-2">
+                    <Icon name="info" size="medium" class="text-primary-dark" />
+                    <div class="justify-center text-primary-dark text-sm lg:text-base font-semibold font-manrope leading-tight">
+                      {tag}
+                    </div>
                   </div>
+                  <h2 class="self-stretch justify-start text-dc-50 text-3xl lg:text-5xl font-semibold font-manrope leading-tight lg:leading-[1.2]">
+                    {title}
+                  </h2>
                 </div>
-                <h2 class="self-stretch justify-start text-dc-800 text-2xl md:text-3xl lg:text-5xl font-semibold font-manrope leading-tight lg:leading-normal">
-                  {title}
-                </h2>
-              </div>
-              <div class="self-stretch justify-start text-dc-500 text-base lg:text-lg font-normal font-switzer leading-relaxed lg:leading-snug">
-                {description}
+                <div class="self-stretch justify-start text-dc-50 text-base lg:text-lg font-medium font-manrope leading-relaxed">
+                  {description}
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Phone Image - Mobile: Below left card, Desktop: Absolutely positioned */}
-          <div class="block lg:hidden w-full flex justify-center py-8">
-            <Image
-              src={phoneImage}
-              alt="Phone"
-              width={297}
-              height={584}
-              class="w-48 h-auto origin-center rotate-[10.51deg]"
-              loading="lazy"
-            />
-          </div>
-
-          {/* Right Card with Platforms */}
-          <div class="w-full lg:flex-1 h-auto lg:h-[520px] p-6 md:p-8 lg:p-16 bg-primary-light rounded-2xl flex flex-col justify-center items-start gap-3 lg:gap-4">
-            {platforms.map((platform, index) => (
-              <div
-                key={index}
-                class="self-stretch flex justify-start items-center platform-integration"
-                data-platform-index={index}
-              >
-                <div class="flex-1 h-0 outline outline-2 lg:outline-4 outline-offset-[-1px] lg:outline-offset-[-2px] outline-stone-50 connection-line">
-                </div>
-                <div class="px-3 lg:px-5 py-1.5 lg:py-2 bg-dc-50 rounded-full flex justify-center items-center gap-2 platform-pill">
-                  <div class="w-6 h-6 lg:w-8 lg:h-8 relative overflow-hidden">
-                    <Image
-                      src={platform.logo}
-                      alt={platform.name}
-                      width={32}
-                      height={32}
-                      class="w-full h-full object-contain"
-                      loading="lazy"
-                    />
+            {/* Right Card with Platforms */}
+            <div class="w-full lg:flex-1 h-auto lg:h-[600px] p-6 md:p-8 lg:p-16 bg-primary-light rounded-2xl flex flex-col justify-center items-start gap-3 lg:gap-4">
+              {platforms.map((platform, index) => (
+                <div
+                  key={index}
+                  class="self-stretch flex justify-start items-center platform-integration"
+                  data-platform-index={index}
+                >
+                  <div class="flex-1 h-0 outline outline-2 lg:outline-4 outline-offset-[-1px] lg:outline-offset-[-2px] outline-stone-50 connection-line">
                   </div>
-                  <div class="justify-center text-dc-700 text-base lg:text-xl font-semibold font-manrope leading-tight">
-                    {platform.name}
+                  <div class="px-3 lg:px-4 py-1.5 lg:py-4 bg-dc-50 rounded-full flex justify-center items-center gap-2 platform-pill">
+                    <div class="w-6 h-6 lg:w-8 lg:h-8 relative overflow-hidden">
+                      <Image
+                        src={platform.logo}
+                        alt={platform.name}
+                        width={32}
+                        height={32}
+                        class="w-full h-full object-contain"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="justify-center text-dc-800 text-base lg:text-2xl font-bold font-manrope leading-tight lg:leading-7">
+                      {platform.name}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
 
-          {/* Phone Image - Desktop: Absolutely positioned */}
-          <div class="hidden lg:block absolute left-[577.59px] top-[-54.41px]">
-            <Image
-              src={phoneImage}
-              alt="Phone"
-              width={297}
-              height={584}
-              class="w-72 h-[584.45px] origin-top-left rotate-[10.51deg]"
-              loading="lazy"
-            />
+            {/* Phone Image - Mobile: Below cards */}
+            <div class="block lg:hidden w-full flex justify-center py-8">
+              <Image
+                src={phoneImage}
+                alt="Phone"
+                width={297}
+                height={584}
+                class="w-48 h-auto origin-center rotate-[10.51deg]"
+                loading="lazy"
+              />
+            </div>
+
+            {/* Phone Image - Desktop: Absolutely positioned in center */}
+            <div class="hidden lg:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+              <Image
+                src={phoneImage}
+                alt="Phone"
+                width={297}
+                height={584}
+                class="w-72 h-auto origin-center rotate-[10.51deg]"
+                loading="lazy"
+              />
+            </div>
           </div>
-        </div>
-      </FadeUp>
+        </FadeUp>
+      </div>
 
       {/* GSAP CDN Scripts */}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js">
@@ -270,8 +274,8 @@ export default function Communications({
 }
 
 const defaultProps: Props = {
-  tag: "Communication",
-  title: "deco.chat fits right into your day",
+  tag: "Channels",
+  title: "Works where your team talks",
   description:
     "Make your internal work more productive and efficient with AI agents.",
   phoneImage: "https://placehold.co/297x584",

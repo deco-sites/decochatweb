@@ -226,173 +226,183 @@ export default function Pricing({
 
   return (
     <div
-      class={`self-stretch px-4 md:px-8 lg:px-16 py-16 md:py-32 ${bgColor} flex flex-col justify-start items-center gap-8 md:gap-14`}
+      class={`w-full ${bgColor} py-16 md:py-32`}
     >
-      <div class="w-full max-w-[900px] flex flex-col justify-start items-center gap-6 md:gap-10">
-        <FadeUp>
-          <div class="self-stretch flex flex-col justify-start items-center gap-6">
-            <Eyebrow variant="primary-light" iconName="info" text={eyebrow} />
-            <h2 class="self-stretch text-center text-dc-800 text-3xl md:text-5xl font-semibold font-manrope leading-normal whitespace-pre-line">
-              {title}
-            </h2>
+      <div class="w-full max-w-[1440px] mx-auto px-4 md:px-8 flex flex-col justify-start items-center gap-8 md:gap-14">
+        <div class="w-full max-w-[900px] flex flex-col justify-start items-center gap-6 md:gap-10">
+          <FadeUp>
+            <div class="self-stretch flex flex-col justify-start items-center gap-6">
+              <Eyebrow variant="primary-light" iconName="info" text={eyebrow} />
+              <h2 class="self-stretch text-center text-dc-800 text-3xl md:text-5xl font-semibold font-manrope leading-normal whitespace-pre-line">
+                {title}
+              </h2>
+            </div>
+          </FadeUp>
+          <FadeUp delay={200}>
+            <BodyText align="center" color="dc-500" size="xl">
+              {description}
+            </BodyText>
+          </FadeUp>
+        </div>
+
+        {/* Team Size Input */}
+        <FadeUp delay={300}>
+          <div class="flex items-center gap-4 bg-white rounded-2xl shadow-lg border border-dc-200 px-6 py-4">
+            <label class="text-dc-800 font-semibold font-manrope text-lg">
+              Team size:
+            </label>
+            <input
+              id="team-size-input"
+              type="number"
+              min="1"
+              max="1000"
+              value={defaultTeamSize}
+              class="w-24 px-3 py-2 text-center border border-dc-300 rounded-lg font-semibold text-dc-800 focus:border-primary-dark focus:outline-none"
+            />
+            <span class="text-dc-600 font-medium">seats</span>
           </div>
         </FadeUp>
-        <FadeUp delay={200}>
-          <BodyText align="center" color="dc-500" size="xl">
-            {description}
-          </BodyText>
+
+        {/* Main Pricing Plans */}
+        <FadeUp delay={400}>
+          <div class="w-full max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Business Plan */}
+              <div class="relative p-8 bg-dc-50 rounded-3xl shadow-lg border-2 border-dc-200 flex flex-col gap-6">
+                {/* Plan Header */}
+                <div class="flex flex-col gap-6">
+                  <div class="flex flex-col gap-2">
+                    <h3 class="text-dc-800 text-3xl font-bold font-manrope">
+                      {business.title}
+                    </h3>
+                    <p class="text-dc-500 text-lg font-medium font-manrope">
+                      {business.subtitle}
+                    </p>
+                  </div>
+                  {/* Pricing */}
+                  <div class="flex flex-col gap-2">
+                    <div class="flex items-baseline gap-2">
+                      <span
+                        id="business-price"
+                        class="text-dc-800 text-4xl font-bold font-manrope"
+                      >
+                        $--
+                      </span>
+                      <span class="text-dc-500 text-lg font-medium font-manrope">
+                        /month
+                      </span>
+                    </div>
+                    <p
+                      id="business-seat-price"
+                      class="text-dc-500 text-base font-medium font-manrope"
+                    >
+                      --
+                    </p>
+                  </div>
+                  {/* Features */}
+                  <ul class="flex flex-col gap-3 mt-2">
+                    {business.features.map((feature) => (
+                      <li
+                        key={feature}
+                        class="flex items-center gap-3 text-dc-700 text-base font-medium font-manrope"
+                      >
+                        <Icon
+                          name="check_circle"
+                          size="small"
+                          class="text-primary-dark"
+                        />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  <Button
+                    variant="primary"
+                    size="large"
+                    className="mt-4 w-full"
+                  >
+                    {business.cta}
+                  </Button>
+                </div>
+              </div>
+              {/* Enterprise Plan */}
+              <div class="relative p-8 bg-dc-50 rounded-3xl shadow-lg border-2 border-dc-200 flex flex-col gap-6">
+                <div class="flex flex-col gap-6">
+                  {/* Plan Header */}
+                  <div class="flex flex-col gap-2">
+                    <h3 class="text-dc-800 text-3xl font-bold font-manrope">
+                      {enterprise.title}
+                    </h3>
+                    <p class="text-dc-500 text-lg font-medium font-manrope">
+                      {enterprise.subtitle}
+                    </p>
+                  </div>
+                  {/* Pricing */}
+                  <div class="flex flex-col gap-2">
+                    <div class="text-dc-800 text-4xl font-bold font-manrope">
+                      Custom
+                    </div>
+                    <p class="text-dc-500 text-base font-medium font-manrope">
+                      Flexible pricing options
+                    </p>
+                  </div>
+                  {/* Features */}
+                  <ul class="flex flex-col gap-3 mt-2">
+                    {enterprise.features.map((feature) => (
+                      <li
+                        key={feature}
+                        class="flex items-center gap-3 text-dc-700 text-base font-medium font-manrope"
+                      >
+                        <Icon
+                          name="check_circle"
+                          size="small"
+                          class="text-primary-dark"
+                        />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  <Button
+                    variant="primary"
+                    size="large"
+                    className="mt-4 w-full"
+                  >
+                    {enterprise.cta}
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </FadeUp>
+
+        {/* Professional Services - Brand Box */}
+        <FadeUp delay={600}>
+          <div class="w-full max-w-5xl mx-auto mt-12">
+            <div class="bg-dc-100 rounded-3xl border border-dc-200 px-8 py-10 flex flex-col items-center gap-6 shadow-md">
+              <h3 class="text-dc-800 text-2xl md:text-3xl font-semibold font-manrope text-center">
+                {professionalServices.title}
+              </h3>
+              <ul class="flex flex-col md:flex-row flex-wrap justify-center items-center gap-4 w-full max-w-3xl mx-auto">
+                {professionalServices.checklist.map((service) => (
+                  <li
+                    key={service}
+                    class="flex items-center gap-2 text-dc-700 text-base font-medium font-manrope bg-dc-50 rounded-xl px-4 py-2"
+                  >
+                    <Icon
+                      name="check_circle"
+                      size="small"
+                      class="text-primary-dark"
+                    />
+                    {service}
+                  </li>
+                ))}
+              </ul>
+              <Button variant="primary" size="large" className="mt-2">
+                {professionalServices.cta}
+              </Button>
+            </div>
+          </div>
         </FadeUp>
       </div>
-
-      {/* Team Size Input */}
-      <FadeUp delay={300}>
-        <div class="flex items-center gap-4 bg-white rounded-2xl shadow-lg border border-dc-200 px-6 py-4">
-          <label class="text-dc-800 font-semibold font-manrope text-lg">
-            Team size:
-          </label>
-          <input
-            id="team-size-input"
-            type="number"
-            min="1"
-            max="1000"
-            value={defaultTeamSize}
-            class="w-24 px-3 py-2 text-center border border-dc-300 rounded-lg font-semibold text-dc-800 focus:border-primary-dark focus:outline-none"
-          />
-          <span class="text-dc-600 font-medium">seats</span>
-        </div>
-      </FadeUp>
-
-      {/* Main Pricing Plans */}
-      <FadeUp delay={400}>
-        <div class="w-full max-w-5xl mx-auto">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Business Plan */}
-            <div class="relative p-8 bg-dc-50 rounded-3xl shadow-lg border-2 border-dc-200 flex flex-col gap-6">
-              {/* Plan Header */}
-              <div class="flex flex-col gap-6">
-                <div class="flex flex-col gap-2">
-                  <h3 class="text-dc-800 text-3xl font-bold font-manrope">
-                    {business.title}
-                  </h3>
-                  <p class="text-dc-500 text-lg font-medium font-manrope">
-                    {business.subtitle}
-                  </p>
-                </div>
-                {/* Pricing */}
-                <div class="flex flex-col gap-2">
-                  <div class="flex items-baseline gap-2">
-                    <span
-                      id="business-price"
-                      class="text-dc-800 text-4xl font-bold font-manrope"
-                    >
-                      $--
-                    </span>
-                    <span class="text-dc-500 text-lg font-medium font-manrope">
-                      /month
-                    </span>
-                  </div>
-                  <p
-                    id="business-seat-price"
-                    class="text-dc-500 text-base font-medium font-manrope"
-                  >
-                    --
-                  </p>
-                </div>
-                {/* Features */}
-                <ul class="flex flex-col gap-3 mt-2">
-                  {business.features.map((feature) => (
-                    <li
-                      key={feature}
-                      class="flex items-center gap-3 text-dc-700 text-base font-medium font-manrope"
-                    >
-                      <Icon
-                        name="check_circle"
-                        size="small"
-                        class="text-primary-dark"
-                      />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <Button variant="primary" size="large" className="mt-4 w-full">
-                  {business.cta}
-                </Button>
-              </div>
-            </div>
-            {/* Enterprise Plan */}
-            <div class="relative p-8 bg-dc-50 rounded-3xl shadow-lg border-2 border-dc-200 flex flex-col gap-6">
-              <div class="flex flex-col gap-6">
-                {/* Plan Header */}
-                <div class="flex flex-col gap-2">
-                  <h3 class="text-dc-800 text-3xl font-bold font-manrope">
-                    {enterprise.title}
-                  </h3>
-                  <p class="text-dc-500 text-lg font-medium font-manrope">
-                    {enterprise.subtitle}
-                  </p>
-                </div>
-                {/* Pricing */}
-                <div class="flex flex-col gap-2">
-                  <div class="text-dc-800 text-4xl font-bold font-manrope">
-                    Custom
-                  </div>
-                  <p class="text-dc-500 text-base font-medium font-manrope">
-                    Flexible pricing options
-                  </p>
-                </div>
-                {/* Features */}
-                <ul class="flex flex-col gap-3 mt-2">
-                  {enterprise.features.map((feature) => (
-                    <li
-                      key={feature}
-                      class="flex items-center gap-3 text-dc-700 text-base font-medium font-manrope"
-                    >
-                      <Icon
-                        name="check_circle"
-                        size="small"
-                        class="text-primary-dark"
-                      />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <Button variant="primary" size="large" className="mt-4 w-full">
-                  {enterprise.cta}
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </FadeUp>
-
-      {/* Professional Services - Brand Box */}
-      <FadeUp delay={600}>
-        <div class="w-full max-w-5xl mx-auto mt-12">
-          <div class="bg-dc-100 rounded-3xl border border-dc-200 px-8 py-10 flex flex-col items-center gap-6 shadow-md">
-            <h3 class="text-dc-800 text-2xl md:text-3xl font-semibold font-manrope text-center">
-              {professionalServices.title}
-            </h3>
-            <ul class="flex flex-col md:flex-row flex-wrap justify-center items-center gap-4 w-full max-w-3xl mx-auto">
-              {professionalServices.checklist.map((service) => (
-                <li
-                  key={service}
-                  class="flex items-center gap-2 text-dc-700 text-base font-medium font-manrope bg-dc-50 rounded-xl px-4 py-2"
-                >
-                  <Icon
-                    name="check_circle"
-                    size="small"
-                    class="text-primary-dark"
-                  />
-                  {service}
-                </li>
-              ))}
-            </ul>
-            <Button variant="primary" size="large" className="mt-2">
-              {professionalServices.cta}
-            </Button>
-          </div>
-        </div>
-      </FadeUp>
 
       {/* Pricing Script */}
       <script

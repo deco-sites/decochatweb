@@ -42,70 +42,72 @@ export default function FAQ({
   faqItems,
 }: Props) {
   return (
-    <div class="self-stretch min-w-full px-8 md:px-16 py-16 md:py-32 bg-stone-50 flex flex-col justify-start items-center gap-8 md:gap-14">
-      <div class="w-full max-w-[650px] flex flex-col justify-start items-center gap-6 md:gap-10">
-        <FadeUp>
-          <div class="self-stretch flex flex-col justify-start items-center gap-6">
-            <Eyebrow variant="primary-light" iconName="info" text={eyebrow} />
-            <h2 class="text-center text-dc-800 text-3xl md:text-5xl font-semibold font-manrope leading-normal">
-              {title}
-            </h2>
-          </div>
-        </FadeUp>
-        <FadeUp delay={200}>
-          <div class="self-stretch text-center text-dc-500 text-xl font-medium font-manrope leading-normal">
-            {description}
-          </div>
-        </FadeUp>
-      </div>
+    <div class="w-full bg-dc-50 py-16 md:py-32">
+      <div class="w-full max-w-[1440px] mx-auto px-4 md:px-8 flex flex-col justify-start items-center gap-8 md:gap-14">
+        <div class="w-full max-w-[650px] flex flex-col justify-start items-center gap-6 md:gap-10">
+          <FadeUp>
+            <div class="self-stretch flex flex-col justify-start items-center gap-6">
+              <Eyebrow variant="primary-light" iconName="info" text={eyebrow} />
+              <h2 class="text-center text-dc-800 text-3xl md:text-5xl font-semibold font-manrope leading-normal">
+                {title}
+              </h2>
+            </div>
+          </FadeUp>
+          <FadeUp delay={200}>
+            <div class="self-stretch text-center text-dc-500 text-xl font-medium font-manrope leading-normal">
+              {description}
+            </div>
+          </FadeUp>
+        </div>
 
-      <FadeUp delay={400}>
-        <div class="w-full max-w-[750px] flex flex-col justify-start items-start gap-4">
-          {faqItems.map((item, index) => (
-            <div class="self-stretch faq-item">
-              {/* Question */}
-              <div
-                class="self-stretch flex justify-end items-center gap-2.5 cursor-pointer faq-question"
-                data-index={index}
-              >
-                <div class="w-6 h-6 relative overflow-hidden faq-icon">
-                  <div class="w-3.5 h-0.5 left-[5px] top-[11px] absolute bg-dc-500 transition-transform duration-300">
+        <FadeUp delay={400}>
+          <div class="w-full max-w-[750px] flex flex-col justify-start items-start gap-4">
+            {faqItems.map((item, index) => (
+              <div class="self-stretch faq-item">
+                {/* Question */}
+                <div
+                  class="self-stretch flex justify-end items-center gap-2.5 cursor-pointer faq-question"
+                  data-index={index}
+                >
+                  <div class="w-6 h-6 relative overflow-hidden faq-icon">
+                    <div class="w-3.5 h-0.5 left-[5px] top-[11px] absolute bg-dc-500 transition-transform duration-300">
+                    </div>
+                    <div class="w-0.5 h-3.5 left-[11px] top-[5px] absolute bg-dc-500 transition-transform duration-300 faq-plus-vertical">
+                    </div>
                   </div>
-                  <div class="w-0.5 h-3.5 left-[11px] top-[5px] absolute bg-dc-500 transition-transform duration-300 faq-plus-vertical">
+                  <div class="max-w-[500px] p-6 bg-dc-100 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl flex flex-col justify-center items-start">
+                    <div class="self-stretch text-dc-600 text-xl font-medium font-manrope leading-normal">
+                      {item.question}
+                    </div>
                   </div>
                 </div>
-                <div class="max-w-[500px] p-6 bg-dc-100 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl flex flex-col justify-center items-start">
-                  <div class="self-stretch text-dc-600 text-xl font-medium font-manrope leading-normal">
-                    {item.question}
-                  </div>
-                </div>
-              </div>
 
-              {/* Answer */}
-              <div class="self-stretch faq-answer hidden" data-index={index}>
-                <div class="self-stretch flex justify-start items-end gap-2.5 mt-4">
-                  <div class="w-12 h-12 relative bg-primary-light rounded-2xl flex-shrink-0 overflow-hidden">
-                    <Image
-                      src={answerLogo}
-                      alt="Logo"
-                      width={48}
-                      height={48}
-                      class="w-full h-full object-cover"
-                      loading="lazy"
-                      fetchPriority="low"
-                    />
-                  </div>
-                  <div class="max-w-[500px] p-6 bg-primary-dark rounded-tl-2xl rounded-tr-2xl rounded-br-2xl flex flex-col justify-center items-start">
-                    <div class="self-stretch text-primary-light text-xl font-medium font-manrope leading-normal">
-                      {item.answer}
+                {/* Answer */}
+                <div class="self-stretch faq-answer hidden" data-index={index}>
+                  <div class="self-stretch flex justify-start items-end gap-2.5 mt-4">
+                    <div class="w-12 h-12 relative bg-primary-light rounded-2xl flex-shrink-0 overflow-hidden">
+                      <Image
+                        src={answerLogo}
+                        alt="Logo"
+                        width={48}
+                        height={48}
+                        class="w-full h-full object-cover"
+                        loading="lazy"
+                        fetchPriority="low"
+                      />
+                    </div>
+                    <div class="max-w-[500px] p-6 bg-primary-dark rounded-tl-2xl rounded-tr-2xl rounded-br-2xl flex flex-col justify-center items-start">
+                      <div class="self-stretch text-primary-light text-xl font-medium font-manrope leading-normal">
+                        {item.answer}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </FadeUp>
+            ))}
+          </div>
+        </FadeUp>
+      </div>
 
       <script
         type="module"

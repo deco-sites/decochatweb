@@ -6,71 +6,294 @@
       "__resolveType": "Header"
     },
     {
+      "__resolveType": "site/sections/ChatSupport.tsx",
+      "agentName": "Sales Bot Agent",
+      "webhookUrl": "https://api.deco.chat/actors/Trigger/invoke/run?passphrase=undefined&deno_isolate_instance_id=/shared/deco.cx/Agents/a213785a-57b4-4800-a207-e408fb476841/triggers/632bce52-a316-43d0-a724-bd1de45d980b&output_tool=undefined",
+      "welcomeMessage": "Hi! I'm here to help you learn about deco.chat. Ask me anything about our AI workspace!"
+    },
+    {
       "__resolveType": "site/sections/Hero.tsx",
       "eyebrow": {
-        "text": "Whitelabel AI Workspace",
-        "iconName": "info",
+        "text": "AI Agent Workspace",
+        "iconName": "smart_toy",
         "variant": "dc-50"
       },
-      "title": "The fastest way to become an AI-First company",
-      "description": "Everything you need to build, run, and scale AI across your\norganization with control and confidence.",
+      "title": "Turn your\ncompany AI-first",
+      "backgroundColor": "dc-50",
+      "description": "The platform to build AI agents in minutes, connected to your company knowledge and tools, powered by the best AI models.",
       "ctas": [
         {
           "text": "Try it for free",
           "href": "https://deco.chat/login",
           "variant": "primary"
+        },
+        {
+          "text": "Book a Demo",
+          "href": "/demo",
+          "variant": "secondary"
         }
       ],
       "backgroundImage": "https://assets.decocache.com/decochatweb/02a46646-de43-4a5d-85f5-9a441f68724f/image-863.png",
-      "mainImage": "https://assets.decocache.com/decochatweb/b3d5935c-3759-4849-8414-78a4e5ad6855/platform.png",
+      "mainImage": "https://assets.decocache.com/decochatweb/e272abbc-70b5-4e05-9d25-616b69b7df55/decochat.png",
       "mainImageBackground": "https://assets.decocache.com/decochatweb/1ca52f99-6720-48b0-8dbd-d36b31620b61/fundo-main.png",
-      "backgroundColor": "dc-50"
+      "decorativeSvg": "https://assets.decocache.com/decochatweb/399caebe-3a48-47c0-89ab-285c379dfb09/setaa.svg"
     },
     {
       "__resolveType": "site/sections/Statement.tsx",
       "eyebrow": {
         "text": "What is deco.chat",
-        "iconName": "info",
+        "iconName": "lightbulb",
         "variant": "primary-light"
       },
       "title": "deco.chat is the platform that allows everyone to solve problems and automate daily work with AI Agents",
+      "backgroundColor": "green-950",
       "centerImage": "https://assets.decocache.com/decochatweb/f037efe4-b4b3-410e-91e1-b4ad95312192/Extract-GIF-Frames-(2).png",
       "leftCard": {
         "text": "Access over 60 AI models through one unified API"
       },
       "topRightCard": {
-        "text": "Text, image, video and code (app) generation"
+        "text": "Text, image, video and code (app) generation",
+        "image": "https://assets.decocache.com/decochatweb/ab002a42-f252-4d6a-b1dd-b3cfe4b8097e/w.png"
       },
       "bottomRightCard": {
-        "image": "https://assets.decocache.com/decochatweb/75e64b80-6a07-486d-81b6-c2003a0d16e8/ChatGPT-Image-May-20-2025-03_22_29-PM-1.png"
+        "image": "https://assets.decocache.com/decochatweb/8f02ea08-66c8-45d0-942d-08a16f3f9d86/capyyy.png"
       },
-      "backgroundColor": "green-950"
+      "aiModelsText": "Access over 60 AI models through one unified API",
+      "aiModels": [
+        {
+          "logo": "https://assets.decocache.com/decochatweb/d3a098b8-a40b-4167-8ffc-7ec8cd6908ec/aimodel-06.svg",
+          "name": "grok"
+        },
+        {
+          "logo": "https://assets.decocache.com/decochatweb/d9a626ee-4b80-49a7-8918-ba6310195bb4/aimodel-02.svg",
+          "name": "stability"
+        },
+        {
+          "logo": "https://assets.decocache.com/decochatweb/f69844fd-8b66-4bf9-a21c-5cabe4aba0e0/aimodel-05.svg",
+          "name": "replit"
+        },
+        {
+          "logo": "https://assets.decocache.com/decochatweb/096c6298-4e33-4c26-83e0-e383588c556d/aimodel-11.svg",
+          "name": "deepseek"
+        },
+        {
+          "logo": "https://assets.decocache.com/decochatweb/d59883ef-814b-4e00-bcad-7ab9799e3196/aimodel-12.svg",
+          "name": "gpt"
+        },
+        {
+          "logo": "https://assets.decocache.com/decochatweb/80663cff-60d6-40b1-9263-84736a60acb0/aimodel-13.svg",
+          "name": "claude"
+        },
+        {
+          "logo": "https://assets.decocache.com/decochatweb/1e79e270-aba3-4c62-a3f6-ac429759cb1f/aimodel-08.svg",
+          "name": "perplexity"
+        },
+        {
+          "logo": "https://assets.decocache.com/decochatweb/d4396144-60c3-4888-a486-f55aeac2ba7d/aimodel-09.svg",
+          "name": "mistral"
+        },
+        {
+          "logo": "https://assets.decocache.com/decochatweb/adfb36a2-7100-4229-ad81-1f2d6176ac50/aimodel-10.svg",
+          "name": "gemini"
+        },
+        {
+          "logo": "https://assets.decocache.com/decochatweb/ce8bb463-6539-4dc5-a87b-b96e74d8d1e4/aimodel-07.svg",
+          "name": "elevenlabs"
+        },
+        {
+          "logo": "https://assets.decocache.com/decochatweb/0e70bfcd-9139-4494-8624-2edae74a88f4/aimodel-04.svg",
+          "name": "v"
+        },
+        {
+          "logo": "https://assets.decocache.com/decochatweb/4f42b2f8-5f8d-4bee-864b-6f16547ce779/aimodel-03.svg",
+          "name": "v"
+        }
+      ],
+      "integrationStatus": [
+        {
+          "service": "Slack",
+          "icon": "https://assets.decocache.com/decochatweb/2073c2de-f3a7-46ae-a672-955a8d8a3e41/icon-8.png",
+          "status": "connected"
+        },
+        {
+          "service": "Google Drive",
+          "icon": "https://assets.decocache.com/decochatweb/c74f6164-4b2f-43f7-8864-d61db383494e/icon.png",
+          "status": "connecting"
+        }
+      ],
+      "finalResult": {
+        "time": "12:26 PM",
+        "serviceTitle": "Sheets",
+        "serviceIcon": "https://assets.decocache.com/decochatweb/32019cd1-157a-409e-b382-6181bcf21427/icon-33.png",
+        "previewImage": "https://assets.decocache.com/decochatweb/09de5b89-96be-4660-952b-07293958fd94/sheeeets.png"
+      }
     },
     {
       "__resolveType": "site/sections/UseCases.tsx",
-      "eyebrow": "Use Cases",
-      "title": "Enterprise-Grade AI solutions\nfor your organization",
+      "eyebrow": {
+        "0": "U",
+        "1": "s",
+        "2": "e",
+        "3": " ",
+        "4": "C",
+        "5": "a",
+        "6": "s",
+        "7": "e",
+        "8": "s",
+        "text": "Use cases",
+        "variant": "primary-light",
+        "iconName": "group"
+      },
+      "title": "Your next hire isn't human",
       "description": "See how AI agents can help with your daily work and how you connect with customers.",
-      "internalTag": "Internal Tooling",
-      "internalTitle": "Internal work more productive",
-      "internalDescription": "Let AI handle routine tasks and break down complex work into simple steps.",
-      "customerTag": "Customer-facing",
-      "customerTitle": "Customer interactions AI chats",
-      "customerDescription": "Build better connections with customers by using easy chats, highly personal service and quick support.",
-      "googleDriveIcon": "https://assets.decocache.com/decochatweb/5ea2a2c1-1b1b-4845-bbd2-da2c00fdc4fa/drive.png",
-      "ipsumAgentLogo": "https://assets.decocache.com/decochatweb/6266830a-b902-4cf3-ab20-ae696218e9e6/agentlogo.png",
-      "productImage": "https://assets.decocache.com/decochatweb/02590a62-4bb1-4c1e-9e93-b9f849e9840b/shirt01.png",
-      "posts": {
-        "__resolveType": "blog/loaders/BlogpostList.ts",
-        "count": 3,
-        "slug": "cases"
-      }
+      "agentCards": [
+        {
+          "avatar": "https://assets.decocache.com/decochatweb/f9ff755c-e656-47e7-b10f-c949b95a34a2/Agent-3.png",
+          "title": "Meeting-to-Proposal Assistant",
+          "description": "Let AI handle routine tasks and break down complex work into simple steps.",
+          "integrations": [
+            {
+              "name": "Google Docs",
+              "icon": "https://assets.decocache.com/decochatweb/48e71883-f0e9-4671-88f0-ec5cabd63310/docs.svg"
+            },
+            {
+              "name": "Grain",
+              "icon": "https://assets.decocache.com/decochatweb/6457d375-70b9-4e45-a287-7292ddd8fb14/icon-12.png"
+            }
+          ],
+          "messages": [
+            {
+              "type": "user",
+              "content": "Draft a proposal from today's client call."
+            },
+            {
+              "type": "agent",
+              "content": "Hi Sarah! Your interview is being reviewed. I'll update you by Thursday. Also updating your status in our ATS."
+            }
+          ]
+        },
+        {
+          "avatar": "https://assets.decocache.com/decochatweb/aa33830d-66f1-41fb-8bb5-8caf383e0cd8/Agent.png",
+          "title": "Recruiting Assistant",
+          "description": "Answers candidate questions and updates your ATS—all in Slack.",
+          "integrations": [
+            {
+              "name": "Slack",
+              "icon": "https://assets.decocache.com/decochatweb/2073c2de-f3a7-46ae-a672-955a8d8a3e41/icon-8.png"
+            },
+            {
+              "name": "Sheets",
+              "icon": "https://assets.decocache.com/decochatweb/32019cd1-157a-409e-b382-6181bcf21427/icon-33.png"
+            },
+            {
+              "name": "Workday ATS",
+              "icon": "https://assets.decocache.com/decochatweb/9dec8b64-675e-4799-9d0a-b5af7b17345c/workday-seeklogo.svg"
+            }
+          ],
+          "messages": [
+            {
+              "type": "user",
+              "content": "Give me the summaries of all candidates"
+            },
+            {
+              "type": "agent",
+              "content": "Hi Sarah! Your interview is being reviewed. I'll update you by Thursday. Also updating your status in our ATS."
+            }
+          ]
+        },
+        {
+          "avatar": "https://assets.decocache.com/decochatweb/a182b7ab-f080-409f-89d0-00abe0ed3c06/Agent-4.png",
+          "title": "Interview Scheduler",
+          "description": "Finds the best interviewer match and books the slot in seconds.",
+          "integrations": [
+            {
+              "name": "Sheets",
+              "icon": "https://assets.decocache.com/decochatweb/32019cd1-157a-409e-b382-6181bcf21427/icon-33.png"
+            },
+            {
+              "name": "Gmail",
+              "icon": "https://assets.decocache.com/decochatweb/8ba7277d-7853-4e1a-addb-1ebb59241601/icon-44.png"
+            }
+          ],
+          "messages": [
+            {
+              "type": "user",
+              "content": "Schedule Sarah's final interview"
+            },
+            {
+              "type": "agent",
+              "content": "Found the best match: Alex (React expert). Booked Tuesday 2PM. Calendar invites sent! ✅"
+            }
+          ]
+        },
+        {
+          "avatar": "https://assets.decocache.com/decochatweb/4b1526f0-e072-4e93-abbe-368beaebab7c/Agent-2.png",
+          "title": "Refund Processor",
+          "description": "Captures, validates, and logs refund requests automatically.",
+          "integrations": [
+            {
+              "name": "Stripe",
+              "icon": "https://assets.decocache.com/decochatweb/af623bcc-0c2c-42e1-9f92-5bb433592f20/icon-41.png"
+            },
+            {
+              "name": "Sheets",
+              "icon": "https://assets.decocache.com/decochatweb/32019cd1-157a-409e-b382-6181bcf21427/icon-33.png"
+            },
+            {
+              "name": "Shopify",
+              "icon": "https://assets.decocache.com/decochatweb/0905d25f-6c59-4d79-8b21-4ad00ef479d8/icon-37.png"
+            }
+          ],
+          "messages": [
+            {
+              "type": "user",
+              "content": "Refund order #4567, damaged item"
+            },
+            {
+              "type": "agent",
+              "content": "I'll set up a trigger for this repetitive task. I just need to connect the integrations, one moment."
+            }
+          ]
+        },
+        {
+          "avatar": "https://assets.decocache.com/decochatweb/4981f6a9-685a-4a3a-8a45-8509986c427d/Agent-1.png",
+          "title": "Pet Concierge",
+          "description": "Guides pet owners through health questions and vet recommendations 24/7.",
+          "integrations": [
+            {
+              "name": "Calendar",
+              "icon": "https://assets.decocache.com/decochatweb/d07e946f-9bc2-4289-ba81-7ee3b341c322/icon-39.png"
+            },
+            {
+              "name": "WhatsApp",
+              "icon": "https://assets.decocache.com/decochatweb/d1272ed0-4ec6-4a77-a2b4-16258d232feb/icon-5.png"
+            },
+            {
+              "name": "Gmail",
+              "icon": "https://assets.decocache.com/decochatweb/ff95da65-77dc-4788-a3af-8b253a84a572/icon-2.png"
+            }
+          ],
+          "messages": [
+            {
+              "type": "user",
+              "content": "My dog keeps scratching, what could it be?"
+            },
+            {
+              "type": "agent",
+              "content": "I'll set up a trigger for this repetitive task. I just need to connect the integrations, one moment."
+            }
+          ]
+        }
+      ],
+      "ctaLink": "/create-agent",
+      "posts": null
     },
     {
       "__resolveType": "site/sections/Whitelabel.tsx",
       "eyebrow": "Whitelabel",
       "title": "Make it yours with\ncomplete customization",
       "description": "Customize every aspect of the platform to match your brand identity and requirements.",
+      "posts": null,
       "backgroundImage": "https://placehold.co/1030x1030",
       "defaultProductImage": "https://assets.decocache.com/decochatweb/25a10123-ebd9-4eec-a6d1-f6264fefc70a/amarelo-1.png",
       "defaultBackgroundColor": "#f3f4f6",
@@ -175,8 +398,7 @@
       ],
       "githubStars": "24",
       "githubButtonText": "deco-cx/chat",
-      "appearanceModes": [],
-      "posts": null
+      "appearanceModes": []
     },
     {
       "__resolveType": "site/sections/Integrations.tsx",
@@ -372,9 +594,9 @@
     },
     {
       "__resolveType": "site/sections/Communications.tsx",
-      "title": "deco.chat fits right into your day",
+      "title": "Works where your team talks",
       "description": "Make your internal work more productive and efficient with AI agents.",
-      "tag": "Communication",
+      "tag": "Channels",
       "phoneImage": "https://assets.decocache.com/decochatweb/b84fa0cc-29d3-4f80-8c19-e52665bb4fc3/phone-zap.png",
       "platforms": [
         {
@@ -401,9 +623,9 @@
     },
     {
       "__resolveType": "site/sections/PrivacySecurity.tsx",
-      "eyebrow": "Privacy-first",
       "title": "Secure, governed and under your control",
       "description": "We take your data privacy and security seriously.\nYou can choose to host it yourself or use our secure setup.",
+      "eyebrow": "Privacy-first",
       "backgroundImage": "https://assets.decocache.com/decochatweb/28eb1a29-b13e-47f0-9bd3-2c74373b6825/globe.png",
       "securityCards": [
         {

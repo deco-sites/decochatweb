@@ -58,8 +58,8 @@ export default function Integrations({
   const bottomLogos = logos.slice(logosPerRow * 2);
 
   const LogoCard = ({ logo }: { logo: Logo }) => (
-    <div class="w-24 h-24 bg-white rounded-3xl outline outline-[1.51px] outline-offset-[-1.51px] outline-dc-200 flex justify-center items-center gap-5 overflow-hidden flex-shrink-0">
-      <div class="w-16 h-16 relative bg-white overflow-hidden">
+    <div class="w-20 sm:w-24 h-20 sm:h-24 bg-white rounded-2xl sm:rounded-3xl outline outline-[1.51px] outline-offset-[-1.51px] outline-dc-200 flex justify-center items-center overflow-hidden flex-shrink-0">
+      <div class="w-12 sm:w-16 h-12 sm:h-16 relative bg-white overflow-hidden">
         <Image
           src={logo.image}
           alt={logo.name}
@@ -73,13 +73,13 @@ export default function Integrations({
   );
 
   return (
-    <div class="self-stretch py-16 md:py-32 bg-dc-50 flex flex-col justify-center items-center gap-16 md:gap-32">
-      <div class="self-stretch flex flex-col justify-start items-center gap-8 md:gap-14 overflow-hidden">
-        <div class="w-full max-w-[900px] flex flex-col justify-start items-center gap-6 md:gap-10">
+    <div class="w-full px-4 md:px-8 lg:px-16 py-16 md:py-32 bg-dc-50 flex flex-col justify-start items-center gap-14">
+      <div class="w-full max-w-[1440px] flex flex-col justify-start items-center gap-14">
+        <div class="w-full max-w-[900px] flex flex-col justify-start items-center gap-10">
           <FadeUp>
-            <div class="self-stretch flex flex-col justify-start items-center gap-6">
+            <div class="flex flex-col justify-start items-center gap-6">
               <Eyebrow variant="primary-light" iconName="info" text={eyebrow} />
-              <h2 class="self-stretch text-center text-dc-800 text-3xl md:text-5xl font-semibold font-manrope leading-normal">
+              <h2 class="text-center text-dc-800 text-3xl md:text-5xl font-semibold font-manrope leading-tight">
                 {title}
               </h2>
             </div>
@@ -92,7 +92,7 @@ export default function Integrations({
         </div>
 
         <FadeUp delay={400}>
-          <div class="self-stretch flex flex-col justify-center items-center gap-4 relative">
+          <div class="w-screen relative -mx-4 md:-mx-8 lg:-mx-16 flex flex-col justify-center items-center gap-4">
             {/* Top Row */}
             <div class="w-full overflow-hidden relative">
               <div class="marquee-left flex gap-2 w-max max-w-full">
@@ -101,10 +101,10 @@ export default function Integrations({
                 ))}
               </div>
               {/* Left gradient */}
-              <div class="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-dc-50 to-transparent pointer-events-none z-10">
+              <div class="absolute top-0 left-0 w-8 sm:w-20 h-full bg-gradient-to-r from-dc-50 to-transparent pointer-events-none z-10">
               </div>
               {/* Right gradient */}
-              <div class="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-dc-50 to-transparent pointer-events-none z-10">
+              <div class="absolute top-0 right-0 w-8 sm:w-20 h-full bg-gradient-to-l from-dc-50 to-transparent pointer-events-none z-10">
               </div>
             </div>
 
@@ -117,10 +117,10 @@ export default function Integrations({
                 ) => <LogoCard key={`middle-${index}`} logo={logo} />)}
               </div>
               {/* Left gradient */}
-              <div class="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-dc-50 to-transparent pointer-events-none z-10">
+              <div class="absolute top-0 left-0 w-8 sm:w-20 h-full bg-gradient-to-r from-dc-50 to-transparent pointer-events-none z-10">
               </div>
               {/* Right gradient */}
-              <div class="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-dc-50 to-transparent pointer-events-none z-10">
+              <div class="absolute top-0 right-0 w-8 sm:w-20 h-full bg-gradient-to-l from-dc-50 to-transparent pointer-events-none z-10">
               </div>
             </div>
 
@@ -133,10 +133,10 @@ export default function Integrations({
                 ) => <LogoCard key={`bottom-${index}`} logo={logo} />)}
               </div>
               {/* Left gradient */}
-              <div class="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-dc-50 to-transparent pointer-events-none z-10">
+              <div class="absolute top-0 left-0 w-8 sm:w-20 h-full bg-gradient-to-r from-dc-50 to-transparent pointer-events-none z-10">
               </div>
               {/* Right gradient */}
-              <div class="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-dc-50 to-transparent pointer-events-none z-10">
+              <div class="absolute top-0 right-0 w-8 sm:w-20 h-full bg-gradient-to-l from-dc-50 to-transparent pointer-events-none z-10">
               </div>
             </div>
           </div>

@@ -77,6 +77,11 @@ export interface Props {
    */
   mainImageBackground?: ImageWidget;
   /**
+   * @title SVG Decorativo
+   * @description SVG decorativo que aparece no canto superior direito da imagem principal
+   */
+  decorativeSvg?: ImageWidget;
+  /**
    * @title Cor de fundo
    * @description Cor de fundo da seção
    */
@@ -91,6 +96,7 @@ export default function Hero({
   backgroundImage = defaultProps.backgroundImage,
   mainImage = defaultProps.mainImage,
   mainImageBackground = defaultProps.mainImageBackground,
+  decorativeSvg = defaultProps.decorativeSvg,
   backgroundColor = defaultProps.backgroundColor,
 }: Props) {
   const bgColorMap = {
@@ -103,112 +109,139 @@ export default function Hero({
   const bgColor = bgColorMap[backgroundColor || "dc-50"];
 
   return (
-    <div class="w-full bg-green-950 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
+    <div class="w-full bg-primary-dark flex flex-col justify-start items-start overflow-hidden">
       <div
-        class={`self-stretch min-w-full px-4 md:px-8 lg:px-16 pt-16 relative ${bgColor} rounded-bl-3xl rounded-br-3xl flex flex-col justify-start items-center gap-12 lg:gap-20 overflow-hidden`}
+        class={`self-stretch w-full px-4 md:px-8 lg:px-16 pt-16 relative ${bgColor} rounded-bl-3xl rounded-br-3xl flex flex-col justify-start items-center overflow-hidden`}
       >
-        {/* Background Image */}
+        {/* Background Image - positioned at bottom */}
         {backgroundImage && (
           <Image
             src={backgroundImage}
             alt="Background decoration"
-            width={1440}
-            height={844}
-            class="w-full h-96 md:h-[36rem] lg:h-[52rem] left-0 top-28 absolute object-cover"
+            width={1760}
+            height={902}
+            class="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-full max-w-none h-auto object-cover object-top"
+            style={{ minWidth: "1440px" }}
             loading="eager"
             fetchPriority="high"
           />
         )}
 
-        {/* Content */}
-        <div class="relative z-10 flex flex-col justify-start items-center gap-6 lg:gap-8 max-w-7xl mx-auto">
-          <FadeUp delay={0}>
-            <div class="flex flex-col justify-start items-center gap-6 lg:gap-10">
-              <div class="flex flex-col justify-start items-center gap-4">
-                {/* Eyebrow */}
-                {eyebrow && (
-                  <Eyebrow
-                    text={eyebrow.text}
-                    iconName={eyebrow.iconName}
-                    variant={eyebrow.variant}
-                  />
-                )}
+        {/* Content Container with max-width 1440px */}
+        <div class="relative z-10 w-full max-w-[1440px] mx-auto flex flex-col justify-start items-center gap-20">
+          {/* Content */}
+          <div class="flex flex-col justify-start items-center gap-8">
+            <FadeUp delay={0}>
+              <div class="flex flex-col justify-start items-center gap-10">
+                <div class="flex flex-col justify-start items-center gap-4">
+                  {/* Eyebrow */}
+                  {eyebrow && (
+                    <Eyebrow
+                      text={eyebrow.text}
+                      iconName={eyebrow.iconName}
+                      variant={eyebrow.variant}
+                    />
+                  )}
 
-                {/* Main Title */}
-                <h1 class="text-center text-dc-700 text-3xl md:text-6xl font-bold font-manrope leading-normal max-w-4xl">
-                  {title.split("\n").map((line, index) => (
-                    <>
-                      {index > 0 && <br />}
-                      {line}
-                    </>
-                  ))}
-                </h1>
-              </div>
+                  {/* Main Title - Large size matching Figma */}
+                  <h1 class="text-center text-dc-700 text-5xl md:text-6xl lg:text-[80px] font-bold font-manrope leading-none tracking-[-0.03em] max-w-4xl">
+                    {title.split("\n").map((line, index) => (
+                      <>
+                        {index > 0 && <br />}
+                        {line}
+                      </>
+                    ))}
+                  </h1>
+                </div>
 
-              {/* Description */}
-              <BodyText
-                align="center"
-                color="dc-500"
-                size="xl"
-                weight="medium"
-                lineHeight="figma"
-                className="max-w-3xl px-4"
-              >
-                {description.split("\n").map((line, index) => (
-                  <>
-                    {index > 0 && <br />}
-                    {line}
-                  </>
-                ))}
-              </BodyText>
-            </div>
-          </FadeUp>
-
-          {/* CTAs */}
-          {ctas && ctas.length > 0 && (
-            <FadeUp delay={200}>
-              <div class="inline-flex flex-col sm:flex-row justify-start items-center gap-4">
-                {ctas.map((cta) => (
-                  <Button
-                    href={cta.href}
-                    variant={cta.variant}
-                    size="large"
-                    className="hover:opacity-90 hover:-translate-y-0.5 transition-transform duration-200 ease-out"
+                {/* Description */}
+                <div class="max-w-full text-center">
+                  <BodyText
+                    align="center"
+                    color="dc-500"
+                    size="lg"
+                    weight="medium"
+                    lineHeight="relaxed"
+                    className="max-w-3xl mx-auto"
                   >
-                    {cta.text}
-                  </Button>
-                ))}
+                    {description.split("\n").map((line, index) => (
+                      <>
+                        {index > 0 && <br />}
+                        {line}
+                      </>
+                    ))}
+                  </BodyText>
+                </div>
+              </div>
+            </FadeUp>
+
+            {/* CTAs */}
+            {ctas && ctas.length > 0 && (
+              <FadeUp delay={200}>
+                <div class="flex flex-row justify-center items-center gap-4">
+                  {ctas.map((cta) => (
+                    <Button
+                      href={cta.href}
+                      variant={cta.variant}
+                      size="large"
+                      className="hover:opacity-90 hover:-translate-y-0.5 transition-transform duration-200 ease-out"
+                    >
+                      {cta.text}
+                    </Button>
+                  ))}
+                </div>
+              </FadeUp>
+            )}
+          </div>
+
+          {/* Main Image Container */}
+          {mainImage && (
+            <FadeUp delay={400}>
+              <div class="w-full relative">
+                <div
+                  class="w-full bg-primary-light rounded-tl-3xl rounded-tr-3xl border-2 border-dc-50 pt-4 px-4 sm:px-4 md:pt-20 md:px-20 pb-0 h-auto md:h-[443px] flex flex-col justify-start items-center overflow-hidden relative"
+                  style={{
+                    backgroundImage: mainImageBackground
+                      ? `url(${mainImageBackground})`
+                      : undefined,
+                    backgroundSize: "cover",
+                    backgroundPosition: "bottom",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                >
+                  {/* Main platform image - fills available height with top padding */}
+                  <div class="w-full flex items-start justify-center relative z-10">
+                    <Image
+                      src={mainImage}
+                      alt="Main hero image"
+                      width={1440}
+                      height={900}
+                      class="w-full sm:max-w-[1182px] h-auto md:min-h-full md:object-cover md:object-top"
+                      loading="eager"
+                      fetchPriority="high"
+                    />
+                  </div>
+
+                  {/* Decorative SVG Arrow - positioned absolutely at top-right with higher z-index */}
+                  {decorativeSvg && (
+                    <div class="absolute top-5 right-5 w-[104px] h-[109px] flex items-center justify-center z-20">
+                      <div class="transform rotate-[45deg] scale-y-[1]">
+                        <Image
+                          src={decorativeSvg}
+                          alt="Decorative arrow"
+                          width={72}
+                          height={84}
+                          class="w-[72px] h-[84px]"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             </FadeUp>
           )}
         </div>
-
-        {/* Main Image Container */}
-        {mainImage && (
-          <FadeUp delay={400}>
-            <div
-              class="self-stretch px-12 pt-12 rounded-tl-3xl rounded-tr-3xl outline outline-2 outline-dc-50 flex flex-col justify-start items-center overflow-hidden relative"
-              style={{
-                backgroundImage: mainImageBackground
-                  ? `url(${mainImageBackground})`
-                  : undefined,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
-              <Image
-                src={mainImage}
-                alt="Main hero image"
-                width={1155}
-                height={363}
-                class="w-full h-auto rounded-tl-3xl object-fill rounded-tr-3xl shadow-sm outline outline-8 outline-white/25 backdrop-blur-sm"
-                loading="eager"
-                fetchPriority="high"
-              />
-            </div>
-          </FadeUp>
-        )}
       </div>
     </div>
   );
@@ -216,13 +249,13 @@ export default function Hero({
 
 const defaultProps: Props = {
   eyebrow: {
-    text: "Opensource Whitelabel AI Workspace",
+    text: "AI Agent Workspace",
     iconName: "info",
     variant: "dc-50",
   },
-  title: "The fastest way to\nbecome AI-First company",
+  title: "Turn your\ncompany AI-first",
   description:
-    "Everything you need to build, run, and scale AI across your\norganization with control and confidence.",
+    "The platform to build AI agents in minutes, connected to your company knowledge and tools, powered by the best AI models.",
   ctas: [
     {
       text: "Try it for free",
@@ -235,9 +268,10 @@ const defaultProps: Props = {
       variant: "secondary",
     },
   ],
-  backgroundImage: "https://placehold.co/1440x844",
-  mainImage: "https://placehold.co/1155x722",
+  backgroundImage: "https://placehold.co/1760x902",
+  mainImage: "https://placehold.co/1182x378",
   mainImageBackground: "https://placehold.co/1440x844",
+  decorativeSvg: "https://placehold.co/72x84",
   backgroundColor: "dc-50",
 };
 
