@@ -402,8 +402,8 @@
     },
     {
       "__resolveType": "site/sections/Integrations.tsx",
-      "title": "Connect all your data and bring\nAI into your everyday work",
-      "description": "Gather all your data using our web-based MCP servers and a central knowledge base. This lets your AI agents use the same information and work towards company goals.",
+      "title": "Bring AI into your everyday work",
+      "description": "Unified API & web‑based MCP servers for secure connections",
       "eyebrow": "Integrations",
       "logos": [
         {
@@ -623,8 +623,8 @@
     },
     {
       "__resolveType": "site/sections/PrivacySecurity.tsx",
-      "title": "Secure, governed and under your control",
-      "description": "We take your data privacy and security seriously.\nYou can choose to host it yourself or use our secure setup.",
+      "title": "Built for security-conscious teams",
+      "description": "We take your data privacy and security seriously. You can choose to host it yourself or use our secure setup.",
       "eyebrow": "Privacy-first",
       "backgroundImage": "https://assets.decocache.com/decochatweb/28eb1a29-b13e-47f0-9bd3-2c74373b6825/globe.png",
       "securityCards": [
