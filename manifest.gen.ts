@@ -14,21 +14,29 @@ import * as $$$$$$3 from "./sections/CTASection.tsx";
 import * as $$$$$$6 from "./sections/Faq.tsx";
 import * as $$$$$$7 from "./sections/FeaturesBento.tsx";
 import * as $$$$$$8 from "./sections/Footer.tsx";
-import * as $$$$$$9 from "./sections/Header.tsx";
-import * as $$$$$$10 from "./sections/Hero.tsx";
-import * as $$$$$$11 from "./sections/IconDemo.tsx";
-import * as $$$$$$12 from "./sections/ImageWithParagraph.tsx";
-import * as $$$$$$13 from "./sections/Integrations.tsx";
-import * as $$$$$$14 from "./sections/Logos.tsx";
-import * as $$$$$$15 from "./sections/MainPost.tsx";
-import * as $$$$$$16 from "./sections/Pricing.tsx";
-import * as $$$$$$17 from "./sections/PrivacySecurity.tsx";
-import * as $$$$$$18 from "./sections/RelatedBlogPosts.tsx";
-import * as $$$$$$19 from "./sections/Statement.tsx";
-import * as $$$$$$20 from "./sections/Testimonials.tsx";
-import * as $$$$$$21 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$22 from "./sections/UseCases.tsx";
-import * as $$$$$$23 from "./sections/Whitelabel.tsx";
+import * as $$$$$$9 from "./sections/HackathonAbout.tsx";
+import * as $$$$$$10 from "./sections/HackathonBenefits.tsx";
+import * as $$$$$$11 from "./sections/HackathonChallenges.tsx";
+import * as $$$$$$12 from "./sections/HackathonFaq.tsx";
+import * as $$$$$$13 from "./sections/HackathonHero.tsx";
+import * as $$$$$$14 from "./sections/HackathonPartners.tsx";
+import * as $$$$$$15 from "./sections/HackathonProcess.tsx";
+import * as $$$$$$16 from "./sections/HackathonRegistration.tsx";
+import * as $$$$$$17 from "./sections/Header.tsx";
+import * as $$$$$$18 from "./sections/Hero.tsx";
+import * as $$$$$$19 from "./sections/IconDemo.tsx";
+import * as $$$$$$20 from "./sections/ImageWithParagraph.tsx";
+import * as $$$$$$21 from "./sections/Integrations.tsx";
+import * as $$$$$$22 from "./sections/Logos.tsx";
+import * as $$$$$$23 from "./sections/MainPost.tsx";
+import * as $$$$$$24 from "./sections/Pricing.tsx";
+import * as $$$$$$25 from "./sections/PrivacySecurity.tsx";
+import * as $$$$$$26 from "./sections/RelatedBlogPosts.tsx";
+import * as $$$$$$27 from "./sections/Statement.tsx";
+import * as $$$$$$28 from "./sections/Testimonials.tsx";
+import * as $$$$$$29 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$30 from "./sections/UseCases.tsx";
+import * as $$$$$$31 from "./sections/Whitelabel.tsx";
 
 const manifest = {
   "sections": {
@@ -41,21 +49,29 @@ const manifest = {
     "site/sections/Faq.tsx": $$$$$$6,
     "site/sections/FeaturesBento.tsx": $$$$$$7,
     "site/sections/Footer.tsx": $$$$$$8,
-    "site/sections/Header.tsx": $$$$$$9,
-    "site/sections/Hero.tsx": $$$$$$10,
-    "site/sections/IconDemo.tsx": $$$$$$11,
-    "site/sections/ImageWithParagraph.tsx": $$$$$$12,
-    "site/sections/Integrations.tsx": $$$$$$13,
-    "site/sections/Logos.tsx": $$$$$$14,
-    "site/sections/MainPost.tsx": $$$$$$15,
-    "site/sections/Pricing.tsx": $$$$$$16,
-    "site/sections/PrivacySecurity.tsx": $$$$$$17,
-    "site/sections/RelatedBlogPosts.tsx": $$$$$$18,
-    "site/sections/Statement.tsx": $$$$$$19,
-    "site/sections/Testimonials.tsx": $$$$$$20,
-    "site/sections/Theme/Theme.tsx": $$$$$$21,
-    "site/sections/UseCases.tsx": $$$$$$22,
-    "site/sections/Whitelabel.tsx": $$$$$$23,
+    "site/sections/HackathonAbout.tsx": $$$$$$9,
+    "site/sections/HackathonBenefits.tsx": $$$$$$10,
+    "site/sections/HackathonChallenges.tsx": $$$$$$11,
+    "site/sections/HackathonFaq.tsx": $$$$$$12,
+    "site/sections/HackathonHero.tsx": $$$$$$13,
+    "site/sections/HackathonPartners.tsx": $$$$$$14,
+    "site/sections/HackathonProcess.tsx": $$$$$$15,
+    "site/sections/HackathonRegistration.tsx": $$$$$$16,
+    "site/sections/Header.tsx": $$$$$$17,
+    "site/sections/Hero.tsx": $$$$$$18,
+    "site/sections/IconDemo.tsx": $$$$$$19,
+    "site/sections/ImageWithParagraph.tsx": $$$$$$20,
+    "site/sections/Integrations.tsx": $$$$$$21,
+    "site/sections/Logos.tsx": $$$$$$22,
+    "site/sections/MainPost.tsx": $$$$$$23,
+    "site/sections/Pricing.tsx": $$$$$$24,
+    "site/sections/PrivacySecurity.tsx": $$$$$$25,
+    "site/sections/RelatedBlogPosts.tsx": $$$$$$26,
+    "site/sections/Statement.tsx": $$$$$$27,
+    "site/sections/Testimonials.tsx": $$$$$$28,
+    "site/sections/Theme/Theme.tsx": $$$$$$29,
+    "site/sections/UseCases.tsx": $$$$$$30,
+    "site/sections/Whitelabel.tsx": $$$$$$31,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,

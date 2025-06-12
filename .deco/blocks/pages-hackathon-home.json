@@ -1,0 +1,277 @@
+{
+  "name": "Hackathon - Home",
+  "path": "/hackathon",
+  "sections": [
+    {
+      "__resolveType": "website/sections/HackathonHero.tsx",
+      "topTag": "deco.chat presents",
+      "title": "Os Melhores\nAgents Vencem!",
+      "subtitle": "Participe do Hackathon deco.chat e crie agentes inteligentes para e-commerce, conteúdo e storefront que transformam experiências digitais.",
+      "ctas": [
+        {
+          "text": "Inscreva sua equipe",
+          "href": "#registration",
+          "variant": "primary"
+        },
+        {
+          "text": "Ver regulamento",
+          "href": "#rules",
+          "variant": "secondary"
+        }
+      ],
+      "eventDate": "2025-07-10T00:00:00",
+      "countdownText": "Evento começa em",
+      "stats": [
+        {
+          "value": "R$ 30K",
+          "label": "Prize Pool"
+        },
+        {
+          "value": "4",
+          "label": "Categorias"
+        },
+        {
+          "value": "2",
+          "label": "Dias"
+        },
+        {
+          "value": "100%",
+          "label": "Online"
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/sections/HackathonAbout.tsx",
+      "eyebrow": "Sobre o evento",
+      "title": "Sobre o Hackathon",
+      "description": "Durante 2 dias, desenvolvedores vão explorar o poder da deco.chat para criar agentes que automatizam tarefas reais no ecossistema digital: geração de conteúdo, SEO, análise de dados, CMS customizados e muito mais.",
+      "eventDetails": [
+        {
+          "iconName": "calendar",
+          "label": "Data",
+          "value": "10 a 11 de julho 2025",
+          "description": "Dois dias intensos de desenvolvimento e inovação"
+        },
+        {
+          "iconName": "location",
+          "label": "Local",
+          "value": "100% Online • Global",
+          "description": "Participe de qualquer lugar do mundo com internet"
+        },
+        {
+          "iconName": "prize",
+          "label": "Premiação",
+          "value": "R$ 30.000 em dinheiro e créditos",
+          "description": "▫ destaque na vitrine oficial da deco.chat"
+        }
+      ],
+      "backgroundColor": "dc-50"
+    },
+    {
+      "__resolveType": "website/sections/HackathonChallenges.tsx",
+      "eyebrow": "Desafios disponíveis",
+      "title": "Categorias de Desafio",
+      "description": "Escolha uma categoria e desenvolva agentes inteligentes que resolvem problemas reais",
+      "challenges": [
+        {
+          "title": "Agente de CMS customizados",
+          "description": "Crie agentes que automatizam a criação e gestão de conteúdo personalizado",
+          "iconName": "edit",
+          "cardColor": "primary",
+          "suggestions": [
+            "Geração automática de posts",
+            "Otimização de metadados",
+            "Curadoria de conteúdo",
+            "Templates inteligentes"
+          ]
+        },
+        {
+          "title": "Agente de SEO + Analytics",
+          "description": "Desenvolva soluções inteligentes para otimização e análise",
+          "iconName": "analytics",
+          "cardColor": "purple",
+          "suggestions": [
+            "Análise de keywords",
+            "Relatórios automáticos",
+            "Otimização on-page",
+            "Monitoring de ranking"
+          ]
+        },
+        {
+          "title": "Agente de Storefront Inteligente",
+          "description": "Construa agentes que melhoram a experiência de e-commerce",
+          "iconName": "shopping_cart",
+          "cardColor": "yellow",
+          "suggestions": [
+            "Recomendações personalizadas",
+            "Chat de vendas",
+            "Gestão de estoque",
+            "Análise de comportamento"
+          ]
+        },
+        {
+          "title": "Agente de Onboarding",
+          "description": "Crie experiências de suporte e onboarding automatizadas",
+          "iconName": "school",
+          "cardColor": "neutral",
+          "suggestions": [
+            "Guias interativos",
+            "Suporte 24/7",
+            "Tutoriais personalizados",
+            "FAQ inteligente"
+          ]
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/sections/HackathonBenefits.tsx",
+      "eyebrow": "Benefícios para os Participantes",
+      "title": "Além da premiação, você ganha\nreconhecimento e oportunidades únicas na comunidade",
+      "description": "Participe e tenha acesso a benefícios exclusivos que vão além da competição",
+      "benefits": [
+        {
+          "title": "Badge oficial \"Certified Agent Builder\"",
+          "description": "Certificação reconhecida pela comunidade deco.chat",
+          "iconName": "verified"
+        },
+        {
+          "title": "Mentoria da equipe deco.chat",
+          "description": "Acesso direto aos especialistas da plataforma",
+          "iconName": "group"
+        },
+        {
+          "title": "Divulgação oficial",
+          "description": "Destaque no blog e redes sociais da deco.chat",
+          "iconName": "campaign"
+        },
+        {
+          "title": "Networking tech-first",
+          "description": "Conecte-se com outras agências inovadoras",
+          "iconName": "connect_without_contact"
+        },
+        {
+          "title": "Acesso exclusivo",
+          "description": "Early access a novas features da plataforma",
+          "iconName": "lock_open"
+        },
+        {
+          "title": "Oportunidades de carreira",
+          "description": "Destaque para oportunidades em empresas parceiras",
+          "iconName": "work"
+        }
+      ],
+      "backgroundColor": "dc-50"
+    },
+    {
+      "__resolveType": "website/sections/HackathonProcess.tsx",
+      "eyebrow": "Como Funciona",
+      "title": "Um processo simples e estruturado para maximizar seu aprendizado e resultados",
+      "description": "Siga estes passos para participar do hackathon e ter a melhor experiência possível",
+      "processSteps": [
+        {
+          "stepNumber": "1",
+          "title": "Inscreva sua equipe",
+          "description": "Registre-se e forme seu time de até 4 desenvolvedores",
+          "iconName": "group_add"
+        },
+        {
+          "stepNumber": "2",
+          "title": "Receba os desafios",
+          "description": "Acesse a documentação e escolha sua categoria favorita",
+          "iconName": "assignment"
+        },
+        {
+          "stepNumber": "3",
+          "title": "Crie, teste e publique",
+          "description": "Desenvolva seus agents usando a plataforma deco.chat",
+          "iconName": "code"
+        },
+        {
+          "stepNumber": "4",
+          "title": "Demo Day",
+          "description": "Apresente sua solução para o time deco.cx e comunidade",
+          "iconName": "present_to_all"
+        }
+      ],
+      "backgroundColor": "dc-50"
+    },
+    {
+      "__resolveType": "website/sections/HackathonPartners.tsx",
+      "eyebrow": "Nossos parceiros",
+      "title": "Patrocinadores e Apoiadores",
+      "description": "Empresas que acreditam no futuro da inteligência artificial e inovação",
+      "partners": [
+        {
+          "name": "NVIDIA",
+          "logo": "https://placehold.co/160x80/00d2df/ffffff?text=NVIDIA",
+          "type": "principal",
+          "url": "https://nvidia.com"
+        },
+        {
+          "name": "AWS",
+          "logo": "https://placehold.co/120x60/ff9900/ffffff?text=AWS",
+          "type": "cloud",
+          "url": "https://aws.amazon.com"
+        },
+        {
+          "name": "Google",
+          "logo": "https://placehold.co/120x60/4285f4/ffffff?text=Google",
+          "type": "technology",
+          "url": "https://google.com"
+        },
+        {
+          "name": "Alura",
+          "logo": "https://placehold.co/120x60/1c4ed8/ffffff?text=Alura",
+          "type": "educational",
+          "url": "https://alura.com.br"
+        }
+      ],
+      "ctaText": "Quer se tornar um patrocinador?",
+      "ctaLink": "mailto:partnerships@deco.chat",
+      "backgroundColor": "dc-50"
+    },
+    {
+      "__resolveType": "website/sections/HackathonFaq.tsx",
+      "eyebrow": "Perguntas Frequentes",
+      "title": "Tire suas dúvidas sobre o hackathon",
+      "description": "Tudo que você precisa saber para participar e ter sucesso no evento",
+      "answerLogo": "https://placehold.co/48x48/d0ec1a/07401a?text=🤖",
+      "faqItems": [
+        {
+          "question": "Quem pode participar?",
+          "answer": "Desenvolvedores de todos os níveis podem participar! Desde iniciantes até experts em IA. O importante é ter vontade de aprender e criar."
+        },
+        {
+          "question": "É preciso já conhecer o deco.chat?",
+          "answer": "Não é necessário! Forneceremos toda a documentação e tutoriais para você começar. Também teremos sessões de onboarding antes do evento."
+        },
+        {
+          "question": "Como será feita a avaliação?",
+          "answer": "Os projetos serão avaliados por critérios como inovação, utilidade prática, qualidade técnica e apresentação. Detalhes completos no regulamento."
+        },
+        {
+          "question": "Posso usar LLMs diferentes?",
+          "answer": "Sim! O deco.chat suporta mais de 60 modelos de IA diferentes. Você pode usar OpenAI, Claude, Gemini, Llama e muitos outros através da nossa API unificada."
+        },
+        {
+          "question": "Qual o tamanho máximo da equipe?",
+          "answer": "Equipes podem ter até 4 desenvolvedores. Você também pode participar sozinho se preferir. Incentivamos a colaboração!"
+        },
+        {
+          "question": "Posso participar de múltiplas categorias?",
+          "answer": "Cada equipe pode se inscrever em apenas uma categoria para focar melhor no desenvolvimento e garantir qualidade do projeto."
+        }
+      ],
+      "backgroundColor": "dc-50"
+    },
+    {
+      "__resolveType": "website/sections/HackathonRegistration.tsx",
+      "eyebrow": "Inscrição",
+      "title": "Registre sua equipe e garanta sua vaga no hackathon",
+      "description": "Preencha os dados da sua equipe para participar do maior hackathon de agentes AI do mundo",
+      "formAction": "https://forms.deco.chat/hackathon-registration",
+      "formMethod": "POST",
+      "backgroundColor": "dc-50"
+    }
+  ]
+}

@@ -21,7 +21,7 @@ interface Props {
 }
 
 export default function ChatSupport({
-  agentName = "Sales Bot Agent",
+  agentName = "Assistant",
   webhookUrl,
   welcomeMessage =
     "Hi! I'm here to help you learn about deco.chat. Ask me anything about our AI workspace!",
@@ -66,7 +66,7 @@ export default function ChatSupport({
               <div>
                 <div class="font-bold text-sm">{agentName}</div>
                 <div class="text-xs text-primary-light/80">
-                  Online • deco.chat
+                  powered by deco.chat
                 </div>
               </div>
             </div>
@@ -377,7 +377,7 @@ export default function ChatSupport({
 }
 
 const defaultProps: Props = {
-  agentName: "Sales Bot Agent",
+  agentName: "Assistant",
   webhookUrl:
     "https://api.deco.chat/actors/Trigger/invoke/run?passphrase=undefined&deno_isolate_instance_id=/shared/deco.cx/Agents/a213785a-57b4-4800-a207-e408fb476841/triggers/632bce52-a316-43d0-a724-bd1de45d980b&output_tool=undefined",
   welcomeMessage:
