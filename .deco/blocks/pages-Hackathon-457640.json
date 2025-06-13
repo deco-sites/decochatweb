@@ -1,6 +1,6 @@
 {
   "name": "Hackathon",
-  "path": "/hackathon",
+  "path": "/events/hackathon",
   "sections": [
     {
       "__resolveType": "site/sections/HackathonHero.tsx",
