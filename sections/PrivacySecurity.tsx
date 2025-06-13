@@ -83,13 +83,13 @@ export default function PrivacySecurity({
                     iconName="info"
                     text={eyebrow}
                   />
-                  <h2 class="self-stretch text-center text-dc-200 text-3xl md:text-5xl font-semibold font-manrope leading-normal">
+                  <h2 class="self-stretch text-center text-dc-200 text-3xl md:text-5xl font-semibold font-main leading-normal">
                     {title}
                   </h2>
                 </div>
               </FadeUp>
               <FadeUp delay={200}>
-                <div class="self-stretch text-center text-dc-200 text-xl font-medium font-manrope leading-normal">
+                <div class="self-stretch text-center text-dc-200 text-xl font-medium font-main leading-normal">
                   {description}
                 </div>
               </FadeUp>
@@ -113,7 +113,7 @@ export default function PrivacySecurity({
                       />
                       <div class="self-stretch p-6 md:p-10 flex flex-col justify-start items-start gap-2.5">
                         <div class="self-stretch flex flex-col justify-start items-start gap-2.5">
-                          <h3 class="self-stretch text-dc-800 text-xl md:text-2xl font-semibold font-manrope leading-7">
+                          <h3 class="self-stretch text-dc-800 text-xl md:text-2xl font-semibold font-main leading-7">
                             {card.title}
                           </h3>
                         </div>

@@ -76,7 +76,7 @@ export default function CTASection({
                   loading="lazy"
                 />
               )}
-              <h2 className="text-center text-primary-dark text-2xl md:text-4xl lg:text-5xl font-semibold font-manrope leading-tight md:leading-[1.2]">
+              <h2 className="text-center text-primary-dark text-2xl md:text-4xl lg:text-5xl font-semibold font-main leading-tight md:leading-[1.2]">
                 {title}
               </h2>
 

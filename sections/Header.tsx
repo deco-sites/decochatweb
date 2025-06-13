@@ -68,7 +68,7 @@ export default function Header({
               item.disabled
                 ? (
                   <span class="px-3 sm:px-4 py-2 rounded-full flex justify-center items-center opacity-50 cursor-not-allowed select-none">
-                    <div class="justify-center text-dc-800 text-sm sm:text-base font-medium font-manrope leading-tight">
+                    <div class="justify-center text-dc-800 text-sm sm:text-base font-medium font-main leading-tight">
                       {item.label}
                     </div>
                   </span>
@@ -78,7 +78,7 @@ export default function Header({
                     href={item.href}
                     class="px-3 sm:px-4 py-2 rounded-full flex justify-center items-center hover:bg-dc-100 transition-colors"
                   >
-                    <div class="justify-center text-dc-800 text-sm sm:text-base font-medium font-manrope leading-tight">
+                    <div class="justify-center text-dc-800 text-sm sm:text-base font-medium font-main leading-tight">
                       {item.label}
                     </div>
                   </a>
@@ -143,7 +143,7 @@ export default function Header({
                     item.disabled
                       ? (
                         <span class="px-4 py-3 rounded-lg flex items-center opacity-50 cursor-not-allowed select-none">
-                          <div class="text-dc-800 text-base font-medium font-manrope">
+                          <div class="text-dc-800 text-base font-medium font-main">
                             {item.label}
                           </div>
                         </span>
@@ -153,7 +153,7 @@ export default function Header({
                           href={item.href}
                           class="px-4 py-3 rounded-lg flex items-center hover:bg-dc-100 transition-colors"
                         >
-                          <div class="text-dc-800 text-base font-medium font-manrope">
+                          <div class="text-dc-800 text-base font-medium font-main">
                             {item.label}
                           </div>
                         </a>

@@ -144,7 +144,7 @@ export default function Hero({
                   )}
 
                   {/* Main Title - Large size matching Figma */}
-                  <h1 class="text-center text-dc-700 text-5xl md:text-6xl lg:text-[80px] font-bold font-manrope leading-none tracking-[-0.03em] max-w-4xl">
+                  <h1 class="text-center text-dc-700 text-5xl md:text-6xl lg:text-[80px] font-bold font-main leading-none tracking-[-0.03em] max-w-4xl">
                     {title.split("\n").map((line, index) => (
                       <>
                         {index > 0 && <br />}

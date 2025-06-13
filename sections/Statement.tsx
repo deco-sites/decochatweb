@@ -185,14 +185,14 @@ export default function Statement({
                     <div class="w-2.5 h-5 left-[7px] top-[2px] absolute bg-primary-dark">
                     </div>
                   </div>
-                  <div class="justify-center text-primary-dark text-base font-semibold font-manrope leading-tight">
+                  <div class="justify-center text-primary-dark text-base font-semibold font-main leading-tight">
                     {eyebrow.text}
                   </div>
                 </div>
               )}
 
               {/* Main Title */}
-              <h1 class="text-center text-dc-200 text-3xl md:text-4xl lg:text-5xl font-semibold font-manrope leading-tight">
+              <h1 class="text-center text-dc-200 text-3xl md:text-4xl lg:text-5xl font-semibold font-main leading-tight">
                 {title}
               </h1>
             </div>
@@ -228,7 +228,7 @@ export default function Statement({
 
               {/* Card Text */}
               <div class="px-4 py-2">
-                <div class="text-primary-dark text-2xl lg:text-3xl font-medium font-manrope leading-tight">
+                <div class="text-primary-dark text-2xl lg:text-3xl font-medium font-main leading-tight">
                   {aiModelsText}
                 </div>
               </div>
@@ -242,7 +242,7 @@ export default function Statement({
                   12:23 PM
                 </div>
                 <div class="w-full max-w-[500px] p-3 sm:p-4 lg:p-6 bg-dc-100 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl flex flex-col justify-center items-start">
-                  <div class="self-stretch text-dc-600 text-base sm:text-lg font-medium font-manrope leading-relaxed">
+                  <div class="self-stretch text-dc-600 text-base sm:text-lg font-medium font-main leading-relaxed">
                     Create a spreadsheet based on the recent Slack conversations
                     about our main project
                   </div>
@@ -254,7 +254,7 @@ export default function Statement({
                 <div class="self-stretch text-dc-400 text-sm sm:text-base font-normal font-inter leading-none">
                   12:24 PM
                 </div>
-                <div class="self-stretch text-dc-600 text-base sm:text-lg font-medium font-manrope leading-relaxed">
+                <div class="self-stretch text-dc-600 text-base sm:text-lg font-medium font-main leading-relaxed">
                   I'll need to connect with the necessary integrations, just a
                   moment!
                 </div>
@@ -277,7 +277,7 @@ export default function Statement({
                         loading="lazy"
                         fetchPriority="low"
                       />
-                      <div class="text-dc-700 text-base sm:text-lg font-medium font-manrope leading-relaxed">
+                      <div class="text-dc-700 text-base sm:text-lg font-medium font-main leading-relaxed">
                         {integration.service}
                       </div>
                     </div>
@@ -305,7 +305,7 @@ export default function Statement({
                 <div class="self-stretch text-dc-400 text-sm sm:text-base font-normal font-inter leading-none">
                   12:25 PM
                 </div>
-                <div class="self-stretch text-dc-600 text-base sm:text-lg font-medium font-manrope leading-relaxed">
+                <div class="self-stretch text-dc-600 text-base sm:text-lg font-medium font-main leading-relaxed">
                   I found the relevant information. Creating the spreadsheet in
                   Google Drive now.
                 </div>
@@ -370,7 +370,7 @@ export default function Statement({
 
                 {/* Card Text */}
                 <div class="px-4 py-2">
-                  <div class="text-primary-dark text-2xl lg:text-3xl font-medium font-manrope leading-tight">
+                  <div class="text-primary-dark text-2xl lg:text-3xl font-medium font-main leading-tight">
                     {topRightCard.text}
                   </div>
                 </div>
@@ -396,7 +396,7 @@ export default function Statement({
                 {/* Card Text */}
                 {bottomRightCard.text && (
                   <div class="w-full relative z-10 flex items-end">
-                    <div class="text-primary-dark text-lg sm:text-xl lg:text-2xl xl:text-3xl font-medium font-manrope leading-tight max-w-[60%]">
+                    <div class="text-primary-dark text-lg sm:text-xl lg:text-2xl xl:text-3xl font-medium font-main leading-tight max-w-[60%]">
                       {bottomRightCard.text}
                     </div>
                   </div>

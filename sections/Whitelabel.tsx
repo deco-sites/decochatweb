@@ -75,28 +75,28 @@ export default function Whitelabel({
             <div class="flex-1 lg:max-w-[600px] p-8 md:p-16 lg:p-20 flex flex-col justify-center">
               <div class="space-y-8 lg:space-y-12">
                 {/* Eyebrow */}
-                <div class="inline-flex items-center gap-2 bg-primary-light text-primary-dark px-4 py-2 rounded-full font-manrope font-semibold text-sm md:text-base">
+                <div class="inline-flex items-center gap-2 bg-primary-light text-primary-dark px-4 py-2 rounded-full font-main font-semibold text-sm md:text-base">
                   <Icon name="info" size="small" class="text-primary-dark" />
                   {eyebrow}
                 </div>
 
                 {/* Title */}
-                <h2 class="text-dc-200 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-manrope font-semibold leading-tight">
+                <h2 class="text-dc-200 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-main font-semibold leading-tight">
                   {title}
                 </h2>
 
                 {/* Description */}
-                <p class="text-dc-200 text-lg md:text-xl font-manrope font-medium leading-relaxed max-w-md">
+                <p class="text-dc-200 text-lg md:text-xl font-main font-medium leading-relaxed max-w-md">
                   {description}
                 </p>
 
                 {/* GitHub Button */}
                 <div class="bg-primary-light rounded-xl p-4 flex items-center gap-3 max-w-sm">
                   <Icon name="code" size="small" class="text-primary-dark" />
-                  <div class="flex-1 text-primary-dark font-manrope font-semibold text-base">
+                  <div class="flex-1 text-primary-dark font-main font-semibold text-base">
                     {githubButtonText}
                   </div>
-                  <div class="text-primary-dark/50 font-manrope text-base">
+                  <div class="text-primary-dark/50 font-main text-base">
                     {githubStars}
                   </div>
                   <Icon
@@ -134,7 +134,7 @@ export default function Whitelabel({
                     id="color-panel"
                     class="bg-white rounded-lg shadow-lg p-3 sm:p-4 min-w-[120px] sm:min-w-[140px]"
                   >
-                    <div class="text-dc-600 font-manrope font-medium text-sm sm:text-base mb-2 sm:mb-3">
+                    <div class="text-dc-600 font-main font-medium text-sm sm:text-base mb-2 sm:mb-3">
                       Color
                     </div>
                     <div class="flex gap-1.5 sm:gap-2 flex-wrap">
@@ -269,7 +269,7 @@ export default function Whitelabel({
                   id="appearance-panel"
                   class="bg-white rounded-lg shadow-lg p-3 sm:p-4 min-w-[120px] sm:min-w-[140px]"
                 >
-                  <div class="text-dc-600 font-manrope font-medium text-sm sm:text-base mb-2 sm:mb-3">
+                  <div class="text-dc-600 font-main font-medium text-sm sm:text-base mb-2 sm:mb-3">
                     Appearance
                   </div>
                   <div class="flex gap-1.5 sm:gap-2">
@@ -363,7 +363,7 @@ export default function Whitelabel({
                             size="small"
                             class="w-3 h-3 sm:w-4 sm:h-4"
                           />
-                          <span class="text-xs font-manrope font-medium truncate">
+                          <span class="text-xs font-main font-medium truncate">
                             New chat
                           </span>
                         </div>
@@ -376,7 +376,7 @@ export default function Whitelabel({
                             size="small"
                             class="w-3 h-3 sm:w-4 sm:h-4"
                           />
-                          <span class="text-xs font-manrope font-medium truncate">
+                          <span class="text-xs font-main font-medium truncate">
                             Agents
                           </span>
                         </div>
@@ -389,7 +389,7 @@ export default function Whitelabel({
                             size="small"
                             class="w-3 h-3 sm:w-4 sm:h-4"
                           />
-                          <span class="text-xs font-manrope font-medium truncate">
+                          <span class="text-xs font-main font-medium truncate">
                             Connect
                           </span>
                         </div>
@@ -402,7 +402,7 @@ export default function Whitelabel({
                             size="small"
                             class="w-3 h-3 sm:w-4 sm:h-4"
                           />
-                          <span class="text-xs font-manrope font-medium truncate">
+                          <span class="text-xs font-main font-medium truncate">
                             Activity
                           </span>
                         </div>
@@ -412,7 +412,7 @@ export default function Whitelabel({
                     {/* Chat History */}
                     <div class="flex-1 p-2 sm:p-3 lg:p-4 space-y-2 sm:space-y-3 lg:space-y-4 overflow-y-auto">
                       <div>
-                        <div class="text-xs font-manrope font-semibold text-slate-600 mb-1 sm:mb-2 hidden sm:block">
+                        <div class="text-xs font-main font-semibold text-slate-600 mb-1 sm:mb-2 hidden sm:block">
                           Today
                         </div>
                         <div class="space-y-0.5 sm:space-y-1">
@@ -444,7 +444,7 @@ export default function Whitelabel({
                       </div>
 
                       <div>
-                        <div class="text-xs font-manrope font-semibold text-slate-600 mb-1 sm:mb-2 hidden sm:block">
+                        <div class="text-xs font-main font-semibold text-slate-600 mb-1 sm:mb-2 hidden sm:block">
                           Yesterday
                         </div>
                         <div class="space-y-0.5 sm:space-y-1">
@@ -485,7 +485,7 @@ export default function Whitelabel({
                       <div class="flex items-center gap-1 sm:gap-2">
                         <div class="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 bg-slate-300 rounded-full flex-shrink-0">
                         </div>
-                        <span class="text-xs font-manrope font-medium text-slate-800 truncate">
+                        <span class="text-xs font-main font-medium text-slate-800 truncate">
                           L.B.
                         </span>
                       </div>
@@ -502,14 +502,14 @@ export default function Whitelabel({
                           size="small"
                           class="text-slate-600 w-3 h-3 sm:w-4 sm:h-4"
                         />
-                        <span class="font-manrope font-medium text-xs sm:text-sm text-slate-800">
+                        <span class="font-main font-medium text-xs sm:text-sm text-slate-800">
                           Agents
                         </span>
                       </div>
                       <button
                         id="create-agent-btn"
                         type="button"
-                        class="bg-amber-400 text-slate-800 px-2 sm:px-3 lg:px-4 py-1 sm:py-1.5 lg:py-2 rounded-md lg:rounded-lg font-manrope font-medium text-xs sm:text-sm hover:bg-amber-500 transition-colors"
+                        class="bg-amber-400 text-slate-800 px-2 sm:px-3 lg:px-4 py-1 sm:py-1.5 lg:py-2 rounded-md lg:rounded-lg font-main font-medium text-xs sm:text-sm hover:bg-amber-500 transition-colors"
                       >
                         <span class="hidden sm:inline">Create agent</span>
                         <span class="sm:hidden">Create</span>
@@ -520,19 +520,19 @@ export default function Whitelabel({
                     <div class="flex-1 p-2 sm:p-3 lg:p-4">
                       {/* Filter Tabs */}
                       <div class="flex gap-1 sm:gap-2 mb-2 sm:mb-3 lg:mb-4 overflow-x-auto">
-                        <div class="bg-slate-100 px-2 sm:px-3 py-1 rounded-md sm:rounded-lg text-xs font-manrope text-slate-700 whitespace-nowrap">
+                        <div class="bg-slate-100 px-2 sm:px-3 py-1 rounded-md sm:rounded-lg text-xs font-main text-slate-700 whitespace-nowrap">
                           Marketplace{" "}
                           <span class="text-slate-500 hidden sm:inline">
                             2k
                           </span>
                         </div>
-                        <div class="px-2 sm:px-3 py-1 rounded-md sm:rounded-lg text-xs font-manrope text-slate-600 hover:bg-slate-100 whitespace-nowrap">
+                        <div class="px-2 sm:px-3 py-1 rounded-md sm:rounded-lg text-xs font-main text-slate-600 hover:bg-slate-100 whitespace-nowrap">
                           Team{" "}
                           <span class="text-slate-500 hidden sm:inline">
                             04
                           </span>
                         </div>
-                        <div class="px-2 sm:px-3 py-1 rounded-md sm:rounded-lg text-xs font-manrope text-slate-600 hover:bg-slate-100 whitespace-nowrap">
+                        <div class="px-2 sm:px-3 py-1 rounded-md sm:rounded-lg text-xs font-main text-slate-600 hover:bg-slate-100 whitespace-nowrap">
                           Private{" "}
                           <span class="text-slate-500 hidden sm:inline">
                             01
@@ -551,7 +551,7 @@ export default function Whitelabel({
                             </div>
                           </div>
                           <div>
-                            <div class="text-xs font-manrope font-medium text-slate-800 mb-1">
+                            <div class="text-xs font-main font-medium text-slate-800 mb-1">
                               Mangabeira Chat
                             </div>
                             <div class="text-xs text-slate-600 leading-relaxed mb-1">
@@ -584,7 +584,7 @@ export default function Whitelabel({
                             </div>
                           </div>
                           <div>
-                            <div class="text-xs font-manrope font-medium text-slate-800 mb-1">
+                            <div class="text-xs font-main font-medium text-slate-800 mb-1">
                               Internal Rituals Agent
                             </div>
                             <div class="text-xs text-slate-600 leading-relaxed mb-1">
@@ -617,7 +617,7 @@ export default function Whitelabel({
                             </div>
                           </div>
                           <div>
-                            <div class="text-xs font-manrope font-medium text-slate-800 mb-1">
+                            <div class="text-xs font-main font-medium text-slate-800 mb-1">
                               Brandable
                             </div>
                             <div class="text-xs text-slate-600 leading-relaxed mb-1">
@@ -650,7 +650,7 @@ export default function Whitelabel({
                             </div>
                           </div>
                           <div>
-                            <div class="text-xs font-manrope font-medium text-slate-800 mb-1">
+                            <div class="text-xs font-main font-medium text-slate-800 mb-1">
                               Pulse Listener
                             </div>
                             <div class="text-xs text-slate-600 leading-relaxed mb-1">
@@ -963,9 +963,9 @@ export default function Whitelabel({
                         const createAgentBtn = document.getElementById("create-agent-btn");
                         if (createAgentBtn) {
                           if (currentAppearance === "light") {
-                            setElementClass(createAgentBtn, \`bg-\${currentColor}-400 text-\${currentNeutral}-800 px-4 py-2 rounded-lg font-manrope font-medium text-sm hover:bg-\${currentColor}-500 transition-colors\`);
+                            setElementClass(createAgentBtn, \`bg-\${currentColor}-400 text-\${currentNeutral}-800 px-4 py-2 rounded-lg font-main font-medium text-sm hover:bg-\${currentColor}-500 transition-colors\`);
                           } else {
-                            setElementClass(createAgentBtn, \`bg-\${currentColor}-500 text-\${currentNeutral}-100 px-4 py-2 rounded-lg font-manrope font-medium text-sm hover:bg-\${currentColor}-600 transition-colors\`);
+                            setElementClass(createAgentBtn, \`bg-\${currentColor}-500 text-\${currentNeutral}-100 px-4 py-2 rounded-lg font-main font-medium text-sm hover:bg-\${currentColor}-600 transition-colors\`);
                           }
                         }
                         

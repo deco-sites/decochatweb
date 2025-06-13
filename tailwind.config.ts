@@ -5,6 +5,9 @@ export default {
   daisyui: { themes: [], logs: false },
   content: ["./**/*.tsx"],
   safelist: [
+    // Font classes
+    "font-main",
+
     // Animation classes
     "animate-spin",
 
@@ -215,8 +218,9 @@ export default {
     container: { center: true },
     extend: {
       fontFamily: {
+        main: ["Nacelle", "sans-serif"],
         manrope: ["Manrope", "sans-serif"],
-        sans: ["Manrope", "sans-serif"],
+        sans: ["Nacelle", "sans-serif"],
       },
       colors: {
         "primary-light": "#D0EC1A",

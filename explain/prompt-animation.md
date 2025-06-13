@@ -721,8 +721,8 @@ class="py-1 sm:py-1.5 lg:py-2"          // Button height
 <span class="sm:hidden">Create</span>
 
 // Navigation text - abbreviated on mobile
-<span class="text-xs font-manrope font-medium truncate">New</span>
-<span class="text-xs font-manrope font-medium truncate">Agents</span>
+<span class="text-xs font-main font-medium truncate">New</span>
+<span class="text-xs font-main font-medium truncate">Agents</span>
 
 // Agent descriptions - different content for mobile vs desktop
 <span class="sm:hidden">Strategy alignment</span>

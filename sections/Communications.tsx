@@ -71,15 +71,15 @@ export default function Communications({
                 <div class="self-stretch flex flex-col justify-start items-start gap-4 lg:gap-6">
                   <div class="px-4 py-1 bg-primary-light rounded-full flex justify-center items-center gap-2">
                     <Icon name="info" size="medium" class="text-primary-dark" />
-                    <div class="justify-center text-primary-dark text-sm lg:text-base font-semibold font-manrope leading-tight">
+                    <div class="justify-center text-primary-dark text-sm lg:text-base font-semibold font-main leading-tight">
                       {tag}
                     </div>
                   </div>
-                  <h2 class="self-stretch justify-start text-dc-50 text-3xl lg:text-5xl font-semibold font-manrope leading-tight lg:leading-[1.2]">
+                  <h2 class="self-stretch justify-start text-dc-50 text-3xl lg:text-5xl font-semibold font-main leading-tight lg:leading-[1.2]">
                     {title}
                   </h2>
                 </div>
-                <div class="self-stretch justify-start text-dc-50 text-base lg:text-lg font-medium font-manrope leading-relaxed">
+                <div class="self-stretch justify-start text-dc-50 text-base lg:text-lg font-medium font-main leading-relaxed">
                   {description}
                 </div>
               </div>
@@ -106,7 +106,7 @@ export default function Communications({
                         loading="lazy"
                       />
                     </div>
-                    <div class="justify-center text-dc-800 text-base lg:text-2xl font-bold font-manrope leading-tight lg:leading-7">
+                    <div class="justify-center text-dc-800 text-base lg:text-2xl font-bold font-main leading-tight lg:leading-7">
                       {platform.name}
                     </div>
                   </div>

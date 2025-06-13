@@ -31,14 +31,14 @@ interface Props {
 
 // Content styling with updated design
 const PARAGRAPH_STYLES =
-  "[&_p]:text-dc-600 [&_p]:text-xl [&_p]:font-medium [&_p]:font-manrope [&_p]:leading-loose [&_p]:mb-6";
+  "[&_p]:text-dc-600 [&_p]:text-xl [&_p]:font-medium [&_p]:font-main [&_p]:leading-loose [&_p]:mb-6";
 const HEADING_STYLES =
-  "[&>h1]:text-dc-800 [&>h1]:text-4xl [&>h1]:font-semibold [&>h1]:font-manrope [&>h1]:leading-tight [&>h1]:my-10 " +
-  "[&>h2]:text-dc-800 [&>h2]:text-3xl [&>h2]:font-semibold [&>h2]:font-manrope [&>h2]:leading-10 [&>h2]:mt-10 [&>h2]:mb-6 " +
-  "[&>h3]:text-dc-800 [&>h3]:text-2xl [&>h3]:font-semibold [&>h3]:font-manrope [&>h3]:leading-7 [&>h3]:mt-10 [&>h3]:mb-4 " +
-  "[&>h4]:text-dc-800 [&>h4]:text-xl [&>h4]:font-semibold [&>h4]:font-manrope [&>h4]:leading-7 [&>h4]:mt-8 [&>h4]:mb-4 " +
-  "[&>h5]:text-dc-800 [&>h5]:text-lg [&>h5]:font-semibold [&>h5]:font-manrope [&>h5]:leading-tight [&>h5]:mt-6 [&>h5]:mb-3 " +
-  "[&>h6]:text-dc-800 [&>h6]:text-base [&>h6]:font-semibold [&>h6]:font-manrope [&>h6]:leading-tight [&>h6]:mt-6 [&>h6]:mb-3";
+  "[&>h1]:text-dc-800 [&>h1]:text-4xl [&>h1]:font-semibold [&>h1]:font-main [&>h1]:leading-tight [&>h1]:my-10 " +
+  "[&>h2]:text-dc-800 [&>h2]:text-3xl [&>h2]:font-semibold [&>h2]:font-main [&>h2]:leading-10 [&>h2]:mt-10 [&>h2]:mb-6 " +
+  "[&>h3]:text-dc-800 [&>h3]:text-2xl [&>h3]:font-semibold [&>h3]:font-main [&>h3]:leading-7 [&>h3]:mt-10 [&>h3]:mb-4 " +
+  "[&>h4]:text-dc-800 [&>h4]:text-xl [&>h4]:font-semibold [&>h4]:font-main [&>h4]:leading-7 [&>h4]:mt-8 [&>h4]:mb-4 " +
+  "[&>h5]:text-dc-800 [&>h5]:text-lg [&>h5]:font-semibold [&>h5]:font-main [&>h5]:leading-tight [&>h5]:mt-6 [&>h5]:mb-3 " +
+  "[&>h6]:text-dc-800 [&>h6]:text-base [&>h6]:font-semibold [&>h6]:font-main [&>h6]:leading-tight [&>h6]:mt-6 [&>h6]:mb-3";
 
 const CODE_BLOCK_STYLES =
   "[&>pre]:bg-gray-100 [&>pre]:text-gray-800 [&>pre]:p-4 [&>pre]:font-mono [&>pre]:text-sm [&>pre]:border [&>pre]:rounded-md [&>pre]:overflow-x-auto [&>code]:block [&>code]:w-full";
@@ -46,8 +46,8 @@ const IMAGE_STYLES = "[&_img]:rounded-2xl [&_img]:w-full [&_img]:my-12";
 const BLOCKQUOTE_STYLES =
   "[&>blockquote]:my-6 [&>blockquote]:border-l-2 [&>blockquote]:border-dc-300 [&>blockquote]:text-xl [&>blockquote]:italic [&>blockquote]:pl-6 [&>blockquote]:text-dc-600";
 const LIST_STYLES =
-  "[&>ul]:list-disc [&>ul]:pl-6 [&>ul]:mb-6 [&>ul]:text-dc-600 [&>ul]:text-xl [&>ul]:font-medium [&>ul]:font-manrope [&>ul]:leading-loose " +
-  "[&>ol]:list-decimal [&>ol]:pl-6 [&>ol]:mb-6 [&>ol]:text-dc-600 [&>ol]:text-xl [&>ol]:font-medium [&>ol]:font-manrope [&>ol]:leading-loose";
+  "[&>ul]:list-disc [&>ul]:pl-6 [&>ul]:mb-6 [&>ul]:text-dc-600 [&>ul]:text-xl [&>ul]:font-medium [&>ul]:font-main [&>ul]:leading-loose " +
+  "[&>ol]:list-decimal [&>ol]:pl-6 [&>ol]:mb-6 [&>ol]:text-dc-600 [&>ol]:text-xl [&>ol]:font-medium [&>ol]:font-main [&>ol]:leading-loose";
 
 const CONTENT_STYLES =
   `${PARAGRAPH_STYLES} ${HEADING_STYLES} ${CODE_BLOCK_STYLES} ${IMAGE_STYLES} ${BLOCKQUOTE_STYLES} ${LIST_STYLES}`;
@@ -117,7 +117,7 @@ export default function BlogPost({ page }: Props) {
                   <span>Blog</span>
                 </Button>
               </div>
-              <h1 className="self-stretch text-center text-dc-800 text-4xl md:text-5xl lg:text-6xl font-semibold font-manrope leading-tight">
+              <h1 className="self-stretch text-center text-dc-800 text-4xl md:text-5xl lg:text-6xl font-semibold font-main leading-tight">
                 {title}
               </h1>
             </div>
@@ -136,7 +136,7 @@ export default function BlogPost({ page }: Props) {
               {formattedDate && (
                 <>
                   <div className="w-1 h-1 bg-dc-500 rounded-[1px]"></div>
-                  <div className="justify-start text-dc-500 text-xl font-medium font-manrope">
+                  <div className="justify-start text-dc-500 text-xl font-medium font-main">
                     {formattedDate}
                   </div>
                 </>
@@ -155,7 +155,7 @@ export default function BlogPost({ page }: Props) {
                           key={index}
                           className="px-4 py-1 bg-dc-50 rounded-full outline outline-1 outline-offset-[-1px] outline-dc-200 flex justify-center items-center gap-2 hover:bg-dc-100 transition-colors"
                         >
-                          <div className="justify-center text-dc-600 text-base font-semibold font-manrope leading-tight">
+                          <div className="justify-center text-dc-600 text-base font-semibold font-main leading-tight">
                             {category.name}
                           </div>
                         </a>

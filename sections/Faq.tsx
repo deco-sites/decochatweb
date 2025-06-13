@@ -48,13 +48,13 @@ export default function FAQ({
           <FadeUp>
             <div class="self-stretch flex flex-col justify-start items-center gap-6">
               <Eyebrow variant="primary-light" iconName="info" text={eyebrow} />
-              <h2 class="text-center text-dc-800 text-3xl md:text-5xl font-semibold font-manrope leading-normal">
+              <h2 class="text-center text-dc-800 text-3xl md:text-5xl font-semibold font-main leading-normal">
                 {title}
               </h2>
             </div>
           </FadeUp>
           <FadeUp delay={200}>
-            <div class="self-stretch text-center text-dc-500 text-xl font-medium font-manrope leading-normal">
+            <div class="self-stretch text-center text-dc-500 text-xl font-medium font-main leading-normal">
               {description}
             </div>
           </FadeUp>
@@ -76,7 +76,7 @@ export default function FAQ({
                     </div>
                   </div>
                   <div class="max-w-[500px] p-6 bg-dc-100 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl flex flex-col justify-center items-start">
-                    <div class="self-stretch text-dc-600 text-xl font-medium font-manrope leading-normal">
+                    <div class="self-stretch text-dc-600 text-xl font-medium font-main leading-normal">
                       {item.question}
                     </div>
                   </div>
@@ -97,7 +97,7 @@ export default function FAQ({
                       />
                     </div>
                     <div class="max-w-[500px] p-6 bg-primary-dark rounded-tl-2xl rounded-tr-2xl rounded-br-2xl flex flex-col justify-center items-start">
-                      <div class="self-stretch text-primary-light text-xl font-medium font-manrope leading-normal">
+                      <div class="self-stretch text-primary-light text-xl font-medium font-main leading-normal">
                         {item.answer}
                       </div>
                     </div>

@@ -33,7 +33,7 @@ export default function ChatSupport({
       {/* Chat Bubble Container */}
       <div
         id={chatId}
-        class="fixed bottom-4 right-4 z-50 font-manrope"
+        class="fixed bottom-4 right-4 z-50 font-main"
         style="display: none;"
       >
         {/* Chat Window */}
@@ -272,7 +272,7 @@ export default function ChatSupport({
 
                 messageDiv.innerHTML = `
                   <div class="flex-1 max-w-[500px] px-3 py-2 ${bubbleClasses} flex flex-col justify-center items-start">
-                    <p class="text-dc-500 text-sm font-medium font-manrope leading-normal">${text}</p>
+                    <p class="text-dc-500 text-sm font-medium font-main leading-normal">${text}</p>
                     <div class="text-xs mt-1 text-dc-400">${timestamp}</div>
                   </div>
                 `;
@@ -329,6 +329,7 @@ export default function ChatSupport({
                     },
                     body: JSON.stringify({
                       message: text,
+                      sessionId: threadId,
                     }),
                   });
 

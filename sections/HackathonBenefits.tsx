@@ -1,9 +1,8 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import Eyebrow from "../components/ui/Eyebrow.tsx";
 import FadeUp from "../components/ui/FadeUp.tsx";
-import BodyText from "../components/ui/BodyText.tsx";
 import Icon from "../components/ui/Icon.tsx";
+import { useScript } from "@deco/deco/hooks";
 
 /**
  * @titleBy title
@@ -15,265 +14,357 @@ interface Benefit {
    */
   title: string;
   /**
-   * @title Descrição
-   * @description Descrição do benefício
-   */
-  description: string;
-  /**
-   * @title Ícone
-   * @description Ícone personalizado do benefício
-   */
-  icon?: ImageWidget;
-  /**
    * @title Nome do ícone
    * @description Nome do ícone Material Design
    */
-  iconName?: string;
+  iconName: string;
 }
 
 interface Props {
-  /**
-   * @title Eyebrow
-   * @description Texto pequeno que aparece acima do título
-   */
-  eyebrow?: string;
   /**
    * @title Título principal
    * @description Título principal da seção
    */
   title: string;
   /**
-   * @title Descrição
-   * @description Descrição da seção
-   */
-  description: string;
-  /**
    * @title Benefícios
    * @description Lista dos benefícios para os participantes
    * @maxItems 6
    */
   benefits: Benefit[];
-  /**
-   * @title Cor de fundo
-   * @description Cor de fundo da seção
-   */
-  backgroundColor?: "dc-50" | "primary-dark" | "purple-dark";
 }
 
 export default function HackathonBenefits({
-  eyebrow = defaultProps.eyebrow,
   title = defaultProps.title,
-  description = defaultProps.description,
   benefits = defaultProps.benefits,
-  backgroundColor = defaultProps.backgroundColor,
 }: Props) {
-  const bgColorMap = {
-    "dc-50": "bg-dc-50",
-    "primary-dark": "bg-primary-dark",
-    "purple-dark": "bg-purple-dark",
-  };
-
-  const textColorMap = {
-    "dc-50": "text-dc-800",
-    "primary-dark": "text-dc-200",
-    "purple-dark": "text-dc-200",
-  };
-
-  const eyebrowVariantMap = {
-    "dc-50": "primary-light" as const,
-    "primary-dark": "primary-light" as const,
-    "purple-dark": "purple-light" as const,
-  };
-
-  const bgColor = bgColorMap[backgroundColor || "dc-50"];
-  const textColor = textColorMap[backgroundColor || "dc-50"];
-  const eyebrowVariant = eyebrowVariantMap[backgroundColor || "dc-50"];
+  const sectionId = `benefits-${Math.random().toString(36).substr(2, 9)}`;
 
   return (
-    <div
-      class={`w-full px-4 md:px-8 lg:px-16 py-16 md:py-32 ${bgColor} flex flex-col justify-start items-center gap-14`}
-    >
-      <div class="w-full max-w-[1440px] flex flex-col justify-start items-center gap-14">
-        {/* Header */}
-        <div class="w-full max-w-[900px] flex flex-col justify-start items-center gap-10">
-          <FadeUp>
-            <div class="flex flex-col justify-start items-center gap-6">
-              <Eyebrow
-                variant={eyebrowVariant}
-                iconName="info"
-                text={eyebrow || ""}
-              />
-              <h2
-                class={`text-center ${textColor} text-3xl md:text-5xl font-semibold font-manrope leading-tight`}
-              >
-                {title.split("\n").map((line, index) => (
-                  <>
-                    {index > 0 && <br />}
-                    {line}
-                  </>
-                ))}
+    <div class="w-full px-4 md:px-16 py-16 md:py-32 bg-stone-50 flex flex-col justify-start items-center gap-14">
+      <div class="w-full max-w-[1580px] flex flex-col gap-6">
+        {/* Top Row - Title (2 spaces) + 2 cards */}
+        <div class="w-full grid grid-cols-1 lg:grid-cols-4 gap-6">
+          {/* Title taking 2 grid spaces */}
+          <div class="lg:col-span-2 flex items-center">
+            <FadeUp>
+              <h2 class="text-dc-800 text-4xl md:text-6xl font-black font-main leading-tight uppercase">
+                {title}
               </h2>
-            </div>
-          </FadeUp>
+            </FadeUp>
+          </div>
 
-          <FadeUp delay={200}>
-            <BodyText
-              align="center"
-              color="dc-500"
-              size="lg"
-              weight="medium"
-              lineHeight="relaxed"
-              className="max-w-4xl"
-            >
-              {description}
-            </BodyText>
-          </FadeUp>
-        </div>
-
-        {/* Benefits Grid */}
-        <FadeUp delay={400}>
-          <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-            {benefits.map((benefit, index) => (
-              <div class="flex items-start gap-6 group">
-                {/* Icon */}
+          {/* First 2 benefit cards */}
+          {benefits.slice(0, 2).map((benefit, index) => (
+            <FadeUp delay={200 + (index * 100)}>
+              <div class="group relative w-full h-[315px] p-12 bg-primary-dark rounded-[32px] flex flex-col justify-between items-start benefit-card overflow-hidden cursor-pointer transition-all duration-300">
+                {/* ASCII Art Background */}
                 <div
-                  class={`w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-hover:scale-110 ${
-                    backgroundColor === "dc-50"
-                      ? "bg-primary-light/10 border border-primary-light/30 group-hover:bg-primary-light/20"
-                      : "bg-primary-light/20 border border-primary-light/40 group-hover:bg-primary-light/30"
-                  }`}
+                  class="ascii-canvas absolute inset-0 z-10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  data-card-index={index}
                 >
-                  {benefit.icon
-                    ? (
-                      <Image
-                        src={benefit.icon}
-                        alt={benefit.title}
-                        width={32}
-                        height={32}
-                        class="w-8 h-8 object-contain"
-                        loading="lazy"
-                      />
-                    )
-                    : (
-                      <Icon
-                        name={benefit.iconName || "star"}
-                        size="medium"
-                        class="text-primary-light"
-                      />
-                    )}
                 </div>
 
-                {/* Content */}
-                <div class="flex-1 space-y-3">
-                  <h3
-                    class={`${textColor} text-xl md:text-2xl font-semibold font-manrope leading-tight`}
-                  >
+                {/* Icon */}
+                <div class="w-8 h-8 relative overflow-hidden z-20">
+                  <Icon
+                    name={benefit.iconName}
+                    size="xxl"
+                    class="text-primary-light"
+                  />
+                </div>
+
+                {/* Title */}
+                <div class="w-full flex flex-col justify-start items-start gap-3 relative z-20">
+                  <div class="w-full text-primary-light text-2xl md:text-3xl font-semibold font-main leading-loose">
                     {benefit.title}
-                  </h3>
-                  <p
-                    class={`${
-                      backgroundColor === "dc-50"
-                        ? "text-dc-600"
-                        : "text-dc-400"
-                    } text-base font-medium leading-relaxed`}
-                  >
-                    {benefit.description}
-                  </p>
+                  </div>
                 </div>
               </div>
-            ))}
-          </div>
-        </FadeUp>
+            </FadeUp>
+          ))}
+        </div>
 
-        {/* Call to Action */}
-        <FadeUp delay={600}>
-          <div
-            class={`w-full max-w-2xl text-center p-8 rounded-3xl border-2 border-dashed ${
-              backgroundColor === "dc-50"
-                ? "border-primary-light/30 bg-primary-light/5"
-                : "border-primary-light/40 bg-primary-light/10"
-            } transition-all duration-300 hover:border-primary-light/50 hover:bg-primary-light/10`}
-          >
-            <div class="flex items-center justify-center gap-3 mb-4">
-              <Icon
-                name="emoji_events"
-                size="large"
-                class="text-primary-light"
-              />
-              <h3
-                class={`${textColor} text-2xl md:text-3xl font-bold font-manrope`}
-              >
-                Pronto para começar?
-              </h3>
-            </div>
-            <p
-              class={`${
-                backgroundColor === "dc-50" ? "text-dc-600" : "text-dc-400"
-              } text-lg font-medium mb-6`}
-            >
-              Junte-se aos melhores desenvolvedores e crie o futuro dos agentes
-              AI
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="#registration"
-                class="px-8 py-4 bg-primary-light text-primary-dark rounded-2xl font-semibold font-manrope hover:scale-105 transition-transform duration-200"
-              >
-                Inscrever Agora
-              </a>
-              <a
-                href="#challenges"
-                class={`px-8 py-4 border-2 border-primary-light/30 ${textColor} rounded-2xl font-semibold font-manrope hover:border-primary-light/50 hover:bg-primary-light/10 transition-all duration-200`}
-              >
-                Ver Desafios
-              </a>
-            </div>
-          </div>
-        </FadeUp>
+        {/* Bottom Row - 4 cards */}
+        <div
+          class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          id={sectionId}
+        >
+          {benefits.slice(2).map((benefit, index) => (
+            <FadeUp delay={400 + (index * 100)}>
+              <div class="group relative w-full h-[315px] p-12 bg-primary-dark rounded-[32px] flex flex-col justify-between items-start benefit-card overflow-hidden cursor-pointer transition-all duration-300">
+                {/* ASCII Art Background */}
+                <div
+                  class="ascii-canvas absolute inset-0 z-10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  data-card-index={index + 2}
+                >
+                </div>
+
+                {/* Icon */}
+                <div class="w-8 h-8 relative overflow-hidden z-20">
+                  <Icon
+                    name={benefit.iconName}
+                    size="xxl"
+                    class="text-primary-light"
+                  />
+                </div>
+
+                {/* Title */}
+                <div class="w-full flex flex-col justify-start items-start gap-3 relative z-20">
+                  <div class="w-full text-primary-light text-2xl md:text-3xl font-semibold font-main leading-loose">
+                    {benefit.title}
+                  </div>
+                </div>
+              </div>
+            </FadeUp>
+          ))}
+        </div>
       </div>
+
+      {/* ASCII Animation Script */}
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{
+          __html: useScript((sectionId: string) => {
+            const CHARS = "⠁⠂⠄⠈⠐⠠⡀⢀⠃⠅⠘⠨⠊⠋⠌⠍⠎⠏";
+            const cardAnimations = new Map();
+
+            function initializeBenefitsAnimation() {
+              let animationsStarted = false;
+
+              // Setup viewport observer
+              const section = document.getElementById(sectionId);
+              if (section) {
+                const observer = new IntersectionObserver(
+                  (entries) => {
+                    entries.forEach((entry) => {
+                      if (entry.isIntersecting && !animationsStarted) {
+                        animationsStarted = true;
+                        setupHoverAnimations();
+                        observer.unobserve(entry.target);
+                      }
+                    });
+                  },
+                  { threshold: 0.1, rootMargin: "0px 0px -50px 0px" },
+                );
+                observer.observe(section);
+              }
+
+              function createAsciiAnimation(container, cardIndex) {
+                if (!container) return null;
+
+                const canvas = document.createElement("canvas");
+                const ctx = canvas.getContext("2d");
+                if (!ctx) return null;
+
+                canvas.style.position = "absolute";
+                canvas.style.top = "0";
+                canvas.style.left = "0";
+                canvas.style.width = "100%";
+                canvas.style.height = "100%";
+
+                container.appendChild(canvas);
+
+                let GRID_WIDTH = 15;
+                let GRID_HEIGHT = 12;
+                let animationId = null;
+                let time = 0;
+
+                function updateCanvasSize() {
+                  const rect = container.getBoundingClientRect();
+                  const dpr = window.devicePixelRatio || 1;
+
+                  canvas.width = rect.width * dpr;
+                  canvas.height = rect.height * dpr;
+
+                  GRID_WIDTH = Math.floor(rect.width / 25);
+                  GRID_HEIGHT = Math.floor(rect.height / 30);
+
+                  ctx.scale(dpr, dpr);
+                  ctx.font = "12px monospace";
+                  ctx.textAlign = "center";
+                  ctx.textBaseline = "middle";
+                }
+
+                updateCanvasSize();
+
+                const waves = [];
+                for (let i = 0; i < 2; i++) {
+                  waves.push({
+                    x: GRID_WIDTH * (0.3 + Math.random() * 0.4),
+                    y: GRID_HEIGHT * (0.3 + Math.random() * 0.4),
+                    frequency: 0.2 + Math.random() * 0.2,
+                    amplitude: 0.3 + Math.random() * 0.3,
+                    phase: Math.random() * Math.PI * 2,
+                    speed: 0.3 + Math.random() * 0.3,
+                  });
+                }
+
+                function animate() {
+                  time += 0.015;
+
+                  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                  const rect = container.getBoundingClientRect();
+                  const cellWidth = rect.width / GRID_WIDTH;
+                  const cellHeight = rect.height / GRID_HEIGHT;
+
+                  for (let y = 0; y < GRID_HEIGHT; y++) {
+                    for (let x = 0; x < GRID_WIDTH; x++) {
+                      let totalWave = 0;
+                      waves.forEach((wave) => {
+                        const dx = x - wave.x;
+                        const dy = y - wave.y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+                        const falloff = 1 / (1 + dist * 0.2);
+                        const value = Math.sin(
+                          dist * wave.frequency - time * wave.speed +
+                            wave.phase,
+                        ) * wave.amplitude * falloff;
+                        totalWave += value;
+                      });
+
+                      if (Math.abs(totalWave) > 0.1) {
+                        const normalizedWave = (totalWave + 1) / 2;
+                        const charIndex = Math.floor(
+                          normalizedWave * (CHARS.length - 1),
+                        );
+                        const opacity = Math.min(
+                          0.4,
+                          Math.max(0.15, 0.15 + (normalizedWave * 0.25)),
+                        );
+
+                        ctx.fillStyle = `rgba(208, 236, 26, ${opacity})`;
+                        ctx.fillText(
+                          CHARS[charIndex] || CHARS[0],
+                          x * cellWidth + cellWidth / 2,
+                          y * cellHeight + cellHeight / 2,
+                        );
+                      }
+                    }
+                  }
+
+                  animationId = requestAnimationFrame(animate);
+                }
+
+                return {
+                  start: () => {
+                    if (!animationId) {
+                      animate();
+                    }
+                  },
+                  stop: () => {
+                    if (animationId) {
+                      cancelAnimationFrame(animationId);
+                      animationId = null;
+                    }
+                  },
+                  cleanup: () => {
+                    if (animationId) {
+                      cancelAnimationFrame(animationId);
+                      animationId = null;
+                    }
+                    if (canvas && canvas.parentNode) {
+                      canvas.parentNode.removeChild(canvas);
+                    }
+                  },
+                };
+              }
+
+              function setupHoverAnimations() {
+                const benefitCards = document.querySelectorAll(".benefit-card");
+                const isMobile = window.innerWidth < 640;
+
+                benefitCards.forEach((card, index) => {
+                  const asciiCanvas = card.querySelector(".ascii-canvas");
+
+                  // Only add hover animations on desktop
+                  if (!isMobile && asciiCanvas) {
+                    // Initialize ASCII animation for this card
+                    const asciiAnimation = createAsciiAnimation(
+                      asciiCanvas,
+                      index,
+                    );
+                    if (asciiAnimation) {
+                      cardAnimations.set(index, asciiAnimation);
+                    }
+
+                    card.addEventListener("mouseenter", () => {
+                      if (animationsStarted) {
+                        // Start ASCII animation
+                        const animation = cardAnimations.get(index);
+                        if (animation) {
+                          animation.start();
+                        }
+                      }
+                    });
+
+                    card.addEventListener("mouseleave", () => {
+                      if (animationsStarted) {
+                        // Stop ASCII animation
+                        const animation = cardAnimations.get(index);
+                        if (animation) {
+                          animation.stop();
+                        }
+                      }
+                    });
+                  }
+                });
+              }
+
+              // Cleanup on page unload
+              window.addEventListener("beforeunload", () => {
+                cardAnimations.forEach((animation) => {
+                  animation.cleanup();
+                });
+                cardAnimations.clear();
+              });
+            }
+
+            // Initialize when DOM is ready
+            if (document.readyState === "loading") {
+              document.addEventListener(
+                "DOMContentLoaded",
+                initializeBenefitsAnimation,
+              );
+            } else {
+              initializeBenefitsAnimation();
+            }
+          }, sectionId),
+        }}
+      />
     </div>
   );
 }
 
 const defaultProps: Props = {
-  eyebrow: "Benefícios para os Participantes",
-  title:
-    "Além da premiação, você ganha\nreconhecimento e oportunidades únicas na comunidade",
-  description:
-    "Participe e tenha acesso a benefícios exclusivos que vão além da competição",
+  title: "BENEFÍCIOS EXCLUSIVOS",
   benefits: [
     {
       title: 'Badge oficial "Certified Agent Builder"',
-      description: "Certificação reconhecida pela comunidade deco.chat",
       iconName: "verified",
     },
     {
       title: "Mentoria da equipe deco.chat",
-      description: "Acesso direto aos especialistas da plataforma",
       iconName: "group",
     },
     {
       title: "Divulgação oficial",
-      description: "Destaque no blog e redes sociais da deco.chat",
       iconName: "campaign",
     },
     {
-      title: "Networking tech-first",
-      description: "Conecte-se com outras agências inovadoras",
-      iconName: "connect_without_contact",
-    },
-    {
       title: "Acesso exclusivo",
-      description: "Early access a novas features da plataforma",
       iconName: "lock_open",
     },
     {
+      title: "Networking tech-first",
+      iconName: "connect_without_contact",
+    },
+    {
       title: "Oportunidades de carreira",
-      description: "Destaque para oportunidades em empresas parceiras",
       iconName: "work",
     },
   ],
-  backgroundColor: "dc-50",
 };
 
 export function Preview() {

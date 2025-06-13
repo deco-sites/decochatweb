@@ -54,7 +54,7 @@ export default function Eyebrow({
     >
       <Icon name={iconName} size="xl" class={` ${styles.text}`} />
       <div
-        class={`justify-center ${styles.text} text-base font-semibold font-manrope leading-tight`}
+        class={`justify-center ${styles.text} text-base font-semibold font-main leading-tight`}
       >
         {text}
       </div>

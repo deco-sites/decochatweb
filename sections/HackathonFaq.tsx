@@ -1,6 +1,5 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import Eyebrow from "../components/ui/Eyebrow.tsx";
 import FadeUp from "../components/ui/FadeUp.tsx";
 import { useScript } from "@deco/deco/hooks";
 
@@ -22,11 +21,6 @@ interface FAQItem {
 
 interface Props {
   /**
-   * @title Eyebrow
-   * @description Texto pequeno que aparece acima do título
-   */
-  eyebrow?: string;
-  /**
    * @title Título principal
    * @description Título principal da seção
    */
@@ -46,69 +40,29 @@ interface Props {
    * @description Lista de perguntas e respostas
    */
   faqItems: FAQItem[];
-  /**
-   * @title Cor de fundo
-   * @description Cor de fundo da seção
-   */
-  backgroundColor?: "dc-50" | "primary-dark" | "purple-dark";
 }
 
 export default function HackathonFaq({
-  eyebrow = defaultProps.eyebrow,
   title = defaultProps.title,
   description = defaultProps.description,
   answerLogo = defaultProps.answerLogo,
   faqItems = defaultProps.faqItems,
-  backgroundColor = defaultProps.backgroundColor,
 }: Props) {
-  const bgColorMap = {
-    "dc-50": "bg-dc-50",
-    "primary-dark": "bg-primary-dark",
-    "purple-dark": "bg-purple-dark",
-  };
-
-  const textColorMap = {
-    "dc-50": "text-dc-800",
-    "primary-dark": "text-dc-200",
-    "purple-dark": "text-dc-200",
-  };
-
-  const eyebrowVariantMap = {
-    "dc-50": "primary-light" as const,
-    "primary-dark": "primary-light" as const,
-    "purple-dark": "purple-light" as const,
-  };
-
-  const bgColor = bgColorMap[backgroundColor || "dc-50"];
-  const textColor = textColorMap[backgroundColor || "dc-50"];
-  const eyebrowVariant = eyebrowVariantMap[backgroundColor || "dc-50"];
-
   return (
-    <div class={`w-full ${bgColor} py-16 md:py-32`}>
-      <div class="w-full max-w-[1440px] mx-auto px-4 md:px-8 flex flex-col justify-start items-center gap-8 md:gap-14">
-        <div class="w-full max-w-[650px] flex flex-col justify-start items-center gap-6 md:gap-10">
+    <div class="w-full bg-stone-50 py-16 md:py-32">
+      <div class="w-full max-w-[1440px] mx-auto px-4 md:px-16 flex flex-col justify-start items-center gap-8 md:gap-14">
+        {/* Header */}
+        <div class="w-full flex flex-col justify-center items-center gap-10">
           <FadeUp>
-            <div class="self-stretch flex flex-col justify-start items-center gap-6">
-              <Eyebrow
-                variant={eyebrowVariant}
-                iconName="info"
-                text={eyebrow || ""}
-              />
-              <h2
-                class={`text-center ${textColor} text-3xl md:text-5xl font-semibold font-manrope leading-normal`}
-              >
-                {title}
-              </h2>
-            </div>
+            <h2 class="text-dc-800 text-4xl md:text-6xl font-black font-main leading-tight text-center uppercase">
+              {title}
+            </h2>
           </FadeUp>
+
           <FadeUp delay={200}>
-            <div
-              class={`self-stretch text-center ${
-                backgroundColor === "dc-50" ? "text-dc-500" : "text-dc-400"
-              } text-xl font-medium font-manrope leading-normal`}
-            >
+            <p class="text-dc-500 text-xl md:text-2xl font-medium font-main leading-relaxed max-w-4xl text-center">
               {description}
-            </div>
+            </p>
           </FadeUp>
         </div>
 
@@ -122,31 +76,13 @@ export default function HackathonFaq({
                   data-index={index}
                 >
                   <div class="w-6 h-6 relative overflow-hidden faq-icon">
-                    <div
-                      class={`w-3.5 h-0.5 left-[5px] top-[11px] absolute ${
-                        backgroundColor === "dc-50" ? "bg-dc-500" : "bg-dc-400"
-                      } transition-transform duration-300`}
-                    >
+                    <div class="w-3.5 h-0.5 left-[5px] top-[11px] absolute bg-dc-500 transition-transform duration-300">
                     </div>
-                    <div
-                      class={`w-0.5 h-3.5 left-[11px] top-[5px] absolute ${
-                        backgroundColor === "dc-50" ? "bg-dc-500" : "bg-dc-400"
-                      } transition-transform duration-300 faq-plus-vertical`}
-                    >
+                    <div class="w-0.5 h-3.5 left-[11px] top-[5px] absolute bg-dc-500 transition-transform duration-300 faq-plus-vertical">
                     </div>
                   </div>
-                  <div
-                    class={`max-w-[500px] p-6 ${
-                      backgroundColor === "dc-50" ? "bg-dc-100" : "bg-dc-50/10"
-                    } rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl flex flex-col justify-center items-start`}
-                  >
-                    <div
-                      class={`self-stretch ${
-                        backgroundColor === "dc-50"
-                          ? "text-dc-600"
-                          : "text-dc-300"
-                      } text-xl font-medium font-manrope leading-normal`}
-                    >
+                  <div class="max-w-[500px] p-6 bg-dc-100 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl flex flex-col justify-center items-start">
+                    <div class="self-stretch text-dc-600 text-xl font-medium font-main leading-normal">
                       {item.question}
                     </div>
                   </div>
@@ -167,7 +103,7 @@ export default function HackathonFaq({
                       />
                     </div>
                     <div class="max-w-[500px] p-6 bg-primary-dark rounded-tl-2xl rounded-tr-2xl rounded-br-2xl flex flex-col justify-center items-start">
-                      <div class="self-stretch text-primary-light text-xl font-medium font-manrope leading-normal">
+                      <div class="self-stretch text-primary-light text-xl font-medium font-main leading-normal">
                         {item.answer}
                       </div>
                     </div>
@@ -244,8 +180,7 @@ export default function HackathonFaq({
 }
 
 const defaultProps: Props = {
-  eyebrow: "Perguntas Frequentes",
-  title: "Tire suas dúvidas sobre o hackathon",
+  title: "PERGUNTAS FREQUENTES",
   description:
     "Tudo que você precisa saber para participar e ter sucesso no evento",
   answerLogo: "https://placehold.co/48x48/d0ec1a/07401a?text=🤖",
@@ -281,7 +216,6 @@ const defaultProps: Props = {
         "Cada equipe pode se inscrever em apenas uma categoria para focar melhor no desenvolvimento e garantir qualidade do projeto.",
     },
   ],
-  backgroundColor: "dc-50",
 };
 
 export function Preview() {

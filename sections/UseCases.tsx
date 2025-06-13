@@ -440,7 +440,7 @@ export default function UseCases({
             href={`/blog/${category.slug}`}
             class="px-4 py-1 bg-dc-50 rounded-xl outline outline-1 outline-offset-[-1px] outline-dc-200 flex justify-center items-center hover:bg-dc-100 transition-colors"
           >
-            <div class="justify-center text-dc-600 text-base font-semibold font-manrope leading-normal">
+            <div class="justify-center text-dc-600 text-base font-semibold font-main leading-normal">
               {category.name}
             </div>
           </a>
@@ -461,7 +461,7 @@ export default function UseCases({
                 iconName={eyebrow?.iconName || "info"}
                 text={eyebrow?.text || "Use Cases"}
               />
-              <h2 class="text-center text-dc-800 text-3xl md:text-5xl font-semibold font-manrope leading-tight">
+              <h2 class="text-center text-dc-800 text-3xl md:text-5xl font-semibold font-main leading-tight">
                 {title}
               </h2>
             </div>
@@ -487,7 +487,7 @@ export default function UseCases({
                 <div class="w-12 h-12 bg-primary-dark rounded-xl flex justify-center items-center">
                   <Icon name="work" size="medium" class="text-primary-light" />
                 </div>
-                <div class="text-dc-900 text-xl md:text-2xl font-semibold font-manrope leading-7">
+                <div class="text-dc-900 text-xl md:text-2xl font-semibold font-main leading-7">
                   Internal work more productive
                 </div>
               </div>
@@ -495,7 +495,7 @@ export default function UseCases({
                 <div class="w-12 h-12 bg-primary-dark rounded-xl flex justify-center items-center">
                   <Icon name="chat" size="medium" class="text-primary-light" />
                 </div>
-                <div class="text-dc-900 text-xl md:text-2xl font-semibold font-manrope leading-7">
+                <div class="text-dc-900 text-xl md:text-2xl font-semibold font-main leading-7">
                   Customer interactions AI chats
                 </div>
               </div>
@@ -549,12 +549,12 @@ export default function UseCases({
 
                         {/* Title and Description */}
                         <div class="w-full flex flex-col justify-start items-start gap-2.5">
-                          <h3 class="text-dc-800 text-2xl font-bold font-manrope leading-7">
+                          <h3 class="text-dc-800 text-2xl font-bold font-main leading-7">
                             {agent.title}
                           </h3>
                           {/* Description that slides down on hover (desktop) or shows always (mobile) */}
                           <div class="description-content opacity-100 sm:opacity-0 max-h-20 sm:max-h-0 overflow-hidden transition-all duration-500 ease-out sm:group-hover:opacity-100 sm:group-hover:max-h-20">
-                            <p class="text-dc-500 text-lg font-medium font-manrope leading-relaxed">
+                            <p class="text-dc-500 text-lg font-medium font-main leading-relaxed">
                               {agent.description}
                             </p>
                           </div>
@@ -565,7 +565,7 @@ export default function UseCases({
                       <div class="w-full h-[800px] p-6 bg-dc-50 rounded-3xl border border-dc-300 flex flex-col justify-start items-center gap-6 overflow-hidden flex-shrink-0">
                         {/* Chat Header */}
                         <div class="w-full flex justify-start items-center gap-2.5">
-                          <div class="text-dc-300 text-base font-medium font-manrope leading-normal">
+                          <div class="text-dc-300 text-base font-medium font-main leading-normal">
                             New chat
                           </div>
                           <div class="flex-1 h-px border-t border-dc-300"></div>
@@ -588,7 +588,7 @@ export default function UseCases({
                                     : "rounded-tl-2xl rounded-tr-2xl rounded-br-2xl border border-dc-300 bg-white"
                                 } flex flex-col justify-center items-start`}
                               >
-                                <p class="text-dc-500 text-base font-medium font-manrope leading-normal">
+                                <p class="text-dc-500 text-base font-medium font-main leading-normal">
                                   {message.content}
                                 </p>
                               </div>
@@ -619,10 +619,10 @@ export default function UseCases({
                       </div>
 
                       <div class="w-full flex flex-col justify-start items-start gap-2.5">
-                        <h3 class="text-dc-800 text-2xl font-bold font-manrope leading-7 group-hover:text-primary-dark transition-colors">
+                        <h3 class="text-dc-800 text-2xl font-bold font-main leading-7 group-hover:text-primary-dark transition-colors">
                           Create your own
                         </h3>
-                        <p class="text-dc-500 text-lg font-medium font-manrope leading-relaxed group-hover:text-primary-dark transition-colors">
+                        <p class="text-dc-500 text-lg font-medium font-main leading-relaxed group-hover:text-primary-dark transition-colors">
                           Build your own custom agent from scratch with our
                           powerful builder.
                         </p>
@@ -632,7 +632,7 @@ export default function UseCases({
                     {/* Empty Chat Interface */}
                     <div class="w-full h-[800px] p-6 bg-dc-50 rounded-3xl border border-dc-300 flex flex-col justify-start items-center gap-6 group-hover:bg-primary-light/20 group-hover:border-primary-dark transition-colors flex-shrink-0">
                       <div class="w-full flex justify-start items-center gap-2.5">
-                        <div class="text-dc-300 text-base font-medium font-manrope leading-normal group-hover:text-primary-dark transition-colors">
+                        <div class="text-dc-300 text-base font-medium font-main leading-normal group-hover:text-primary-dark transition-colors">
                           New chat
                         </div>
                         <div class="flex-1 h-px border-t border-dc-300 group-hover:border-primary-dark transition-colors">

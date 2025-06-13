@@ -4,7 +4,7 @@
   "sections": [
     {
       "__resolveType": "website/sections/HackathonHero.tsx",
-      "topTag": "deco.chat presents",
+      "topTag": "deco.chat apresenta",
       "title": "Os Melhores\nAgents Vencem!",
       "subtitle": "Participe do Hackathon deco.chat e crie agentes inteligentes para e-commerce, conteúdo e storefront que transformam experiências digitais.",
       "ctas": [

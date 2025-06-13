@@ -23,6 +23,9 @@ export const Layout = ({ children, revision, hmrUniqueId }: {
           rel="stylesheet"
         />
 
+        {/* Custom Fonts CSS */}
+        <link href="/fonts.css" rel="stylesheet" />
+
         {/* Material Design Icons - Filled Version */}
         <link
           rel="stylesheet"

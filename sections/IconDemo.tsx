@@ -33,7 +33,7 @@ export default function IconDemo({
   return (
     <div class="w-full py-16 bg-dc-50">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-dc-900 mb-8 text-center font-manrope">
+        <h2 class="text-3xl font-bold text-dc-900 mb-8 text-center font-main">
           {title}
         </h2>
 
@@ -45,10 +45,10 @@ export default function IconDemo({
                 size="large"
                 class="text-primary-dark mb-4"
               />
-              <h3 class="text-xl font-semibold text-dc-800 mb-2 font-manrope">
+              <h3 class="text-xl font-semibold text-dc-800 mb-2 font-main">
                 {example.name}
               </h3>
-              <p class="text-dc-600 text-center font-manrope">
+              <p class="text-dc-600 text-center font-main">
                 {example.description}
               </p>
             </div>
@@ -56,13 +56,13 @@ export default function IconDemo({
         </div>
 
         <div class="bg-white p-8 rounded-xl shadow-sm">
-          <h3 class="text-2xl font-bold text-dc-900 mb-4 font-manrope">
+          <h3 class="text-2xl font-bold text-dc-900 mb-4 font-main">
             Como usar os ícones
           </h3>
 
           <div class="space-y-6">
             <div>
-              <h4 class="text-lg font-semibold text-dc-800 mb-2 font-manrope">
+              <h4 class="text-lg font-semibold text-dc-800 mb-2 font-main">
                 Utilizando o componente Icon
               </h4>
               <div class="bg-dc-100 p-4 rounded-lg">
@@ -78,7 +78,7 @@ export default function IconDemo({
             </div>
 
             <div>
-              <h4 class="text-lg font-semibold text-dc-800 mb-2 font-manrope">
+              <h4 class="text-lg font-semibold text-dc-800 mb-2 font-main">
                 Utilizando diretamente a classe
               </h4>
               <div class="bg-dc-100 p-4 rounded-lg">
@@ -99,7 +99,7 @@ export default function IconDemo({
             </div>
 
             <div>
-              <h4 class="text-lg font-semibold text-dc-800 mb-2 font-manrope">
+              <h4 class="text-lg font-semibold text-dc-800 mb-2 font-main">
                 Tamanhos disponíveis
               </h4>
               <div class="flex items-center gap-8 mt-4">

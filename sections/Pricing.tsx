@@ -233,7 +233,7 @@ export default function Pricing({
           <FadeUp>
             <div class="self-stretch flex flex-col justify-start items-center gap-6">
               <Eyebrow variant="primary-light" iconName="info" text={eyebrow} />
-              <h2 class="self-stretch text-center text-dc-800 text-3xl md:text-5xl font-semibold font-manrope leading-normal whitespace-pre-line">
+              <h2 class="self-stretch text-center text-dc-800 text-3xl md:text-5xl font-semibold font-main leading-normal whitespace-pre-line">
                 {title}
               </h2>
             </div>
@@ -248,7 +248,7 @@ export default function Pricing({
         {/* Team Size Input */}
         <FadeUp delay={300}>
           <div class="flex items-center gap-4 bg-white rounded-2xl shadow-lg border border-dc-200 px-6 py-4">
-            <label class="text-dc-800 font-semibold font-manrope text-lg">
+            <label class="text-dc-800 font-semibold font-main text-lg">
               Team size:
             </label>
             <input
@@ -272,10 +272,10 @@ export default function Pricing({
                 {/* Plan Header */}
                 <div class="flex flex-col gap-6">
                   <div class="flex flex-col gap-2">
-                    <h3 class="text-dc-800 text-3xl font-bold font-manrope">
+                    <h3 class="text-dc-800 text-3xl font-bold font-main">
                       {business.title}
                     </h3>
-                    <p class="text-dc-500 text-lg font-medium font-manrope">
+                    <p class="text-dc-500 text-lg font-medium font-main">
                       {business.subtitle}
                     </p>
                   </div>
@@ -284,17 +284,17 @@ export default function Pricing({
                     <div class="flex items-baseline gap-2">
                       <span
                         id="business-price"
-                        class="text-dc-800 text-4xl font-bold font-manrope"
+                        class="text-dc-800 text-4xl font-bold font-main"
                       >
                         $--
                       </span>
-                      <span class="text-dc-500 text-lg font-medium font-manrope">
+                      <span class="text-dc-500 text-lg font-medium font-main">
                         /month
                       </span>
                     </div>
                     <p
                       id="business-seat-price"
-                      class="text-dc-500 text-base font-medium font-manrope"
+                      class="text-dc-500 text-base font-medium font-main"
                     >
                       --
                     </p>
@@ -304,7 +304,7 @@ export default function Pricing({
                     {business.features.map((feature) => (
                       <li
                         key={feature}
-                        class="flex items-center gap-3 text-dc-700 text-base font-medium font-manrope"
+                        class="flex items-center gap-3 text-dc-700 text-base font-medium font-main"
                       >
                         <Icon
                           name="check_circle"
@@ -329,19 +329,19 @@ export default function Pricing({
                 <div class="flex flex-col gap-6">
                   {/* Plan Header */}
                   <div class="flex flex-col gap-2">
-                    <h3 class="text-dc-800 text-3xl font-bold font-manrope">
+                    <h3 class="text-dc-800 text-3xl font-bold font-main">
                       {enterprise.title}
                     </h3>
-                    <p class="text-dc-500 text-lg font-medium font-manrope">
+                    <p class="text-dc-500 text-lg font-medium font-main">
                       {enterprise.subtitle}
                     </p>
                   </div>
                   {/* Pricing */}
                   <div class="flex flex-col gap-2">
-                    <div class="text-dc-800 text-4xl font-bold font-manrope">
+                    <div class="text-dc-800 text-4xl font-bold font-main">
                       Custom
                     </div>
-                    <p class="text-dc-500 text-base font-medium font-manrope">
+                    <p class="text-dc-500 text-base font-medium font-main">
                       Flexible pricing options
                     </p>
                   </div>
@@ -350,7 +350,7 @@ export default function Pricing({
                     {enterprise.features.map((feature) => (
                       <li
                         key={feature}
-                        class="flex items-center gap-3 text-dc-700 text-base font-medium font-manrope"
+                        class="flex items-center gap-3 text-dc-700 text-base font-medium font-main"
                       >
                         <Icon
                           name="check_circle"
@@ -378,14 +378,14 @@ export default function Pricing({
         <FadeUp delay={600}>
           <div class="w-full max-w-5xl mx-auto mt-12">
             <div class="bg-dc-100 rounded-3xl border border-dc-200 px-8 py-10 flex flex-col items-center gap-6 shadow-md">
-              <h3 class="text-dc-800 text-2xl md:text-3xl font-semibold font-manrope text-center">
+              <h3 class="text-dc-800 text-2xl md:text-3xl font-semibold font-main text-center">
                 {professionalServices.title}
               </h3>
               <ul class="flex flex-col md:flex-row flex-wrap justify-center items-center gap-4 w-full max-w-3xl mx-auto">
                 {professionalServices.checklist.map((service) => (
                   <li
                     key={service}
-                    class="flex items-center gap-2 text-dc-700 text-base font-medium font-manrope bg-dc-50 rounded-xl px-4 py-2"
+                    class="flex items-center gap-2 text-dc-700 text-base font-medium font-main bg-dc-50 rounded-xl px-4 py-2"
                   >
                     <Icon
                       name="check_circle"

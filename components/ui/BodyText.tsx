@@ -105,7 +105,7 @@ export default function BodyText({
   };
 
   // Combine all classes
-  const textClasses = `font-manrope ${alignClasses[align]} ${
+  const textClasses = `font-main ${alignClasses[align]} ${
     colorClasses[color]
   } ${sizeClasses[size]} ${weightClasses[weight]} ${
     lineHeightClasses[lineHeight]

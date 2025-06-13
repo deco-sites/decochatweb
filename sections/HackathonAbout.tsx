@@ -3,6 +3,7 @@ import Image from "apps/website/components/Image.tsx";
 import Eyebrow from "../components/ui/Eyebrow.tsx";
 import FadeUp from "../components/ui/FadeUp.tsx";
 import BodyText from "../components/ui/BodyText.tsx";
+import Icon from "../components/ui/Icon.tsx";
 
 /**
  * @titleBy label
@@ -94,103 +95,84 @@ export default function HackathonAbout({
   const eyebrowVariant = eyebrowVariantMap[backgroundColor || "dc-50"];
 
   return (
-    <div
-      class={`w-full px-4 md:px-8 lg:px-16 py-16 md:py-32 ${bgColor} flex flex-col justify-start items-center gap-14`}
-    >
-      <div class="w-full max-w-[1440px] flex flex-col justify-start items-center gap-14">
-        {/* Header */}
-        <div class="w-full max-w-[900px] flex flex-col justify-start items-center gap-10">
-          <FadeUp>
-            <div class="flex flex-col justify-start items-center gap-6">
-              <Eyebrow
-                variant={eyebrowVariant}
-                iconName="info"
-                text={eyebrow || ""}
-              />
-              <h2
-                class={`text-center ${textColor} text-3xl md:text-5xl font-semibold font-manrope leading-tight`}
-              >
-                {title}
-              </h2>
-            </div>
-          </FadeUp>
+    <div class="w-full px-4 md:px-16 py-12 md:py-32 bg-dc-50 flex flex-col justify-start items-center gap-8 md:gap-14">
+      {/* Content Layout */}
+      <FadeUp delay={200}>
+        <div class="w-full max-w-[1580px] flex flex-col justify-start items-start gap-8 md:gap-14">
+          {/* Title */}
+          <h2 class="text-left text-dc-800 text-3xl sm:text-4xl md:text-6xl font-black font-main leading-tight md:leading-[64px] uppercase">
+            <div class="whitespace-nowrap">SOBRE O</div>
+            <div class="whitespace-nowrap">HACKATHON</div>
+          </h2>
 
-          <FadeUp delay={200}>
-            <BodyText
-              align="center"
-              color={backgroundColor === "dc-50" ? "dc-500" : "dc-500"}
-              size="lg"
-              weight="medium"
-              lineHeight="relaxed"
-              className="max-w-4xl"
-            >
-              {description}
-            </BodyText>
-          </FadeUp>
-        </div>
-
-        {/* Event Details */}
-        <FadeUp delay={400}>
-          <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-            {eventDetails.map((detail, index) => (
-              <div class="flex flex-col items-center text-center gap-4">
-                {/* Icon */}
-                <div
-                  class={`w-16 h-16 rounded-2xl flex items-center justify-center ${
-                    backgroundColor === "dc-50"
-                      ? "bg-primary-light/10 border border-primary-light/30"
-                      : "bg-primary-light/20 border border-primary-light/40"
-                  }`}
-                >
-                  {detail.icon
-                    ? (
-                      <Image
-                        src={detail.icon}
-                        alt={detail.label}
-                        width={32}
-                        height={32}
-                        class="w-8 h-8 object-contain"
-                        loading="lazy"
-                      />
-                    )
-                    : (
-                      <span class="text-primary-light text-2xl">
-                        {detail.iconName === "calendar"
-                          ? "📅"
-                          : detail.iconName === "location"
-                          ? "🌍"
-                          : detail.iconName === "prize"
-                          ? "🏆"
-                          : "⚡"}
-                      </span>
-                    )}
+          {/* Main Content */}
+          <div class="w-full flex flex-col lg:flex-row justify-start items-stretch gap-6 lg:gap-6">
+            {/* Left Side - Date */}
+            <div class="w-full lg:w-96 flex flex-row md:flex-col justify-start items-start gap-6 md:gap-14">
+              {/* Large Calendar */}
+              <div class="w-44 h-44 sm:w-52 sm:h-52 md:w-56 md:h-56 rounded-[20px] md:rounded-[24px] overflow-hidden bg-primary-light border-4 border-primary-light">
+                <div class="h-[66px] sm:h-[78px] md:h-[84px] flex justify-center items-center text-center bg-primary-light font-main text-[28px] sm:text-[32px] md:text-[36px] uppercase text-primary-dark font-semibold">
+                  Jul
                 </div>
-
-                {/* Content */}
-                <div class="flex flex-col gap-2">
-                  <h3 class={`${textColor} text-xl font-semibold font-manrope`}>
-                    {detail.label}
-                  </h3>
-                  <div class="text-primary-light text-2xl md:text-3xl font-bold font-manrope">
-                    {detail.value}
-                  </div>
-                  {detail.description && (
-                    <p
-                      class={`${
-                        backgroundColor === "dc-50"
-                          ? "text-dc-500"
-                          : "text-dc-400"
-                      } text-base font-medium`}
-                    >
-                      {detail.description}
-                    </p>
-                  )}
+                <div class="h-[110px] sm:h-[130px] md:h-[140px] flex justify-center items-center text-center bg-primary-dark font-main text-3xl sm:text-4xl md:text-5xl uppercase text-primary-light font-semibold">
+                  10-11
                 </div>
               </div>
-            ))}
+
+              {/* Date Info */}
+              <div class="w-full flex flex-col justify-start items-start gap-2 md:gap-3">
+                <div class="text-dc-800 text-lg md:text-xl font-semibold font-main leading-tight">
+                  Data
+                </div>
+                <div class="w-full text-dc-800 text-xl sm:text-2xl md:text-3xl font-semibold font-main leading-relaxed">
+                  Dois dias intensos de desenvolvimento e inovação
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side - Location & Prize Cards */}
+            <div class="flex-1 w-full flex flex-col md:flex-row justify-center items-stretch gap-4 md:gap-6">
+              {/* Location Card */}
+              <div class="flex-1 w-full p-6 sm:p-8 md:p-12 bg-primary-dark rounded-[24px] md:rounded-[32px] flex flex-col justify-end items-center gap-8 md:gap-14">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 relative overflow-hidden flex items-center justify-center">
+                  <Icon
+                    name="language"
+                    size="immense"
+                    class="text-primary-light"
+                  />
+                </div>
+                <div class="w-full flex flex-col justify-start items-center gap-2 md:gap-3">
+                  <div class="text-center text-primary-light text-lg md:text-xl font-semibold font-main leading-tight">
+                    Local
+                  </div>
+                  <div class="w-full text-center text-primary-light text-3xl font-semibold font-main">
+                    100% Online • Global
+                  </div>
+                </div>
+              </div>
+
+              {/* Prize Card */}
+              <div class="flex-1 w-full p-6 sm:p-8 md:p-12 bg-primary-dark rounded-[24px] md:rounded-[32px] flex flex-col justify-end items-center gap-8 md:gap-14">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 relative overflow-hidden flex items-center justify-center">
+                  <Icon
+                    name="paid"
+                    size="immense"
+                    class="text-primary-light"
+                  />
+                </div>
+                <div class="w-full flex flex-col justify-start items-center gap-2 md:gap-3">
+                  <div class="text-center text-primary-light text-lg md:text-xl font-semibold font-main leading-tight">
+                    Premiação
+                  </div>
+                  <div class="w-full text-center text-primary-light text-3xl font-semibold font-main">
+                    R$ 30k em dinheiro<br />e créditos
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </FadeUp>
-      </div>
+        </div>
+      </FadeUp>
     </div>
   );
 }

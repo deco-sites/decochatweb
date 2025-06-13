@@ -4,8 +4,8 @@
   "sections": [
     {
       "__resolveType": "site/sections/HackathonHero.tsx",
-      "topTag": "deco.chat presents",
-      "title": "Os Melhores\nAgents Vencem!",
+      "topTag": "deco.chat apresenta",
+      "title": "Os melhores\nagents vencem!",
       "subtitle": "Participe do Hackathon deco.chat e crie agentes inteligentes para e-commerce, conteúdo e storefront que transformam experiências digitais.",
       "ctas": [
         {
@@ -38,7 +38,8 @@
           "value": "100%",
           "label": "Online"
         }
-      ]
+      ],
+      "logo": "https://assets.decocache.com/decochatweb/faffff75-b48c-4340-9563-c64635690ba2/decochatlogoneg.svg"
     },
     {
       "__resolveType": "site/sections/HackathonAbout.tsx",
@@ -121,42 +122,38 @@
             "FAQ inteligente"
           ]
         }
-      ]
+      ],
+      "ctaText": "Inscrever-se",
+      "ctaLink": "/hackathon"
     },
     {
       "__resolveType": "site/sections/HackathonBenefits.tsx",
       "eyebrow": "Benefícios para os Participantes",
-      "title": "Além da premiação, você ganha\nreconhecimento e oportunidades únicas na comunidade",
+      "title": "BENEFÍCIOS EXCLUSIVOS",
       "description": "Participe e tenha acesso a benefícios exclusivos que vão além da competição",
       "benefits": [
         {
-          "title": "Badge oficial \"Certified Agent Builder\"",
-          "description": "Certificação reconhecida pela comunidade deco.chat",
+          "title": "Certificação oficial reconhecida",
           "iconName": "verified"
         },
         {
-          "title": "Mentoria da equipe deco.chat",
-          "description": "Acesso direto aos especialistas da plataforma",
+          "title": "Mentoria direta dos especialistas",
           "iconName": "group"
         },
         {
-          "title": "Divulgação oficial",
-          "description": "Destaque no blog e redes sociais da deco.chat",
+          "title": "Destaque nas redes oficiais",
           "iconName": "campaign"
         },
         {
-          "title": "Networking tech-first",
-          "description": "Conecte-se com outras agências inovadoras",
-          "iconName": "connect_without_contact"
-        },
-        {
-          "title": "Acesso exclusivo",
-          "description": "Early access a novas features da plataforma",
+          "title": "Early access às features",
           "iconName": "lock_open"
         },
         {
-          "title": "Oportunidades de carreira",
-          "description": "Destaque para oportunidades em empresas parceiras",
+          "title": "Networking com inovadores",
+          "iconName": "connect_without_contact"
+        },
+        {
+          "title": "Oportunidades em empresas parceiras",
           "iconName": "work"
         }
       ],
@@ -165,7 +162,7 @@
     {
       "__resolveType": "site/sections/HackathonProcess.tsx",
       "eyebrow": "Como Funciona",
-      "title": "Um processo simples e estruturado para maximizar seu aprendizado e resultados",
+      "title": "Como Funciona",
       "description": "Siga estes passos para participar do hackathon e ter a melhor experiência possível",
       "processSteps": [
         {
@@ -233,9 +230,9 @@
     {
       "__resolveType": "site/sections/HackathonFaq.tsx",
       "eyebrow": "Perguntas Frequentes",
-      "title": "Tire suas dúvidas sobre o hackathon",
+      "title": "FAQ",
       "description": "Tudo que você precisa saber para participar e ter sucesso no evento",
-      "answerLogo": "https://placehold.co/48x48/d0ec1a/07401a?text=🤖",
+      "answerLogo": "https://assets.decocache.com/decochatweb/cebb6b63-37c8-48a8-870e-0bad65e6e1fb/logo-agnet-deco.png",
       "faqItems": [
         {
           "question": "Quem pode participar?",
@@ -272,6 +269,12 @@
       "formAction": "https://forms.deco.chat/hackathon-registration",
       "formMethod": "POST",
       "backgroundColor": "dc-50"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
     }
   ],
   "seo": {

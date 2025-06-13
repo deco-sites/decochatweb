@@ -79,7 +79,7 @@ export default function Integrations({
           <FadeUp>
             <div class="flex flex-col justify-start items-center gap-6">
               <Eyebrow variant="primary-light" iconName="info" text={eyebrow} />
-              <h2 class="text-center text-dc-800 text-3xl md:text-5xl font-semibold font-manrope leading-tight">
+              <h2 class="text-center text-dc-800 text-3xl md:text-5xl font-semibold font-main leading-tight">
                 {title}
               </h2>
             </div>

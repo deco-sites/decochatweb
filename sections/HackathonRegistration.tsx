@@ -1,16 +1,10 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import Eyebrow from "../components/ui/Eyebrow.tsx";
 import FadeUp from "../components/ui/FadeUp.tsx";
 import Icon from "../components/ui/Icon.tsx";
 import { useScript } from "@deco/deco/hooks";
 
 interface Props {
-  /**
-   * @title Eyebrow
-   * @description Texto pequeno que aparece acima do título
-   */
-  eyebrow?: string;
   /**
    * @title Título principal
    * @description Título principal da seção
@@ -31,348 +25,195 @@ interface Props {
    * @description Método HTTP para envio do formulário
    */
   formMethod?: "POST" | "GET";
-  /**
-   * @title Cor de fundo
-   * @description Cor de fundo da seção
-   */
-  backgroundColor?: "dc-50" | "primary-dark" | "purple-dark";
 }
 
 export default function HackathonRegistration({
-  eyebrow = defaultProps.eyebrow,
   title = defaultProps.title,
   description = defaultProps.description,
   formAction = defaultProps.formAction,
   formMethod = defaultProps.formMethod,
-  backgroundColor = defaultProps.backgroundColor,
 }: Props) {
-  const bgColorMap = {
-    "dc-50": "bg-dc-50",
-    "primary-dark": "bg-primary-dark",
-    "purple-dark": "bg-purple-dark",
-  };
-
-  const textColorMap = {
-    "dc-50": "text-dc-800",
-    "primary-dark": "text-dc-200",
-    "purple-dark": "text-dc-200",
-  };
-
-  const eyebrowVariantMap = {
-    "dc-50": "primary-light" as const,
-    "primary-dark": "primary-light" as const,
-    "purple-dark": "purple-light" as const,
-  };
-
-  const bgColor = bgColorMap[backgroundColor || "dc-50"];
-  const textColor = textColorMap[backgroundColor || "dc-50"];
-  const eyebrowVariant = eyebrowVariantMap[backgroundColor || "dc-50"];
-
   return (
-    <div
-      id="registration"
-      class={`w-full px-4 md:px-8 lg:px-16 py-16 md:py-32 ${bgColor} flex flex-col justify-start items-center gap-14`}
-    >
-      <div class="w-full max-w-[1440px] flex flex-col justify-start items-center gap-14">
-        {/* Header */}
-        <div class="w-full max-w-[900px] flex flex-col justify-start items-center gap-10">
-          <FadeUp>
-            <div class="flex flex-col justify-start items-center gap-6">
-              <Eyebrow
-                variant={eyebrowVariant}
-                iconName="info"
-                text={eyebrow || ""}
-              />
-              <h2
-                class={`text-center ${textColor} text-3xl md:text-5xl font-semibold font-manrope leading-tight`}
-              >
-                {title}
-              </h2>
-            </div>
-          </FadeUp>
+    <div class="w-full bg-dc-50">
+      <div class="relative z-10 pt-20 md:pt-40 px-4 md:px-8 lg:px-16 mb-[-100px]">
+        <div class="w-full max-w-[1580px] mx-auto">
+          <div
+            id="registration"
+            class="px-4 sm:px-6 md:px-16 py-16 md:py-24 bg-primary-light rounded-[20px] md:rounded-[40px] flex flex-col justify-center items-center gap-10 relative"
+          >
+            {/* Content Layout - Side by Side */}
+            <div class="w-full flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-20">
+              {/* Left Side - Header */}
+              <div class="w-full lg:w-auto flex flex-col justify-center items-start gap-6">
+                <FadeUp>
+                  <h2 class="text-primary-dark text-4xl md:text-6xl font-black font-main leading-tight uppercase">
+                    REGISTRE SUA<br />EQUIPE
+                  </h2>
+                </FadeUp>
 
-          <FadeUp delay={200}>
-            <div
-              class={`self-stretch text-center ${
-                backgroundColor === "dc-50" ? "text-dc-500" : "text-dc-400"
-              } text-xl font-medium font-manrope leading-normal`}
-            >
-              {description}
+                <FadeUp delay={200}>
+                  <p class="text-primary-dark text-xl md:text-2xl font-medium font-main leading-relaxed max-w-lg">
+                    {description}
+                  </p>
+                </FadeUp>
+              </div>
+
+              {/* Right Side - Registration Form */}
+              <FadeUp delay={400}>
+                <div class="flex-1 w-full max-w-2xl">
+                  <div class="p-8 md:p-12 bg-white rounded-3xl border-2 border-primary-dark/10 shadow-lg">
+                    <form
+                      id="hackathon-form"
+                      action={formAction}
+                      method={formMethod}
+                      class="space-y-6 relative z-20"
+                    >
+                      {/* Team Name */}
+                      <div class="space-y-3">
+                        <label
+                          for="teamName"
+                          class="block text-lg font-semibold font-main text-dc-800"
+                        >
+                          Nome da Equipe *
+                        </label>
+                        <input
+                          type="text"
+                          id="teamName"
+                          name="teamName"
+                          required
+                          placeholder="Ex: Code Warriors"
+                          class="w-full px-4 py-4 rounded-2xl border-2 border-dc-200 text-lg font-medium font-main transition-all duration-200 focus:outline-none focus:border-primary-light focus:bg-dc-50 text-dc-800 placeholder-dc-400"
+                        />
+                      </div>
+
+                      {/* Team Members */}
+                      <div class="space-y-3">
+                        <label
+                          for="teamMembers"
+                          class="block text-lg font-semibold font-main text-dc-800"
+                        >
+                          Integrantes *
+                        </label>
+                        <textarea
+                          id="teamMembers"
+                          name="teamMembers"
+                          required
+                          rows={4}
+                          placeholder="Liste os nomes dos integrantes da equipe (máximo 4 pessoas)&#10;Ex:&#10;João Silva - Desenvolvedor Full-stack&#10;Maria Santos - UI/UX Designer&#10;Pedro Costa - Backend Developer"
+                          class="w-full px-4 py-4 rounded-2xl border-2 border-dc-200 text-lg font-medium font-main transition-all duration-200 focus:outline-none resize-none focus:border-primary-light focus:bg-dc-50 text-dc-800 placeholder-dc-400"
+                        />
+                      </div>
+
+                      {/* Agency (Optional) */}
+                      <div class="space-y-3">
+                        <label
+                          for="agency"
+                          class="block text-lg font-semibold font-main text-dc-800"
+                        >
+                          Agência (opcional)
+                        </label>
+                        <input
+                          type="text"
+                          id="agency"
+                          name="agency"
+                          placeholder="Nome da sua empresa/agência"
+                          class="w-full px-4 py-4 rounded-2xl border-2 border-dc-200 text-lg font-medium font-main transition-all duration-200 focus:outline-none focus:border-primary-light focus:bg-dc-50 text-dc-800 placeholder-dc-400"
+                        />
+                      </div>
+
+                      {/* Email */}
+                      <div class="space-y-3">
+                        <label
+                          for="email"
+                          class="block text-lg font-semibold font-main text-dc-800"
+                        >
+                          E-mail *
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          required
+                          placeholder="seu-email@exemplo.com"
+                          class="w-full px-4 py-4 rounded-2xl border-2 border-dc-200 text-lg font-medium font-main transition-all duration-200 focus:outline-none focus:border-primary-light focus:bg-dc-50 text-dc-800 placeholder-dc-400"
+                        />
+                      </div>
+
+                      {/* Challenge Category */}
+                      <div class="space-y-3">
+                        <label
+                          for="category"
+                          class="block text-lg font-semibold font-main text-dc-800"
+                        >
+                          Categoria do Desafio *
+                        </label>
+                        <select
+                          id="category"
+                          name="category"
+                          required
+                          class="w-full px-4 py-4 rounded-2xl border-2 border-dc-200 text-lg font-medium font-main transition-all duration-200 focus:outline-none focus:border-primary-light focus:bg-dc-50 text-dc-800"
+                        >
+                          <option value="">Selecione uma categoria</option>
+                          <option value="cms">
+                            Agente de CMS customizados
+                          </option>
+                          <option value="seo">Agente de SEO + Analytics</option>
+                          <option value="storefront">
+                            Agente de Storefront Inteligente
+                          </option>
+                          <option value="onboarding">
+                            Agente de Onboarding
+                          </option>
+                        </select>
+                      </div>
+
+                      {/* Terms and Conditions */}
+                      <div class="flex items-start gap-3">
+                        <input
+                          type="checkbox"
+                          id="terms"
+                          name="terms"
+                          required
+                          class="w-5 h-5 mt-1 rounded border-2 border-dc-300 text-primary-light focus:ring-primary-light focus:ring-2"
+                        />
+                        <label
+                          for="terms"
+                          class="text-base font-medium text-dc-600"
+                        >
+                          Concordo com os{" "}
+                          <a
+                            href="#rules"
+                            class="text-primary-light hover:underline"
+                          >
+                            termos e condições
+                          </a>{" "}
+                          do hackathon e autorizo o uso das informações para
+                          fins do evento.
+                        </label>
+                      </div>
+
+                      {/* Submit Button */}
+                      <button
+                        type="submit"
+                        class="w-full flex items-center justify-center gap-3 px-8 py-4 bg-primary-dark text-primary-light rounded-2xl text-lg font-bold font-main hover:scale-105 transition-transform duration-200 focus:outline-none focus:ring-4 focus:ring-primary-dark/30"
+                      >
+                        <Icon
+                          name="send"
+                          size="medium"
+                          class="text-primary-light"
+                        />
+                        Confirmar minha inscrição
+                      </button>
+
+                      {/* Success/Error Messages */}
+                      <div id="form-message" class="hidden"></div>
+                    </form>
+                  </div>
+                </div>
+              </FadeUp>
             </div>
-          </FadeUp>
+          </div>
         </div>
-
-        {/* Registration Form */}
-        <FadeUp delay={400}>
-          <div class="w-full max-w-2xl">
-            <div
-              class={`p-8 md:p-12 rounded-3xl ${
-                backgroundColor === "dc-50"
-                  ? "bg-white border border-dc-200 shadow-lg"
-                  : "bg-dc-50/10 border border-dc-50/20"
-              }`}
-            >
-              <form
-                id="hackathon-form"
-                action={formAction}
-                method={formMethod}
-                class="space-y-6"
-              >
-                {/* Team Name */}
-                <div class="space-y-3">
-                  <label
-                    for="teamName"
-                    class={`block text-lg font-semibold font-manrope ${
-                      backgroundColor === "dc-50"
-                        ? "text-dc-800"
-                        : "text-dc-200"
-                    }`}
-                  >
-                    Nome da Equipe *
-                  </label>
-                  <input
-                    type="text"
-                    id="teamName"
-                    name="teamName"
-                    required
-                    placeholder="Ex: Code Warriors"
-                    class={`w-full px-4 py-4 rounded-2xl border-2 text-lg font-medium font-manrope transition-all duration-200 focus:outline-none ${
-                      backgroundColor === "dc-50"
-                        ? "bg-dc-50 border-dc-200 text-dc-800 placeholder-dc-400 focus:border-primary-light focus:bg-white"
-                        : "bg-dc-50/10 border-dc-50/20 text-dc-200 placeholder-dc-400 focus:border-primary-light focus:bg-dc-50/20"
-                    }`}
-                  />
-                </div>
-
-                {/* Team Members */}
-                <div class="space-y-3">
-                  <label
-                    for="teamMembers"
-                    class={`block text-lg font-semibold font-manrope ${
-                      backgroundColor === "dc-50"
-                        ? "text-dc-800"
-                        : "text-dc-200"
-                    }`}
-                  >
-                    Integrantes *
-                  </label>
-                  <textarea
-                    id="teamMembers"
-                    name="teamMembers"
-                    required
-                    rows={4}
-                    placeholder="Liste os nomes dos integrantes da equipe (máximo 4 pessoas)&#10;Ex:&#10;João Silva - Desenvolvedor Full-stack&#10;Maria Santos - UI/UX Designer&#10;Pedro Costa - Backend Developer"
-                    class={`w-full px-4 py-4 rounded-2xl border-2 text-lg font-medium font-manrope transition-all duration-200 focus:outline-none resize-none ${
-                      backgroundColor === "dc-50"
-                        ? "bg-dc-50 border-dc-200 text-dc-800 placeholder-dc-400 focus:border-primary-light focus:bg-white"
-                        : "bg-dc-50/10 border-dc-50/20 text-dc-200 placeholder-dc-400 focus:border-primary-light focus:bg-dc-50/20"
-                    }`}
-                  />
-                </div>
-
-                {/* Agency (Optional) */}
-                <div class="space-y-3">
-                  <label
-                    for="agency"
-                    class={`block text-lg font-semibold font-manrope ${
-                      backgroundColor === "dc-50"
-                        ? "text-dc-800"
-                        : "text-dc-200"
-                    }`}
-                  >
-                    Agência (opcional)
-                  </label>
-                  <input
-                    type="text"
-                    id="agency"
-                    name="agency"
-                    placeholder="Nome da sua empresa/agência"
-                    class={`w-full px-4 py-4 rounded-2xl border-2 text-lg font-medium font-manrope transition-all duration-200 focus:outline-none ${
-                      backgroundColor === "dc-50"
-                        ? "bg-dc-50 border-dc-200 text-dc-800 placeholder-dc-400 focus:border-primary-light focus:bg-white"
-                        : "bg-dc-50/10 border-dc-50/20 text-dc-200 placeholder-dc-400 focus:border-primary-light focus:bg-dc-50/20"
-                    }`}
-                  />
-                </div>
-
-                {/* Email */}
-                <div class="space-y-3">
-                  <label
-                    for="email"
-                    class={`block text-lg font-semibold font-manrope ${
-                      backgroundColor === "dc-50"
-                        ? "text-dc-800"
-                        : "text-dc-200"
-                    }`}
-                  >
-                    E-mail *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    placeholder="seu-email@exemplo.com"
-                    class={`w-full px-4 py-4 rounded-2xl border-2 text-lg font-medium font-manrope transition-all duration-200 focus:outline-none ${
-                      backgroundColor === "dc-50"
-                        ? "bg-dc-50 border-dc-200 text-dc-800 placeholder-dc-400 focus:border-primary-light focus:bg-white"
-                        : "bg-dc-50/10 border-dc-50/20 text-dc-200 placeholder-dc-400 focus:border-primary-light focus:bg-dc-50/20"
-                    }`}
-                  />
-                </div>
-
-                {/* Challenge Category */}
-                <div class="space-y-3">
-                  <label
-                    for="category"
-                    class={`block text-lg font-semibold font-manrope ${
-                      backgroundColor === "dc-50"
-                        ? "text-dc-800"
-                        : "text-dc-200"
-                    }`}
-                  >
-                    Categoria do Desafio *
-                  </label>
-                  <select
-                    id="category"
-                    name="category"
-                    required
-                    class={`w-full px-4 py-4 rounded-2xl border-2 text-lg font-medium font-manrope transition-all duration-200 focus:outline-none ${
-                      backgroundColor === "dc-50"
-                        ? "bg-dc-50 border-dc-200 text-dc-800 focus:border-primary-light focus:bg-white"
-                        : "bg-dc-50/10 border-dc-50/20 text-dc-200 focus:border-primary-light focus:bg-dc-50/20"
-                    }`}
-                  >
-                    <option value="">Selecione uma categoria</option>
-                    <option value="cms">Agente de CMS customizados</option>
-                    <option value="seo">Agente de SEO + Analytics</option>
-                    <option value="storefront">
-                      Agente de Storefront Inteligente
-                    </option>
-                    <option value="onboarding">Agente de Onboarding</option>
-                  </select>
-                </div>
-
-                {/* Terms and Conditions */}
-                <div class="flex items-start gap-3">
-                  <input
-                    type="checkbox"
-                    id="terms"
-                    name="terms"
-                    required
-                    class="w-5 h-5 mt-1 rounded border-2 border-dc-300 text-primary-light focus:ring-primary-light focus:ring-2"
-                  />
-                  <label
-                    for="terms"
-                    class={`text-base font-medium ${
-                      backgroundColor === "dc-50"
-                        ? "text-dc-600"
-                        : "text-dc-400"
-                    }`}
-                  >
-                    Concordo com os{" "}
-                    <a href="#rules" class="text-primary-light hover:underline">
-                      termos e condições
-                    </a>{" "}
-                    do hackathon e autorizo o uso das informações para fins do
-                    evento.
-                  </label>
-                </div>
-
-                {/* Submit Button */}
-                <button
-                  type="submit"
-                  class="w-full flex items-center justify-center gap-3 px-8 py-4 bg-primary-light text-primary-dark rounded-2xl text-lg font-bold font-manrope hover:scale-105 transition-transform duration-200 focus:outline-none focus:ring-4 focus:ring-primary-light/30"
-                >
-                  <Icon name="send" size="medium" class="text-primary-dark" />
-                  Confirmar minha inscrição
-                </button>
-
-                {/* Success/Error Messages */}
-                <div id="form-message" class="hidden"></div>
-              </form>
-            </div>
-          </div>
-        </FadeUp>
-
-        {/* Additional Info */}
-        <FadeUp delay={600}>
-          <div class="w-full max-w-3xl grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="text-center space-y-3">
-              <div
-                class={`w-12 h-12 mx-auto rounded-2xl flex items-center justify-center ${
-                  backgroundColor === "dc-50"
-                    ? "bg-primary-light/10"
-                    : "bg-primary-light/20"
-                }`}
-              >
-                <Icon name="timer" size="medium" class="text-primary-light" />
-              </div>
-              <h3 class={`text-lg font-semibold font-manrope ${textColor}`}>
-                Inscrições Limitadas
-              </h3>
-              <p
-                class={`text-sm ${
-                  backgroundColor === "dc-50" ? "text-dc-500" : "text-dc-400"
-                }`}
-              >
-                Vagas por ordem de chegada
-              </p>
-            </div>
-
-            <div class="text-center space-y-3">
-              <div
-                class={`w-12 h-12 mx-auto rounded-2xl flex items-center justify-center ${
-                  backgroundColor === "dc-50"
-                    ? "bg-primary-light/10"
-                    : "bg-primary-light/20"
-                }`}
-              >
-                <Icon
-                  name="support_agent"
-                  size="medium"
-                  class="text-primary-light"
-                />
-              </div>
-              <h3 class={`text-lg font-semibold font-manrope ${textColor}`}>
-                Suporte Completo
-              </h3>
-              <p
-                class={`text-sm ${
-                  backgroundColor === "dc-50" ? "text-dc-500" : "text-dc-400"
-                }`}
-              >
-                Mentoria e documentação
-              </p>
-            </div>
-
-            <div class="text-center space-y-3">
-              <div
-                class={`w-12 h-12 mx-auto rounded-2xl flex items-center justify-center ${
-                  backgroundColor === "dc-50"
-                    ? "bg-primary-light/10"
-                    : "bg-primary-light/20"
-                }`}
-              >
-                <Icon
-                  name="emoji_events"
-                  size="medium"
-                  class="text-primary-light"
-                />
-              </div>
-              <h3 class={`text-lg font-semibold font-manrope ${textColor}`}>
-                Grandes Prêmios
-              </h3>
-              <p
-                class={`text-sm ${
-                  backgroundColor === "dc-50" ? "text-dc-500" : "text-dc-400"
-                }`}
-              >
-                R$ 30k + oportunidades
-              </p>
-            </div>
-          </div>
-        </FadeUp>
       </div>
 
       {/* Form Submission Script */}
@@ -458,13 +299,11 @@ export default function HackathonRegistration({
 }
 
 const defaultProps: Props = {
-  eyebrow: "Inscrição",
-  title: "Registre sua equipe e garanta sua vaga no hackathon",
+  title: "INSCREVA SUA EQUIPE",
   description:
     "Preencha os dados da sua equipe para participar do maior hackathon de agentes AI do mundo",
   formAction: "javascript:void(0)", // Replace with actual form action URL
   formMethod: "POST",
-  backgroundColor: "dc-50",
 };
 
 export function Preview() {
