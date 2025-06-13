@@ -26,11 +26,6 @@
           "text": "Try it for free",
           "href": "https://deco.chat/login",
           "variant": "primary"
-        },
-        {
-          "text": "Book a Demo",
-          "href": "/demo",
-          "variant": "secondary"
         }
       ],
       "backgroundImage": "https://assets.decocache.com/decochatweb/02a46646-de43-4a5d-85f5-9a441f68724f/image-863.png",
@@ -285,7 +280,7 @@
           ]
         }
       ],
-      "ctaLink": "/create-agent",
+      "ctaLink": "https://deco.chat/login",
       "posts": null
     },
     {
