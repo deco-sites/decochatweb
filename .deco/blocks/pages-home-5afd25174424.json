@@ -693,40 +693,50 @@
       }
     },
     {
-      "__resolveType": "site/sections/Pricing.tsx",
-      "business": {
-        "title": "Business",
-        "subtitle": "Up to 500 seats",
-        "features": [
-          "All of our features",
-          "Pay-as-you-go based on model consumption",
-          "US$80 per 1M requests, US$1 per extra 1 GB"
-        ],
-        "cta": "Get started"
-      },
-      "enterprise": {
-        "title": "Enterprise",
-        "subtitle": "500+ seats",
-        "features": [
-          "All in Business",
-          "Option to use your own API tokens",
-          "Option to self-host"
-        ],
-        "cta": "Contact sales"
-      },
-      "professionalServices": {
-        "title": "Professional Services",
-        "checklist": [
-          "Discovery & AI use case mapping",
-          "Environment set-up",
-          "Integration with legacy systems via MCPs",
-          "Custom agent design & deployment",
-          "Support and iteration"
-        ],
-        "cta": "Contact sales"
-      },
-      "backgroundColor": "dc-50",
-      "defaultTeamSize": 5
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Pricing.tsx",
+            "business": {
+              "title": "Business",
+              "subtitle": "Up to 500 seats",
+              "features": [
+                "All of our features",
+                "Pay-as-you-go based on model consumption",
+                "US$80 per 1M requests, US$1 per extra 1 GB"
+              ],
+              "cta": "Get started"
+            },
+            "enterprise": {
+              "title": "Enterprise",
+              "subtitle": "500+ seats",
+              "features": [
+                "All in Business",
+                "Option to use your own API tokens",
+                "Option to self-host"
+              ],
+              "cta": "Contact sales"
+            },
+            "professionalServices": {
+              "title": "Professional Services",
+              "checklist": [
+                "Discovery & AI use case mapping",
+                "Environment set-up",
+                "Integration with legacy systems via MCPs",
+                "Custom agent design & deployment",
+                "Support and iteration"
+              ],
+              "cta": "Contact sales"
+            },
+            "backgroundColor": "dc-50",
+            "defaultTeamSize": 5
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
     },
     {
       "__resolveType": "Footer"
