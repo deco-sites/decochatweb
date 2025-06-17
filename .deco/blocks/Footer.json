@@ -77,11 +77,13 @@
       "links": [
         {
           "text": "Privacy",
-          "disabled": true
+          "disabled": false,
+          "url": "https://assets.decocache.com/decochatweb/7f6359c7-4b6b-4337-b8dd-40cb5278db83/Privacy-and-Data-Protection-Policy---deco.cx.pdf"
         },
         {
           "text": "Terms",
-          "disabled": true
+          "disabled": false,
+          "url": "https://assets.decocache.com/decochatweb/552b5ded-52e0-48b6-b5c7-d9d5da87ab37/Terms-and-Conditions-of-Use---deco.cx.pdf"
         }
       ],
       "title": "Legal"
