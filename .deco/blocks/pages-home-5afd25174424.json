@@ -59,266 +59,254 @@
       "chatWebhookUrl": "https://api.deco.chat/actors/Trigger/invoke/run?passphrase=undefined&deno_isolate_instance_id=/shared/deco.cx/Agents/a213785a-57b4-4800-a207-e408fb476841/triggers/632bce52-a316-43d0-a724-bd1de45d980b&output_tool=undefined"
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/new-home/NewHomeHow.tsx",
-        "title": "Nossa abordagem",
-        "description": "Usamos nossa plataforma open-source como base para integrar modelos aos seus sistemas, priorizando fluxos com maior potencial de impacto.\n\nTrabalhamos junto com seu time para configurar o ambiente, definir a arquitetura e resolver os primeiros casos críticos — enquanto capacitamos sua equipe para seguir com autonomia.",
-        "interfaceImage": "https://assets.decocache.com/decochatweb/812b2e2b-a579-48f3-9dae-f301158ccb95/decochatproduto.png",
-        "integration1": "https://assets.decocache.com/decochatweb/ff022056-2524-468f-aac7-3efef4bbd322/drive.svg",
-        "integration2": "https://assets.decocache.com/decochatweb/2b9f361c-bb5b-458b-b9f5-f3f405757ef0/hubspot-low.svg",
-        "integration3": "https://assets.decocache.com/decochatweb/ed6c0bfd-b44c-4e08-9b70-3a7cce054a90/github-low.svg"
-      }
+      "__resolveType": "site/sections/new-home/NewHomeHow.tsx",
+      "title": "Nossa abordagem",
+      "description": "Usamos nossa plataforma open-source como base para integrar modelos aos seus sistemas, priorizando fluxos com maior potencial de impacto.\n\nTrabalhamos junto com seu time para configurar o ambiente, definir a arquitetura e resolver os primeiros casos críticos — enquanto capacitamos sua equipe para seguir com autonomia.",
+      "interfaceImage": "https://assets.decocache.com/decochatweb/812b2e2b-a579-48f3-9dae-f301158ccb95/decochatproduto.png",
+      "integration1": "https://assets.decocache.com/decochatweb/ff022056-2524-468f-aac7-3efef4bbd322/drive.svg",
+      "integration2": "https://assets.decocache.com/decochatweb/2b9f361c-bb5b-458b-b9f5-f3f405757ef0/hubspot-low.svg",
+      "integration3": "https://assets.decocache.com/decochatweb/ed6c0bfd-b44c-4e08-9b70-3a7cce054a90/github-low.svg"
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/new-home/NewHomeUseCases.tsx",
-        "title": "Workflows inteligentes sob medida",
-        "description": "Casos que vão de fluxos pontuais a sistemas prontos para o cliente final",
-        "mainUseCases": [
-          {
-            "avatar": "https://assets.decocache.com/decochatweb/24e035c4-20d3-472e-ad39-bb2854a77729/rfp.png",
-            "title": "Preenchimento de RFP",
-            "description": "Com acesso à base de conhecimento, preencha RFPs em apenas 2 minutos.",
-            "mainImage": "https://placehold.co/636x500?text=RFP+Interface",
-            "imagePosition": "left",
-            "integrations": [
-              {
-                "name": "Google Sheets",
-                "icon": "https://assets.decocache.com/decochatweb/32019cd1-157a-409e-b382-6181bcf21427/Sheets.png"
-              },
-              {
-                "name": "Pinecone",
-                "icon": "https://assets.decocache.com/decochatweb/2e1f74d7-64e9-4af6-bd15-c8d80de6e1cb/pinecone.png"
-              }
-            ],
-            "showButton": false,
-            "mediaType": "video",
-            "lottieUrl": "https://assets.decocache.com/decochatweb/7e0cdbc3-0c57-44b9-834b-7f459a38518c/rfp.json",
-            "lottieLoop": true,
-            "mainVideo": "https://assets.decocache.com/decochatweb/630e407f-a9df-4f06-b67f-5042e2253019/RFP.webm"
-          },
-          {
-            "avatar": "https://assets.decocache.com/decochatweb/53cb4eed-d456-4b7c-8afa-a5119d2fa86b/mangabeira.png",
-            "title": "Mangabeira Chat",
-            "description": "Converse com as propostas e opiniões do Professor Mangabeira pelo WhatsApp.",
-            "mainImage": "https://placehold.co/636x500?text=Chat+Interface",
-            "imagePosition": "right",
-            "integrations": [
-              {
-                "name": "WhatsApp",
-                "icon": "https://assets.decocache.com/decochatweb/1f447484-de80-47d3-95a9-aefcf7f1b638/zap.png"
-              },
-              {
-                "name": "Pinecone",
-                "icon": "https://assets.decocache.com/decochatweb/2e1f74d7-64e9-4af6-bd15-c8d80de6e1cb/pinecone.png"
-              }
-            ],
-            "showButton": true,
-            "buttonText": "Testar",
-            "mediaType": "video",
-            "lottieUrl": "https://assets.decocache.com/decochatweb/7e0cdbc3-0c57-44b9-834b-7f459a38518c/rfp.json",
-            "lottieLoop": true,
-            "buttonHref": "https://mangabeira.chat/",
-            "buttonIcon": "arrow_outward",
-            "mainVideo": "https://assets.decocache.com/decochatweb/cc48f3a0-9a32-4e64-9330-8d8381a04636/mangabeira.webm"
-          }
-        ],
-        "agentCards": [
-          {
-            "avatar": "https://assets.decocache.com/decochatweb/6e7bc646-caa8-4ffb-a024-67070e56a489/lead.png",
-            "title": "Lead Qualifier",
-            "description": "Qualifique leads em tempo real, priorizando oportunidades de alto valor.",
-            "integrations": [
-              {
-                "name": "Sheets",
-                "icon": "https://assets.decocache.com/decochatweb/32019cd1-157a-409e-b382-6181bcf21427/Sheets.png"
-              },
-              {
-                "name": "Apify",
-                "icon": "https://assets.decocache.com/decochatweb/054a0ebd-bb30-48d8-b1e0-cea5995d0411/apify.svg"
-              }
-            ],
-            "messages": [
-              {
-                "type": "user",
-                "content": "Qualifique os leads dessa planilha."
-              },
-              {
-                "type": "agent",
-                "content": "64 leads qualificados (27 Prioridade A, 37 Prioridade B) salvos na aba “QLFY\""
-              }
-            ]
-          },
-          {
-            "avatar": "https://assets.decocache.com/decochatweb/c67bd4d5-dce4-4fc2-9983-7eab426837d2/blurb.png",
-            "title": "Blurb Generator",
-            "description": "Gere blurbs envolventes em segundos, prontos para qualquer canal.",
-            "integrations": [
-              {
-                "name": "Exa AI",
-                "icon": "https://assets.decocache.com/decochatweb/a1e6f158-2d26-4afd-b271-4196a9ad12f5/exa.png"
-              },
-              {
-                "name": "Gmail",
-                "icon": "https://assets.decocache.com/decochatweb/ff95da65-77dc-4788-a3af-8b253a84a572/icon-2.png"
-              },
-              {
-                "name": "Docs",
-                "icon": "https://assets.decocache.com/decochatweb/48e71883-f0e9-4671-88f0-ec5cabd63310/docs.svg"
-              }
-            ],
-            "messages": [
-              {
-                "type": "user",
-                "content": "Gere um blurb da minha empresa para investidores"
-              },
-              {
-                "type": "agent",
-                "content": "Nossa plataforma une segurança bancária nível PCI a IA generativa, reduzindo custos operacionais..."
-              }
-            ]
-          },
-          {
-            "avatar": "https://assets.decocache.com/decochatweb/7425e87b-c00c-4981-9259-b4667365d276/proposal.png",
-            "title": "Meeting-to-Proposal",
-            "description": "Transforme reuniões em propostas completas em minutos, sem retrabalho.",
-            "integrations": [
-              {
-                "name": "Grain",
-                "icon": "https://assets.decocache.com/decochatweb/6457d375-70b9-4e45-a287-7292ddd8fb14/icon-12.png"
-              },
-              {
-                "name": "Google Slides",
-                "icon": "https://assets.decocache.com/decochatweb/d7432e2b-331b-401c-b848-9424a9247a54/slide.png"
-              }
-            ],
-            "messages": [
-              {
-                "type": "user",
-                "content": "Ajuste o preço da proposta de acordo com a nossa última reunião."
-              },
-              {
-                "type": "agent",
-                "content": "Valor recalculado para R$ 108.000/ano. Proposta atualizada e compartilhada.  "
-              }
-            ]
-          }
-        ]
-      }
+      "__resolveType": "site/sections/new-home/NewHomeUseCases.tsx",
+      "title": "Workflows inteligentes sob medida",
+      "description": "Casos que vão de fluxos pontuais a sistemas prontos para o cliente final",
+      "mainUseCases": [
+        {
+          "avatar": "https://assets.decocache.com/decochatweb/24e035c4-20d3-472e-ad39-bb2854a77729/rfp.png",
+          "title": "Preenchimento de RFP",
+          "description": "Com acesso à base de conhecimento, preencha RFPs em apenas 2 minutos.",
+          "mainImage": "https://placehold.co/636x500?text=RFP+Interface",
+          "imagePosition": "left",
+          "integrations": [
+            {
+              "name": "Google Sheets",
+              "icon": "https://assets.decocache.com/decochatweb/32019cd1-157a-409e-b382-6181bcf21427/Sheets.png"
+            },
+            {
+              "name": "Pinecone",
+              "icon": "https://assets.decocache.com/decochatweb/2e1f74d7-64e9-4af6-bd15-c8d80de6e1cb/pinecone.png"
+            }
+          ],
+          "showButton": false,
+          "mediaType": "video",
+          "lottieUrl": "https://assets.decocache.com/decochatweb/7e0cdbc3-0c57-44b9-834b-7f459a38518c/rfp.json",
+          "lottieLoop": true,
+          "mainVideo": "https://assets.decocache.com/decochatweb/630e407f-a9df-4f06-b67f-5042e2253019/RFP.webm"
+        },
+        {
+          "avatar": "https://assets.decocache.com/decochatweb/53cb4eed-d456-4b7c-8afa-a5119d2fa86b/mangabeira.png",
+          "title": "Mangabeira Chat",
+          "description": "Converse com as propostas e opiniões do Professor Mangabeira pelo WhatsApp.",
+          "mainImage": "https://placehold.co/636x500?text=Chat+Interface",
+          "imagePosition": "right",
+          "integrations": [
+            {
+              "name": "WhatsApp",
+              "icon": "https://assets.decocache.com/decochatweb/1f447484-de80-47d3-95a9-aefcf7f1b638/zap.png"
+            },
+            {
+              "name": "Pinecone",
+              "icon": "https://assets.decocache.com/decochatweb/2e1f74d7-64e9-4af6-bd15-c8d80de6e1cb/pinecone.png"
+            }
+          ],
+          "showButton": true,
+          "buttonText": "Testar",
+          "mediaType": "video",
+          "lottieUrl": "https://assets.decocache.com/decochatweb/7e0cdbc3-0c57-44b9-834b-7f459a38518c/rfp.json",
+          "lottieLoop": true,
+          "buttonHref": "https://mangabeira.chat/",
+          "buttonIcon": "arrow_outward",
+          "mainVideo": "https://assets.decocache.com/decochatweb/cc48f3a0-9a32-4e64-9330-8d8381a04636/mangabeira.webm"
+        }
+      ],
+      "agentCards": [
+        {
+          "avatar": "https://assets.decocache.com/decochatweb/6e7bc646-caa8-4ffb-a024-67070e56a489/lead.png",
+          "title": "Lead Qualifier",
+          "description": "Qualifique leads em tempo real, priorizando oportunidades de alto valor.",
+          "integrations": [
+            {
+              "name": "Sheets",
+              "icon": "https://assets.decocache.com/decochatweb/32019cd1-157a-409e-b382-6181bcf21427/Sheets.png"
+            },
+            {
+              "name": "Apify",
+              "icon": "https://assets.decocache.com/decochatweb/054a0ebd-bb30-48d8-b1e0-cea5995d0411/apify.svg"
+            }
+          ],
+          "messages": [
+            {
+              "type": "user",
+              "content": "Qualifique os leads dessa planilha."
+            },
+            {
+              "type": "agent",
+              "content": "64 leads qualificados (27 Prioridade A, 37 Prioridade B) salvos na aba “QLFY\""
+            }
+          ]
+        },
+        {
+          "avatar": "https://assets.decocache.com/decochatweb/c67bd4d5-dce4-4fc2-9983-7eab426837d2/blurb.png",
+          "title": "Blurb Generator",
+          "description": "Gere blurbs envolventes em segundos, prontos para qualquer canal.",
+          "integrations": [
+            {
+              "name": "Exa AI",
+              "icon": "https://assets.decocache.com/decochatweb/a1e6f158-2d26-4afd-b271-4196a9ad12f5/exa.png"
+            },
+            {
+              "name": "Gmail",
+              "icon": "https://assets.decocache.com/decochatweb/ff95da65-77dc-4788-a3af-8b253a84a572/icon-2.png"
+            },
+            {
+              "name": "Docs",
+              "icon": "https://assets.decocache.com/decochatweb/48e71883-f0e9-4671-88f0-ec5cabd63310/docs.svg"
+            }
+          ],
+          "messages": [
+            {
+              "type": "user",
+              "content": "Gere um blurb da minha empresa para investidores"
+            },
+            {
+              "type": "agent",
+              "content": "Nossa plataforma une segurança bancária nível PCI a IA generativa, reduzindo custos operacionais..."
+            }
+          ]
+        },
+        {
+          "avatar": "https://assets.decocache.com/decochatweb/7425e87b-c00c-4981-9259-b4667365d276/proposal.png",
+          "title": "Meeting-to-Proposal",
+          "description": "Transforme reuniões em propostas completas em minutos, sem retrabalho.",
+          "integrations": [
+            {
+              "name": "Grain",
+              "icon": "https://assets.decocache.com/decochatweb/6457d375-70b9-4e45-a287-7292ddd8fb14/icon-12.png"
+            },
+            {
+              "name": "Google Slides",
+              "icon": "https://assets.decocache.com/decochatweb/d7432e2b-331b-401c-b848-9424a9247a54/slide.png"
+            }
+          ],
+          "messages": [
+            {
+              "type": "user",
+              "content": "Ajuste o preço da proposta de acordo com a nossa última reunião."
+            },
+            {
+              "type": "agent",
+              "content": "Valor recalculado para R$ 108.000/ano. Proposta atualizada e compartilhada.  "
+            }
+          ]
+        }
+      ]
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/new-home/NewHomeFeatures.tsx",
-        "icon": "https://assets.decocache.com/decochatweb/315a119f-dfcc-46a1-a2a0-f9ee7ac54565/decologoblack.svg",
-        "title": "Do primeiro prompt à automação completa.",
-        "description": "Seu sistema operacional open‑source para agentes de IA governados",
-        "featureCards": [
-          {
-            "category": "CHAT",
-            "title": "Converse com qualquer modelo",
-            "description": "Interface intuitiva para interagir com qualquer LLM, desde GPT até modelos locais, com contexto e memória persistente.",
-            "image": "https://placehold.co/426x322?text=Chat+Interface",
-            "size": "small",
-            "imageAspectRatio": "426/322",
-            "mediaType": "video",
-            "lottieUrl": "https://assets.decocache.com/decochatweb/bbb351bf-069a-44a3-8a00-423d7ecf98f9/Modelos.json",
-            "videoUrl": "https://assets.decocache.com/decochatweb/da602609-b82f-4795-a184-dff8b1cbb5b3/Modelos.webm"
-          },
-          {
-            "category": "TOOLS",
-            "title": "Estruture como a IA entende e atua na sua stack",
-            "description": "Defina funções customizadas que permitem à IA interagir diretamente com suas APIs, bancos de dados e sistemas.",
-            "image": "https://placehold.co/426x322?text=Tools+Interface",
-            "size": "small",
-            "imageAspectRatio": "426/322",
-            "mediaType": "video",
-            "lottieUrl": "https://assets.decocache.com/decochatweb/b860e497-e79a-4cb1-802d-4e22d9fb775b/Integracoes.json",
-            "videoUrl": "https://assets.decocache.com/decochatweb/95a7b198-c3f9-4546-a61f-4254a9d58897/Integracoes.webm"
-          },
-          {
-            "category": "PAINEL DE CONTROLE",
-            "title": "Monitore e otimize toda a operação em um só lugar",
-            "description": "Dashboard completo para acompanhar métricas, custos, performance e logs de todos os agentes em tempo real.",
-            "image": "https://placehold.co/426x322?text=Dashboard",
-            "size": "small",
-            "imageAspectRatio": "426/322",
-            "mediaType": "video",
-            "lottieUrl": "https://assets.decocache.com/decochatweb/6d8fa90d-4419-42c6-a2fd-bf21ca2385d9/Governance.json",
-            "videoUrl": "https://assets.decocache.com/decochatweb/ce0fce00-b3de-46c4-bde7-8c69cc1ebf31/Governance.webm"
-          },
-          {
-            "category": "APPS",
-            "title": "Crie interfaces para uso interno ou externo",
-            "description": "Vá além do chat, criando interfaces e sistemas com base em agentes e workflows — de dashboards a apps internos.",
-            "image": "https://placehold.co/643x531?text=Apps+Interface",
-            "size": "wide",
-            "imageAspectRatio": "643/531",
-            "mediaType": "video",
-            "lottieUrl": "https://assets.decocache.com/decochatweb/344ef815-dfb5-4970-95c4-a134e131d0a2/Views.json",
-            "videoUrl": "https://assets.decocache.com/decochatweb/12514d1f-53e9-4591-8bb5-46963c0ed33a/Views.webm"
-          },
-          {
-            "category": "WORKFLOWS",
-            "title": "Transforme processos em automações confiáveis",
-            "description": "Orquestre múltiplos agentes e ferramentas em fluxos complexos, com controle de erro, retry e auditoria completa.",
-            "image": "https://placehold.co/643x595?text=Workflows",
-            "size": "wide",
-            "imageAspectRatio": "643/595",
-            "mediaType": "video",
-            "lottieUrl": "https://assets.decocache.com/decochatweb/f1f3263c-1d38-4285-8fca-4f05067cce11/Workflows.json",
-            "videoUrl": "https://assets.decocache.com/decochatweb/07b2b2c6-58cd-45c5-8abe-86764ac4cc77/Workflows.webm"
-          },
-          {
-            "category": "OPEN-SOURCE",
-            "title": "Sem dependência de stack ou fornecedor",
-            "description": "Código aberto e extensível, rode on-premise ou na nuvem, com total controle sobre dados e customizações.",
-            "image": "https://placehold.co/426x322?text=Open+Source",
-            "size": "small",
-            "imageAspectRatio": "426/322",
-            "mediaType": "video",
-            "lottieUrl": "https://assets.decocache.com/decochatweb/a01f0fa1-a82a-4339-bc2d-19f2000beb32/Opensource.json",
-            "videoUrl": "https://assets.decocache.com/decochatweb/83b5fdb7-c079-43e4-a47f-e64e4a8577cf/open-source.webm"
-          },
-          {
-            "category": "CANAIS",
-            "title": "Atue onde o dia a dia acontece",
-            "description": "Integre com Slack, WhatsApp, Teams, email e outros canais onde sua equipe já trabalha diariamente.",
-            "image": "https://placehold.co/426x322?text=Channels",
-            "size": "small",
-            "imageAspectRatio": "426/322",
-            "mediaType": "video",
-            "lottieUrl": "https://assets.decocache.com/decochatweb/5fbf2756-a451-4548-a280-f5466cd73ea2/channels.json",
-            "videoUrl": "https://assets.decocache.com/decochatweb/588bd824-6111-4c4b-8fda-cc12ab21b0ea/channels.webm"
-          },
-          {
-            "category": "WHITE-LABEL",
-            "title": "Personalize toda a experiência",
-            "description": "Customize cores, logos, domínios e toda a identidade visual para que a plataforma seja verdadeiramente sua.",
-            "image": "https://placehold.co/426x322?text=White+Label",
-            "size": "small",
-            "imageAspectRatio": "426/322",
-            "lottieUrl": "https://assets.decocache.com/decochatweb/ce73e3d6-bf57-4f33-9a0f-603b8c5993ae/Whitelabel.json",
-            "mediaType": "video",
-            "videoUrl": "https://assets.decocache.com/decochatweb/d440a1a3-8dbd-4b32-ae98-f76ffad0515f/Whitelabel.webm"
-          }
-        ]
-      }
+      "__resolveType": "site/sections/new-home/NewHomeFeatures.tsx",
+      "icon": "https://assets.decocache.com/decochatweb/315a119f-dfcc-46a1-a2a0-f9ee7ac54565/decologoblack.svg",
+      "title": "Do primeiro prompt à automação completa.",
+      "description": "Seu sistema operacional open‑source para agentes de IA governados",
+      "featureCards": [
+        {
+          "category": "CHAT",
+          "title": "Converse com qualquer modelo",
+          "description": "Interface intuitiva para interagir com qualquer LLM, desde GPT até modelos locais, com contexto e memória persistente.",
+          "image": "https://placehold.co/426x322?text=Chat+Interface",
+          "size": "small",
+          "imageAspectRatio": "426/322",
+          "mediaType": "video",
+          "lottieUrl": "https://assets.decocache.com/decochatweb/bbb351bf-069a-44a3-8a00-423d7ecf98f9/Modelos.json",
+          "videoUrl": "https://assets.decocache.com/decochatweb/da602609-b82f-4795-a184-dff8b1cbb5b3/Modelos.webm"
+        },
+        {
+          "category": "TOOLS",
+          "title": "Estruture como a IA entende e atua na sua stack",
+          "description": "Defina funções customizadas que permitem à IA interagir diretamente com suas APIs, bancos de dados e sistemas.",
+          "image": "https://placehold.co/426x322?text=Tools+Interface",
+          "size": "small",
+          "imageAspectRatio": "426/322",
+          "mediaType": "video",
+          "lottieUrl": "https://assets.decocache.com/decochatweb/b860e497-e79a-4cb1-802d-4e22d9fb775b/Integracoes.json",
+          "videoUrl": "https://assets.decocache.com/decochatweb/95a7b198-c3f9-4546-a61f-4254a9d58897/Integracoes.webm"
+        },
+        {
+          "category": "PAINEL DE CONTROLE",
+          "title": "Monitore e otimize toda a operação em um só lugar",
+          "description": "Dashboard completo para acompanhar métricas, custos, performance e logs de todos os agentes em tempo real.",
+          "image": "https://placehold.co/426x322?text=Dashboard",
+          "size": "small",
+          "imageAspectRatio": "426/322",
+          "mediaType": "video",
+          "lottieUrl": "https://assets.decocache.com/decochatweb/6d8fa90d-4419-42c6-a2fd-bf21ca2385d9/Governance.json",
+          "videoUrl": "https://assets.decocache.com/decochatweb/ce0fce00-b3de-46c4-bde7-8c69cc1ebf31/Governance.webm"
+        },
+        {
+          "category": "APPS",
+          "title": "Crie interfaces para uso interno ou externo",
+          "description": "Vá além do chat, criando interfaces e sistemas com base em agentes e workflows — de dashboards a apps internos.",
+          "image": "https://placehold.co/643x531?text=Apps+Interface",
+          "size": "wide",
+          "imageAspectRatio": "643/531",
+          "mediaType": "video",
+          "lottieUrl": "https://assets.decocache.com/decochatweb/344ef815-dfb5-4970-95c4-a134e131d0a2/Views.json",
+          "videoUrl": "https://assets.decocache.com/decochatweb/12514d1f-53e9-4591-8bb5-46963c0ed33a/Views.webm"
+        },
+        {
+          "category": "WORKFLOWS",
+          "title": "Transforme processos em automações confiáveis",
+          "description": "Orquestre múltiplos agentes e ferramentas em fluxos complexos, com controle de erro, retry e auditoria completa.",
+          "image": "https://placehold.co/643x595?text=Workflows",
+          "size": "wide",
+          "imageAspectRatio": "643/595",
+          "mediaType": "video",
+          "lottieUrl": "https://assets.decocache.com/decochatweb/f1f3263c-1d38-4285-8fca-4f05067cce11/Workflows.json",
+          "videoUrl": "https://assets.decocache.com/decochatweb/07b2b2c6-58cd-45c5-8abe-86764ac4cc77/Workflows.webm"
+        },
+        {
+          "category": "OPEN-SOURCE",
+          "title": "Sem dependência de stack ou fornecedor",
+          "description": "Código aberto e extensível, rode on-premise ou na nuvem, com total controle sobre dados e customizações.",
+          "image": "https://placehold.co/426x322?text=Open+Source",
+          "size": "small",
+          "imageAspectRatio": "426/322",
+          "mediaType": "video",
+          "lottieUrl": "https://assets.decocache.com/decochatweb/a01f0fa1-a82a-4339-bc2d-19f2000beb32/Opensource.json",
+          "videoUrl": "https://assets.decocache.com/decochatweb/83b5fdb7-c079-43e4-a47f-e64e4a8577cf/open-source.webm"
+        },
+        {
+          "category": "CANAIS",
+          "title": "Atue onde o dia a dia acontece",
+          "description": "Integre com Slack, WhatsApp, Teams, email e outros canais onde sua equipe já trabalha diariamente.",
+          "image": "https://placehold.co/426x322?text=Channels",
+          "size": "small",
+          "imageAspectRatio": "426/322",
+          "mediaType": "video",
+          "lottieUrl": "https://assets.decocache.com/decochatweb/5fbf2756-a451-4548-a280-f5466cd73ea2/channels.json",
+          "videoUrl": "https://assets.decocache.com/decochatweb/588bd824-6111-4c4b-8fda-cc12ab21b0ea/channels.webm"
+        },
+        {
+          "category": "WHITE-LABEL",
+          "title": "Personalize toda a experiência",
+          "description": "Customize cores, logos, domínios e toda a identidade visual para que a plataforma seja verdadeiramente sua.",
+          "image": "https://placehold.co/426x322?text=White+Label",
+          "size": "small",
+          "imageAspectRatio": "426/322",
+          "lottieUrl": "https://assets.decocache.com/decochatweb/ce73e3d6-bf57-4f33-9a0f-603b8c5993ae/Whitelabel.json",
+          "mediaType": "video",
+          "videoUrl": "https://assets.decocache.com/decochatweb/d440a1a3-8dbd-4b32-ae98-f76ffad0515f/Whitelabel.webm"
+        }
+      ]
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/new-home/NewHomeMCPTemplates.tsx",
-        "title": "MCP Templates:\nIA que entende seus dados",
-        "description": "MCP Template: conecte sua IA com segurança e controle Configure em poucos minutos um MCP que integra sua IA a planilhas, CRMs, bancos de dados e APIs. Use wrappers em camadas para refinar a interpretação da LLM e aumentar a precisão das respostas. Tudo direto do navegador, sem DevOps.  Comece agora com nosso repositório open source:",
-        "repositoryUrl": "https://github.com/deco-cx/mcp-template",
-        "repositoryName": "deco.cx/mcp-template",
-        "stars": 20,
-        "codeImage": "https://assets.decocache.com/decochatweb/5978aeb3-2bdc-4228-a25a-2947fe5884da/mcptemplate.png",
-        "githubIcon": "https://assets.decocache.com/decochatweb/10f68927-5f1b-4682-81d6-73d3d2065a8f/github.svg"
-      }
+      "__resolveType": "site/sections/new-home/NewHomeMCPTemplates.tsx",
+      "title": "MCP Templates:\nIA que entende seus dados",
+      "description": "MCP Template: conecte sua IA com segurança e controle Configure em poucos minutos um MCP que integra sua IA a planilhas, CRMs, bancos de dados e APIs. Use wrappers em camadas para refinar a interpretação da LLM e aumentar a precisão das respostas. Tudo direto do navegador, sem DevOps.  Comece agora com nosso repositório open source:",
+      "repositoryUrl": "https://github.com/deco-cx/mcp-template",
+      "repositoryName": "deco.cx/mcp-template",
+      "stars": 20,
+      "codeImage": "https://assets.decocache.com/decochatweb/5978aeb3-2bdc-4228-a25a-2947fe5884da/mcptemplate.png",
+      "githubIcon": "https://assets.decocache.com/decochatweb/10f68927-5f1b-4682-81d6-73d3d2065a8f/github.svg"
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
@@ -343,18 +331,15 @@
       ]
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/new-home/NewHomeCTA.tsx",
-        "title": "Centralize seus Agentes e Workflows de IA",
-        "primaryButton": {
-          "text": "Veja nossos agents em ação, agende uma demo agora",
-          "url": "#demo"
-        },
-        "secondaryButton": {
-          "text": "Entre em contato",
-          "url": "#contact"
-        }
+      "__resolveType": "site/sections/new-home/NewHomeCTA.tsx",
+      "title": "Centralize seus Agentes e Workflows de IA",
+      "primaryButton": {
+        "text": "Veja nossos agents em ação, agende uma demo agora",
+        "url": "#demo"
+      },
+      "secondaryButton": {
+        "text": "Entre em contato",
+        "url": "#contact"
       }
     },
     {
