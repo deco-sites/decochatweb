@@ -218,9 +218,21 @@ export default {
     container: { center: true },
     extend: {
       fontFamily: {
-        main: ["Nacelle", "sans-serif"],
+        main: [
+          "helvetica-neue-lt-pro",
+          "Helvetica Neue",
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+        ],
         manrope: ["Manrope", "sans-serif"],
-        sans: ["Nacelle", "sans-serif"],
+        sans: [
+          "helvetica-neue-lt-pro",
+          "Helvetica Neue",
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+        ],
       },
       colors: {
         "primary-light": "#D0EC1A",

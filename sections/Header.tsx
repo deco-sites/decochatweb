@@ -52,23 +52,26 @@ export default function Header({
 }: Props) {
   return (
     <div className="w-full bg-dc-50">
-      <div class="w-full max-w-[1440px] px-4 md:px-8 lg:px-16 py-6 md:py-8 lg:py-12 mx-auto">
-        <div class="flex-1 p-2 sm:p-4 rounded-3xl outline outline-1 outline-offset-[-0.5px] outline-dc-200 flex justify-between items-center relative">
-          <Image
-            src={logo}
-            alt="Logo"
-            width={144}
-            height={32}
-            class="w-28 sm:w-36 h-6 sm:h-8"
-          />
+      <div class="max-w-[1440px] flex items-center justify-center px-4 md:px-8 lg:px-16 py-4 md:py-6 lg:py-8 mx-auto">
+        <div class="w-fit p-2 bg-dc-800 rounded-2xl flex justify-between items-center gap-12 relative">
+          {/* Logo */}
+          <div class="px-2 flex flex-col justify-start items-start gap-2.5">
+            <Image
+              src={logo}
+              alt="deco.chat Logo"
+              width={111}
+              height={24}
+              class="w-28 h-6"
+            />
+          </div>
 
           {/* Desktop Navigation */}
-          <div class="hidden md:flex justify-center items-center gap-2">
+          <div class="hidden lg:flex justify-start items-center gap-2">
             {navItems.map((item) => (
               item.disabled
                 ? (
-                  <span class="px-3 sm:px-4 py-2 rounded-full flex justify-center items-center opacity-50 cursor-not-allowed select-none">
-                    <div class="justify-center text-dc-800 text-sm sm:text-base font-medium font-main leading-tight">
+                  <span class="px-4 py-2 rounded-full flex justify-center items-center gap-2 opacity-50 cursor-not-allowed select-none">
+                    <div class="text-dc-50 text-base font-normal leading-tight">
                       {item.label}
                     </div>
                   </span>
@@ -76,9 +79,9 @@ export default function Header({
                 : (
                   <a
                     href={item.href}
-                    class="px-3 sm:px-4 py-2 rounded-full flex justify-center items-center hover:bg-dc-100 transition-colors"
+                    class="px-4 py-2 rounded-full flex justify-center items-center gap-2 hover:bg-dc-700 transition-colors"
                   >
-                    <div class="justify-center text-dc-800 text-sm sm:text-base font-medium font-main leading-tight">
+                    <div class="text-dc-50 text-base font-normal leading-tight">
                       {item.label}
                     </div>
                   </a>
@@ -87,18 +90,18 @@ export default function Header({
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Button
               variant="primary"
-              size="small"
+              size="medium"
               href={ctaHref}
             >
               {ctaText}
             </Button>
           </div>
 
-          {/* Mobile Menu - Simple Version */}
-          <div class="block md:hidden">
+          {/* Mobile Menu */}
+          <div class="block lg:hidden">
             <style
               dangerouslySetInnerHTML={{
                 __html: `
@@ -119,13 +122,13 @@ export default function Header({
             {/* Menu Toggle Button */}
             <label
               for="mobile-menu"
-              class="menu-label cursor-pointer fixed right-6 top-10 z-[70] w-10 h-10 flex items-center justify-center"
+              class="menu-label cursor-pointer fixed right-6 top-8 z-[70] w-10 h-10 flex items-center justify-center"
             >
               <div class="menu-icon">
-                <Icon name="menu" size="large" class="text-dc-800" />
+                <Icon name="menu" size="large" class="text-dc-50" />
               </div>
               <div class="close-icon">
-                <Icon name="close" size="large" class="text-dc-800" />
+                <Icon name="close" size="large" class="text-dc-50" />
               </div>
             </label>
 
@@ -135,15 +138,15 @@ export default function Header({
             </div>
 
             {/* Menu Panel */}
-            <div class="mobile-menu-panel fixed inset-y-0 right-0 w-3/4 max-w-sm bg-white shadow-xl z-[60] transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
-              <div class="flex flex-col p-6 pt-16">
+            <div class="mobile-menu-panel fixed inset-y-0 right-0 w-3/4 max-w-sm bg-dc-800 shadow-xl z-[60] transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto rounded-l-2xl">
+              <div class="flex flex-col p-6 pt-14">
                 {/* Navigation Links */}
                 <div class="flex flex-col gap-4 mb-8">
                   {navItems.map((item) => (
                     item.disabled
                       ? (
                         <span class="px-4 py-3 rounded-lg flex items-center opacity-50 cursor-not-allowed select-none">
-                          <div class="text-dc-800 text-base font-medium font-main">
+                          <div class="text-dc-50 text-base font-normal font-main">
                             {item.label}
                           </div>
                         </span>
@@ -151,9 +154,9 @@ export default function Header({
                       : (
                         <a
                           href={item.href}
-                          class="px-4 py-3 rounded-lg flex items-center hover:bg-dc-100 transition-colors"
+                          class="px-4 py-3 rounded-lg flex items-center hover:bg-dc-700 transition-colors"
                         >
-                          <div class="text-dc-800 text-base font-medium font-main">
+                          <div class="text-dc-50 text-base font-normal font-main">
                             {item.label}
                           </div>
                         </a>
@@ -179,7 +182,7 @@ export default function Header({
 }
 
 const defaultProps: Props = {
-  logo: "https://placehold.co/150x32",
+  logo: "https://placehold.co/111x24/D0EC1A/07401A?text=deco.chat",
   navItems: [
     {
       label: "Blog",
@@ -199,7 +202,7 @@ const defaultProps: Props = {
       href: "/integrations",
     },
   ],
-  ctaText: "Book a Demo",
+  ctaText: "Testar grátis",
   ctaHref: "/demo",
 };
 

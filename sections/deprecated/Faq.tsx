@@ -1,5 +1,5 @@
-import Eyebrow from "../components/ui/Eyebrow.tsx";
-import FadeUp from "../components/ui/FadeUp.tsx";
+import Eyebrow from "../../components/ui/Eyebrow.tsx";
+import FadeUp from "../../components/ui/FadeUp.tsx";
 import { useScript } from "@deco/deco/hooks";
 import Image from "apps/website/components/Image.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
@@ -51,11 +51,6 @@ export default function FAQ({
               <h2 class="text-center text-dc-800 text-3xl md:text-5xl font-semibold font-main leading-normal">
                 {title}
               </h2>
-            </div>
-          </FadeUp>
-          <FadeUp delay={200}>
-            <div class="self-stretch text-center text-dc-500 text-xl font-medium font-main leading-normal">
-              {description}
             </div>
           </FadeUp>
         </div>

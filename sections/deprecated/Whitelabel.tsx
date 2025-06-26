@@ -1,5 +1,5 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Icon from "../components/ui/Icon.tsx";
+import Icon from "../../components/ui/Icon.tsx";
 
 /**
  * @titleBy name

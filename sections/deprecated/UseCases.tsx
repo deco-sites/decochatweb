@@ -1,11 +1,11 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import type { BlogPost } from "apps/blog/types.ts";
 import Image from "apps/website/components/Image.tsx";
-import Eyebrow from "../components/ui/Eyebrow.tsx";
-import BodyText from "../components/ui/BodyText.tsx";
-import FadeUp from "../components/ui/FadeUp.tsx";
-import BlogAuthorTag from "../components/blog/BlogAuthorTag.tsx";
-import Icon from "../components/ui/Icon.tsx";
+import Eyebrow from "../../components/ui/Eyebrow.tsx";
+import BodyText from "../../components/ui/BodyText.tsx";
+import FadeUp from "../../components/ui/FadeUp.tsx";
+import BlogAuthorTag from "../../components/blog/BlogAuthorTag.tsx";
+import Icon from "../../components/ui/Icon.tsx";
 import { useScript } from "@deco/deco/hooks";
 
 /**

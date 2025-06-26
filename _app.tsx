@@ -23,6 +23,9 @@ export const Layout = ({ children, revision, hmrUniqueId }: {
           rel="stylesheet"
         />
 
+        {/* Adobe Fonts - Helvetica Neue */}
+        <link rel="stylesheet" href="https://use.typekit.net/nad8kqx.css" />
+
         {/* Custom Fonts CSS */}
         <link href="/fonts.css" rel="stylesheet" />
 

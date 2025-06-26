@@ -1,8 +1,8 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import Icon from "../components/ui/Icon.tsx";
-import Slider from "../components/ui/Slider/index.tsx";
-import { useId } from "../sdk/useId.ts";
+import Icon from "../../components/ui/Icon.tsx";
+import Slider from "../../components/ui/Slider/index.tsx";
+import { useId } from "../../sdk/useId.ts";
 
 /**
  * @titleBy alt

@@ -1,7 +1,7 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import Eyebrow from "../components/ui/Eyebrow.tsx";
-import FadeUp from "../components/ui/FadeUp.tsx";
+import Eyebrow from "../../components/ui/Eyebrow.tsx";
+import FadeUp from "../../components/ui/FadeUp.tsx";
 
 /**
  * @titleBy title

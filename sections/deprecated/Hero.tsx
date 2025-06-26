@@ -1,9 +1,9 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import Eyebrow from "../components/ui/Eyebrow.tsx";
-import FadeUp from "../components/ui/FadeUp.tsx";
-import Button from "../components/ui/Button.tsx";
-import BodyText from "../components/ui/BodyText.tsx";
+import Eyebrow from "../../components/ui/Eyebrow.tsx";
+import FadeUp from "../../components/ui/FadeUp.tsx";
+import Button from "../../components/ui/Button.tsx";
+import BodyText from "../../components/ui/BodyText.tsx";
 
 export interface CTA {
   /**

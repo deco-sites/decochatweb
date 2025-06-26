@@ -1,9 +1,9 @@
-import Eyebrow from "../components/ui/Eyebrow.tsx";
-import BodyText from "../components/ui/BodyText.tsx";
-import FadeUp from "../components/ui/FadeUp.tsx";
-import Icon from "../components/ui/Icon.tsx";
+import Eyebrow from "../../components/ui/Eyebrow.tsx";
+import BodyText from "../../components/ui/BodyText.tsx";
+import FadeUp from "../../components/ui/FadeUp.tsx";
+import Icon from "../../components/ui/Icon.tsx";
 import { useScript } from "deco/hooks/useScript.ts";
-import Button from "../components/ui/Button.tsx";
+import Button from "../../components/ui/Button.tsx";
 
 /**
  * @titleBy name

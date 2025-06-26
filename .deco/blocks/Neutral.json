@@ -26,13 +26,7 @@
     "info": "#2e72d2"
   },
   "font": {
-    "__resolveType": "website/loaders/fonts/googleFonts.ts",
-    "fonts": [
-      {
-        "variations": [],
-        "family": "Manrope"
-      }
-    ]
+    "family": "helvetica-neue-lt-pro"
   },
   "mode": "light"
 }

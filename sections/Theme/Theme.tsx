@@ -256,15 +256,13 @@ function Section({
     ...otherStyles,
   };
 
+  const fontFallback =
+    "helvetica-neue-lt-pro, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif";
+
   const variables = [
     ...toVariables(theme),
-    [
-      "--font-family",
-      font?.family ||
-      "Manrope, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
-    ],
-  ]
-    .map(([name, value]) => ({ name, value }));
+    ["--font-family", font?.family || fontFallback],
+  ].map(([name, value]) => ({ name, value }));
 
   return (
     <>

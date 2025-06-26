@@ -1,6 +1,6 @@
 import { useScript } from "deco/hooks/useScript.ts";
-import Button from "../components/ui/Button.tsx";
-import Icon from "../components/ui/Icon.tsx";
+import Button from "../../components/ui/Button.tsx";
+import Icon from "../../components/ui/Icon.tsx";
 
 interface Props {
   /**

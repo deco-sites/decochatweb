@@ -70,7 +70,7 @@ export default function Footer({
                   key={index}
                   className="flex flex-col justify-start items-start gap-4"
                 >
-                  <h3 className="text-primary-light text-lg font-semibold font-main leading-relaxed">
+                  <h3 className="text-primary-light text-lg font-medium leading-relaxed">
                     {column.title}
                   </h3>
                   <div className="w-full flex flex-col justify-start items-start">
@@ -80,14 +80,14 @@ export default function Footer({
                           ? (
                             <a
                               href={link.url}
-                              className="text-dc-200 text-base font-main hover:text-primary-light/80 transition-colors"
+                              className="text-dc-200 text-base hover:text-primary-light/80 transition-colors"
                             >
                               {link.text}
                             </a>
                           )
                           : (
                             <span
-                              className={`text-dc-200 text-base font-main ${
+                              className={`text-dc-200 text-base ${
                                 link.disabled
                                   ? "opacity-50 cursor-not-allowed"
                                   : ""
