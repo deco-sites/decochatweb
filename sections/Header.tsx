@@ -53,7 +53,7 @@ export default function Header({
   return (
     <div className="w-full bg-dc-50">
       <div class="max-w-[1440px] flex items-center justify-center px-4 md:px-8 lg:px-16 py-4 md:py-6 lg:py-8 mx-auto">
-        <div class="w-fit p-2 bg-dc-800 rounded-2xl flex justify-between items-center gap-12 relative">
+        <div class="w-full lg:w-fit p-2 bg-dc-800 rounded-2xl flex justify-between items-center gap-4 lg:gap-12 relative">
           {/* Logo */}
           <div class="px-2 flex flex-col justify-start items-start gap-2.5">
             <Image
@@ -122,20 +122,21 @@ export default function Header({
             {/* Menu Toggle Button */}
             <label
               for="mobile-menu"
-              class="menu-label cursor-pointer fixed right-6 top-8 z-[70] w-10 h-10 flex items-center justify-center"
+              class="menu-label cursor-pointer fixed right-4 top-4 z-[70] w-14 h-14 flex items-center justify-center"
             >
               <div class="menu-icon">
-                <Icon name="menu" size="large" class="text-dc-50" />
+                <Icon name="menu" size="xl" class="text-dc-50" />
               </div>
               <div class="close-icon">
-                <Icon name="close" size="large" class="text-dc-50" />
+                <Icon name="close" size="xl" class="text-dc-50" />
               </div>
             </label>
 
             {/* Menu Backdrop */}
-            <div class="mobile-menu-backdrop fixed inset-0 bg-black/50 backdrop-blur-sm z-[50] opacity-0 pointer-events-none transition-opacity duration-300">
-              &nbsp;
-            </div>
+            <label
+              for="mobile-menu"
+              class="mobile-menu-backdrop fixed inset-0 bg-black/50 backdrop-blur-sm z-[50] opacity-0 pointer-events-none transition-opacity duration-300"
+            />
 
             {/* Menu Panel */}
             <div class="mobile-menu-panel fixed inset-y-0 right-0 w-3/4 max-w-sm bg-dc-800 shadow-xl z-[60] transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto rounded-l-2xl">

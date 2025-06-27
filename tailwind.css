@@ -21,6 +21,18 @@
     -moz-appearance: textfield;
     appearance: textfield;
   }
+
+  /* Custom selection colors */
+  ::selection {
+    background-color: #eff3d4; /* Light background */
+    color: #b0cb00; /* Text color */
+  }
+
+  /* For Firefox */
+  ::-moz-selection {
+    background-color: #eff3d4;
+    color: #b0cb00;
+  }
 }
 
 @layer components {

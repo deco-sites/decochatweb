@@ -482,6 +482,25 @@ input[type="number"] {
             appearance: textfield;
   }
 
+/* Custom selection colors */
+
+::-moz-selection {
+    background-color: #eff3d4; /* Light background */
+    color: #b0cb00; /* Text color */
+  }
+
+::selection {
+    background-color: #eff3d4; /* Light background */
+    color: #b0cb00; /* Text color */
+  }
+
+/* For Firefox */
+
+::-moz-selection {
+    background-color: #eff3d4;
+    color: #b0cb00;
+  }
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -11482,6 +11501,11 @@ input.tab:checked + .tab-content,
     width: auto;
   }
 
+  .lg\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
   .lg\:max-w-5xl {
     max-width: 64rem;
   }
@@ -11555,6 +11579,10 @@ input.tab:checked + .tab-content,
 
   .lg\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .lg\:gap-12 {
+    gap: 3rem;
   }
 
   .lg\:gap-14 {
