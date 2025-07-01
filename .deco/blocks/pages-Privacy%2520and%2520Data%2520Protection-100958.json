@@ -1,7 +1,11 @@
 {
   "name": "Privacy and Data Protection",
   "path": "/privacy-policy",
-  "sections": [],
+  "sections": [
+    {
+      "__resolveType": "site/sections/PrivacyPolicy.tsx"
+    }
+  ],
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },

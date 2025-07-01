@@ -8,22 +8,22 @@ import * as $$$$$$$$$$$2 from "./apps/site.ts";
 import * as $$$$$$0 from "./sections/BlogCategories.tsx";
 import * as $$$$$$1 from "./sections/BlogPost.tsx";
 import * as $$$$$$2 from "./sections/BlogPosts.tsx";
-import * as $$$$$$17 from "./sections/deprecated/ChatSupport.tsx";
-import * as $$$$$$18 from "./sections/deprecated/Communications.tsx";
-import * as $$$$$$16 from "./sections/deprecated/CTASection.tsx";
-import * as $$$$$$19 from "./sections/deprecated/Faq.tsx";
-import * as $$$$$$20 from "./sections/deprecated/FeaturesBento.tsx";
-import * as $$$$$$21 from "./sections/deprecated/Hero.tsx";
-import * as $$$$$$22 from "./sections/deprecated/IconDemo.tsx";
-import * as $$$$$$23 from "./sections/deprecated/ImageWithParagraph.tsx";
-import * as $$$$$$24 from "./sections/deprecated/Integrations.tsx";
-import * as $$$$$$25 from "./sections/deprecated/Logos.tsx";
-import * as $$$$$$26 from "./sections/deprecated/Pricing.tsx";
-import * as $$$$$$27 from "./sections/deprecated/PrivacySecurity.tsx";
-import * as $$$$$$28 from "./sections/deprecated/Statement.tsx";
-import * as $$$$$$29 from "./sections/deprecated/Testimonials.tsx";
-import * as $$$$$$30 from "./sections/deprecated/UseCases.tsx";
-import * as $$$$$$31 from "./sections/deprecated/Whitelabel.tsx";
+import * as $$$$$$19 from "./sections/deprecated/ChatSupport.tsx";
+import * as $$$$$$20 from "./sections/deprecated/Communications.tsx";
+import * as $$$$$$18 from "./sections/deprecated/CTASection.tsx";
+import * as $$$$$$21 from "./sections/deprecated/Faq.tsx";
+import * as $$$$$$22 from "./sections/deprecated/FeaturesBento.tsx";
+import * as $$$$$$23 from "./sections/deprecated/Hero.tsx";
+import * as $$$$$$24 from "./sections/deprecated/IconDemo.tsx";
+import * as $$$$$$25 from "./sections/deprecated/ImageWithParagraph.tsx";
+import * as $$$$$$26 from "./sections/deprecated/Integrations.tsx";
+import * as $$$$$$27 from "./sections/deprecated/Logos.tsx";
+import * as $$$$$$28 from "./sections/deprecated/Pricing.tsx";
+import * as $$$$$$29 from "./sections/deprecated/PrivacySecurity.tsx";
+import * as $$$$$$30 from "./sections/deprecated/Statement.tsx";
+import * as $$$$$$31 from "./sections/deprecated/Testimonials.tsx";
+import * as $$$$$$32 from "./sections/deprecated/UseCases.tsx";
+import * as $$$$$$33 from "./sections/deprecated/Whitelabel.tsx";
 import * as $$$$$$3 from "./sections/Footer.tsx";
 import * as $$$$$$4 from "./sections/HackathonAbout.tsx";
 import * as $$$$$$5 from "./sections/HackathonBenefits.tsx";
@@ -35,37 +35,39 @@ import * as $$$$$$10 from "./sections/HackathonProcess.tsx";
 import * as $$$$$$11 from "./sections/HackathonRegistration.tsx";
 import * as $$$$$$12 from "./sections/Header.tsx";
 import * as $$$$$$13 from "./sections/MainPost.tsx";
-import * as $$$$$$32 from "./sections/new-home/NewHomeCTA.tsx";
-import * as $$$$$$33 from "./sections/new-home/NewHomeFeatures.tsx";
-import * as $$$$$$34 from "./sections/new-home/NewHomeHero.tsx";
-import * as $$$$$$35 from "./sections/new-home/NewHomeHow.tsx";
-import * as $$$$$$36 from "./sections/new-home/NewHomeMCPTemplates.tsx";
-import * as $$$$$$37 from "./sections/new-home/NewHomeUseCases.tsx";
-import * as $$$$$$38 from "./sections/new-home/NewHomeWhatsAppCommunity.tsx";
-import * as $$$$$$14 from "./sections/RelatedBlogPosts.tsx";
-import * as $$$$$$15 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$34 from "./sections/new-home/NewHomeCTA.tsx";
+import * as $$$$$$35 from "./sections/new-home/NewHomeFeatures.tsx";
+import * as $$$$$$36 from "./sections/new-home/NewHomeHero.tsx";
+import * as $$$$$$37 from "./sections/new-home/NewHomeHow.tsx";
+import * as $$$$$$38 from "./sections/new-home/NewHomeMCPTemplates.tsx";
+import * as $$$$$$39 from "./sections/new-home/NewHomeUseCases.tsx";
+import * as $$$$$$40 from "./sections/new-home/NewHomeWhatsAppCommunity.tsx";
+import * as $$$$$$14 from "./sections/PrivacyPolicy.tsx";
+import * as $$$$$$15 from "./sections/RelatedBlogPosts.tsx";
+import * as $$$$$$16 from "./sections/TermsAndConditions.tsx";
+import * as $$$$$$17 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
     "site/sections/BlogCategories.tsx": $$$$$$0,
     "site/sections/BlogPost.tsx": $$$$$$1,
     "site/sections/BlogPosts.tsx": $$$$$$2,
-    "site/sections/deprecated/ChatSupport.tsx": $$$$$$17,
-    "site/sections/deprecated/Communications.tsx": $$$$$$18,
-    "site/sections/deprecated/CTASection.tsx": $$$$$$16,
-    "site/sections/deprecated/Faq.tsx": $$$$$$19,
-    "site/sections/deprecated/FeaturesBento.tsx": $$$$$$20,
-    "site/sections/deprecated/Hero.tsx": $$$$$$21,
-    "site/sections/deprecated/IconDemo.tsx": $$$$$$22,
-    "site/sections/deprecated/ImageWithParagraph.tsx": $$$$$$23,
-    "site/sections/deprecated/Integrations.tsx": $$$$$$24,
-    "site/sections/deprecated/Logos.tsx": $$$$$$25,
-    "site/sections/deprecated/Pricing.tsx": $$$$$$26,
-    "site/sections/deprecated/PrivacySecurity.tsx": $$$$$$27,
-    "site/sections/deprecated/Statement.tsx": $$$$$$28,
-    "site/sections/deprecated/Testimonials.tsx": $$$$$$29,
-    "site/sections/deprecated/UseCases.tsx": $$$$$$30,
-    "site/sections/deprecated/Whitelabel.tsx": $$$$$$31,
+    "site/sections/deprecated/ChatSupport.tsx": $$$$$$19,
+    "site/sections/deprecated/Communications.tsx": $$$$$$20,
+    "site/sections/deprecated/CTASection.tsx": $$$$$$18,
+    "site/sections/deprecated/Faq.tsx": $$$$$$21,
+    "site/sections/deprecated/FeaturesBento.tsx": $$$$$$22,
+    "site/sections/deprecated/Hero.tsx": $$$$$$23,
+    "site/sections/deprecated/IconDemo.tsx": $$$$$$24,
+    "site/sections/deprecated/ImageWithParagraph.tsx": $$$$$$25,
+    "site/sections/deprecated/Integrations.tsx": $$$$$$26,
+    "site/sections/deprecated/Logos.tsx": $$$$$$27,
+    "site/sections/deprecated/Pricing.tsx": $$$$$$28,
+    "site/sections/deprecated/PrivacySecurity.tsx": $$$$$$29,
+    "site/sections/deprecated/Statement.tsx": $$$$$$30,
+    "site/sections/deprecated/Testimonials.tsx": $$$$$$31,
+    "site/sections/deprecated/UseCases.tsx": $$$$$$32,
+    "site/sections/deprecated/Whitelabel.tsx": $$$$$$33,
     "site/sections/Footer.tsx": $$$$$$3,
     "site/sections/HackathonAbout.tsx": $$$$$$4,
     "site/sections/HackathonBenefits.tsx": $$$$$$5,
@@ -77,15 +79,17 @@ const manifest = {
     "site/sections/HackathonRegistration.tsx": $$$$$$11,
     "site/sections/Header.tsx": $$$$$$12,
     "site/sections/MainPost.tsx": $$$$$$13,
-    "site/sections/new-home/NewHomeCTA.tsx": $$$$$$32,
-    "site/sections/new-home/NewHomeFeatures.tsx": $$$$$$33,
-    "site/sections/new-home/NewHomeHero.tsx": $$$$$$34,
-    "site/sections/new-home/NewHomeHow.tsx": $$$$$$35,
-    "site/sections/new-home/NewHomeMCPTemplates.tsx": $$$$$$36,
-    "site/sections/new-home/NewHomeUseCases.tsx": $$$$$$37,
-    "site/sections/new-home/NewHomeWhatsAppCommunity.tsx": $$$$$$38,
-    "site/sections/RelatedBlogPosts.tsx": $$$$$$14,
-    "site/sections/Theme/Theme.tsx": $$$$$$15,
+    "site/sections/new-home/NewHomeCTA.tsx": $$$$$$34,
+    "site/sections/new-home/NewHomeFeatures.tsx": $$$$$$35,
+    "site/sections/new-home/NewHomeHero.tsx": $$$$$$36,
+    "site/sections/new-home/NewHomeHow.tsx": $$$$$$37,
+    "site/sections/new-home/NewHomeMCPTemplates.tsx": $$$$$$38,
+    "site/sections/new-home/NewHomeUseCases.tsx": $$$$$$39,
+    "site/sections/new-home/NewHomeWhatsAppCommunity.tsx": $$$$$$40,
+    "site/sections/PrivacyPolicy.tsx": $$$$$$14,
+    "site/sections/RelatedBlogPosts.tsx": $$$$$$15,
+    "site/sections/TermsAndConditions.tsx": $$$$$$16,
+    "site/sections/Theme/Theme.tsx": $$$$$$17,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,

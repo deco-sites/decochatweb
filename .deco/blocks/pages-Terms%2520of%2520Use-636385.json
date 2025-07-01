@@ -1,7 +1,12 @@
 {
   "name": "Terms of Use",
   "path": "/terms-of-use",
-  "sections": [],
+  "sections": [
+    {
+      "__resolveType": "site/sections/TermsAndConditions.tsx",
+      "posts": null
+    }
+  ],
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
