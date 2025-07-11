@@ -1,0 +1,266 @@
+{
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/deco-cx/DarkModeHeader.tsx",
+        "navItems": [],
+        "ctaText": "Join the waitlist",
+        "ctaHref": "https://deco.chat/login",
+        "navigation": {
+          "links": [
+            {
+              "label": "Performance",
+              "url": "/performance"
+            },
+            {
+              "label": "Culture",
+              "url": "/culture"
+            },
+            {
+              "label": "Customization",
+              "url": "/customization"
+            }
+          ],
+          "buttons": []
+        },
+        "logo": "https://assets.decocache.com/decochatweb/3c2191cc-632d-43dd-b27d-f93729503449/logo-decocx.svg"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/DecoCXHero.tsx",
+        "title": "Vibecode high-performance storefronts",
+        "subtitle": "Create shopping experiences by chatting with AI",
+        "inputPlaceholder": "Enter your email",
+        "buttonText": "Join the waitlist",
+        "heroImage": "https://assets.decocache.com/decochatweb/ed349b6c-9542-4938-b45f-1f7527adb8a2/imagem-hero-decocx2.png"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/DecoCXLogos.tsx",
+        "title": "Leading companies already use deco.cx",
+        "logos": [
+          {
+            "src": "https://assets.decocache.com/decochatweb/428648e9-a59b-49d4-ae1b-58715bf099d9/BAW.png"
+          },
+          {
+            "src": "https://assets.decocache.com/decochatweb/511514b4-b33e-4f52-9d1a-7ed6e73277cb/ZeeDog.png"
+          },
+          {
+            "src": "https://assets.decocache.com/decochatweb/82f16ca6-9fd5-4431-a242-c235e0a94c71/osklen.png"
+          },
+          {
+            "src": "https://assets.decocache.com/decochatweb/c75b8f76-4810-4294-8517-685360e15116/cvlb.png"
+          },
+          {
+            "src": "https://assets.decocache.com/decochatweb/15dcc782-301b-4db3-b15c-69564dcf7c11/Torra.png"
+          },
+          {
+            "src": "https://assets.decocache.com/decochatweb/63b91616-97a8-4ed9-924c-d4e7177f735c/Miess.png"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/DecoCXFeatures.tsx",
+        "title": "AI Builder optimized for e-commerce",
+        "description": "Artificial intelligence that understands the needs of your business and creates optimized shopping experiences.",
+        "featureCards": [
+          {
+            "mediaType": "image",
+            "size": "small",
+            "title": "Brand consistency",
+            "description": "Unified design system that maintains its visual identity across all pages.",
+            "showDescription": true,
+            "category": "DESIGN",
+            "image": "https://assets.decocache.com/decochatweb/38d8fefe-53af-4dff-9dee-88d72ecee26a/brand.png"
+          },
+          {
+            "mediaType": "image",
+            "size": "small",
+            "title": "Storefront components",
+            "description": "Pre-designed blocks optimized for conversion and boosting the shopping experience.",
+            "showDescription": true,
+            "category": "BLOCKS",
+            "image": "https://assets.decocache.com/decochatweb/30119099-fcc6-4c1a-b778-7270681e7f05/blocks.png"
+          },
+          {
+            "mediaType": "image",
+            "size": "small",
+            "title": "Fast loading & performance",
+            "description": "Improved performance for an improved user experience and better SEO",
+            "showDescription": true,
+            "category": "PERFORMANCE",
+            "image": "https://assets.decocache.com/decochatweb/12f14060-e2b3-470a-bdf0-0ea80e39c5b5/performance.png"
+          }
+        ],
+        "icon": "https://assets.decocache.com/decochatweb/315a119f-dfcc-46a1-a2a0-f9ee7ac54565/decologoblack.svg"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/DecoCxConnections.tsx",
+        "title": "Connect to any platform with one click",
+        "description": "No code. No friction.",
+        "connectionIcons": [
+          {
+            "title": "VTEX",
+            "icon": "https://assets.decocache.com/decochatweb/dbc7cc68-f06f-48a1-ba3c-1bdc9ce806de/vtex.png"
+          },
+          {
+            "title": "Shopify",
+            "icon": "https://assets.decocache.com/decochatweb/02e555d5-ab45-4cae-bbea-7431ecc8264b/shopify.png"
+          },
+          {
+            "title": "WooCommerce",
+            "icon": "https://assets.decocache.com/decochatweb/dfe42de9-8051-4889-93b7-48c14bbf9cf8/Woo.png"
+          },
+          {
+            "icon": "https://assets.decocache.com/decochatweb/a781ea0e-f9b4-494a-83d6-34b72c088cc9/magento.png",
+            "title": "Magento"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/deco-cx/DarkModeCTA.tsx",
+        "title": "Be one of the first to use it!",
+        "description": "Join the waiting list to gain early access to the platform that will transform how you create storefronts.",
+        "emailPlaceholder": "Enter your email",
+        "buttonText": "Join the waitlist",
+        "actionUrl": "sdfsdf"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/deco-cx/DarkModeFooter.tsx",
+        "columns": [
+          {
+            "links": [
+              {
+                "text": "AI Agents",
+                "disabled": true
+              },
+              {
+                "text": "Enterprise",
+                "disabled": true
+              },
+              {
+                "text": "Agencies",
+                "disabled": true
+              },
+              {
+                "text": "AI Chatbots",
+                "disabled": true
+              },
+              {
+                "text": "Internal Tools",
+                "disabled": true
+              },
+              {
+                "text": "Whitelabel",
+                "disabled": true
+              }
+            ],
+            "title": "Solutions"
+          },
+          {
+            "links": [
+              {
+                "text": "Pricing",
+                "disabled": true
+              },
+              {
+                "text": "Documentation",
+                "disabled": true
+              },
+              {
+                "text": "Tutorials",
+                "disabled": true
+              },
+              {
+                "text": "Status Page",
+                "disabled": true
+              },
+              {
+                "text": "Changelog",
+                "disabled": true
+              }
+            ],
+            "title": "Support"
+          },
+          {
+            "links": [
+              {
+                "text": "About",
+                "disabled": true
+              },
+              {
+                "text": "Blog",
+                "disabled": false,
+                "url": "/blog"
+              },
+              {
+                "disabled": true,
+                "text": "Security"
+              }
+            ],
+            "title": "Company"
+          },
+          {
+            "links": [
+              {
+                "text": "Privacy",
+                "disabled": false,
+                "url": "/privacy-policy"
+              },
+              {
+                "text": "Terms",
+                "disabled": false,
+                "url": "/terms-of-use"
+              }
+            ],
+            "title": "Legal"
+          },
+          {
+            "links": [
+              {
+                "text": "LinkedIn",
+                "disabled": false,
+                "url": "https://www.linkedin.com/company/getdeco/"
+              },
+              {
+                "text": "Instagram",
+                "disabled": false,
+                "url": "https://www.instagram.com/deco.chat/"
+              }
+            ],
+            "title": "Social"
+          }
+        ],
+        "logo": "https://assets.decocache.com/decochatweb/67250988-1f63-4aa2-8e71-9cdd8fc70a18/image-893.png"
+      }
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "type": "website",
+    "title": "VibeCode - AI-Powered High-Performance Storefronts",
+    "description": "Create shopping experiences by chatting with AI. Build high-performance e-commerce storefronts with brand consistency, optimized components, and fast loading times.",
+    "canonical": "https://deco.cx/vibecode",
+    "image": "https://assets.decocache.com/decochatweb/812b2e2b-a579-48f3-9dae-f301158ccb95/decochatproduto.png"
+  },
+  "name": "Deco CX",
+  "path": "/deco"
+}

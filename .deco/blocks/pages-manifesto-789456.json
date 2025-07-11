@@ -1,0 +1,35 @@
+{
+  "name": "Manifesto",
+  "path": "/manifesto",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/Manifesto.tsx",
+      "title": "VIBECODE THE AUTONOMOUS FUTURE",
+      "subtitle": "Vibecode your agentic workforce.",
+      "tagline": "Instant value · Integrated control · Infinite extensibility",
+      "content": "<p>Software should serve ambition, not stall it. Yet building AI‑powered tools still feels gated by DevOps rituals, fragmented stacks and opaque costs. Businesses cross the 100‑person mark and hit a wall of backlog and bottlenecks. Non‑technical doers wait in ticket queues; developers fight YAML. It's 2025—this is theft of human momentum.</p>\n\n<p>Anyone should be able to declare work and watch software materialise, safe, observable and affordable. We believe the next era is not <em>low‑code</em>; it's actually <strong>vibecoding</strong>—expressing intent in plain language while trusted agents wire the rest.</p>\n\n<p>Deco is the open‑source operating system for autonomous companies. We mesh every tool, model and dataset into secure, observable MCPs, then let builders compose <strong>Agents, Workflows & Views</strong> in chat—no code, no ops. One click spins up logs, billing and guardrails; one line drops into code when you want to go wild.</p>",
+      "promises": [
+        "Instant value — launch a ready‑to‑use AI solution in under 30 seconds.",
+        "Integrated control — see every token, cost and decision in real time.",
+        "Infinite extensibility — fork the repo, plug any MCP, contribute to the marketplace."
+      ],
+      "finalMessage": "Whether you're a scrappy PM automating a workflow or a staff engineer seeking canvas‑wide leverage: jump in, vibecode an agent, and push humanity forward. Help us prove that autonomy isn't a luxury feature—it's the default state of work.",
+      "cta": "State the work—watch it happen."
+    },
+    {
+      "__resolveType": "Footer"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Manifesto - Vibecode the Autonomous Future | deco.chat",
+    "description": "Software should serve ambition, not stall it. Vibecode your agentic workforce with instant value, integrated control and infinite extensibility.",
+    "canonical": "https://deco.chat/manifesto",
+    "themeColor": "#d0ec1a",
+    "favicon": "https://deco.chat/favicon.ico"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+} 

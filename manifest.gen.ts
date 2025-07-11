@@ -8,88 +8,120 @@ import * as $$$$$$$$$$$2 from "./apps/site.ts";
 import * as $$$$$$0 from "./sections/BlogCategories.tsx";
 import * as $$$$$$1 from "./sections/BlogPost.tsx";
 import * as $$$$$$2 from "./sections/BlogPosts.tsx";
-import * as $$$$$$19 from "./sections/deprecated/ChatSupport.tsx";
-import * as $$$$$$20 from "./sections/deprecated/Communications.tsx";
-import * as $$$$$$18 from "./sections/deprecated/CTASection.tsx";
-import * as $$$$$$21 from "./sections/deprecated/Faq.tsx";
-import * as $$$$$$22 from "./sections/deprecated/FeaturesBento.tsx";
-import * as $$$$$$23 from "./sections/deprecated/Hero.tsx";
-import * as $$$$$$24 from "./sections/deprecated/IconDemo.tsx";
-import * as $$$$$$25 from "./sections/deprecated/ImageWithParagraph.tsx";
-import * as $$$$$$26 from "./sections/deprecated/Integrations.tsx";
-import * as $$$$$$27 from "./sections/deprecated/Logos.tsx";
-import * as $$$$$$28 from "./sections/deprecated/Pricing.tsx";
-import * as $$$$$$29 from "./sections/deprecated/PrivacySecurity.tsx";
-import * as $$$$$$30 from "./sections/deprecated/Statement.tsx";
-import * as $$$$$$31 from "./sections/deprecated/Testimonials.tsx";
-import * as $$$$$$32 from "./sections/deprecated/UseCases.tsx";
-import * as $$$$$$33 from "./sections/deprecated/Whitelabel.tsx";
-import * as $$$$$$3 from "./sections/Footer.tsx";
-import * as $$$$$$4 from "./sections/HackathonAbout.tsx";
-import * as $$$$$$5 from "./sections/HackathonBenefits.tsx";
-import * as $$$$$$6 from "./sections/HackathonChallenges.tsx";
-import * as $$$$$$7 from "./sections/HackathonFaq.tsx";
-import * as $$$$$$8 from "./sections/HackathonHero.tsx";
-import * as $$$$$$9 from "./sections/HackathonPartners.tsx";
-import * as $$$$$$10 from "./sections/HackathonProcess.tsx";
-import * as $$$$$$11 from "./sections/HackathonRegistration.tsx";
-import * as $$$$$$12 from "./sections/Header.tsx";
-import * as $$$$$$13 from "./sections/MainPost.tsx";
-import * as $$$$$$34 from "./sections/new-home/NewHomeCTA.tsx";
-import * as $$$$$$35 from "./sections/new-home/NewHomeFeatures.tsx";
-import * as $$$$$$36 from "./sections/new-home/NewHomeHero.tsx";
-import * as $$$$$$37 from "./sections/new-home/NewHomeHow.tsx";
-import * as $$$$$$38 from "./sections/new-home/NewHomeMCPTemplates.tsx";
-import * as $$$$$$39 from "./sections/new-home/NewHomeUseCases.tsx";
-import * as $$$$$$40 from "./sections/new-home/NewHomeWhatsAppCommunity.tsx";
-import * as $$$$$$14 from "./sections/PrivacyPolicy.tsx";
-import * as $$$$$$15 from "./sections/RelatedBlogPosts.tsx";
-import * as $$$$$$16 from "./sections/TermsAndConditions.tsx";
-import * as $$$$$$17 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$31 from "./sections/deco-cx/DarkModeCTA.tsx";
+import * as $$$$$$32 from "./sections/deco-cx/DarkModeFooter.tsx";
+import * as $$$$$$33 from "./sections/deco-cx/DarkModeHeader.tsx";
+import * as $$$$$$6 from "./sections/DecoCxConnections.tsx";
+import * as $$$$$$3 from "./sections/DecoCXFeatures.tsx";
+import * as $$$$$$4 from "./sections/DecoCXHero.tsx";
+import * as $$$$$$5 from "./sections/DecoCXLogos.tsx";
+import * as $$$$$$35 from "./sections/deprecated/ChatSupport.tsx";
+import * as $$$$$$36 from "./sections/deprecated/Communications.tsx";
+import * as $$$$$$34 from "./sections/deprecated/CTASection.tsx";
+import * as $$$$$$37 from "./sections/deprecated/Faq.tsx";
+import * as $$$$$$38 from "./sections/deprecated/FeaturesBento.tsx";
+import * as $$$$$$39 from "./sections/deprecated/Hero.tsx";
+import * as $$$$$$40 from "./sections/deprecated/IconDemo.tsx";
+import * as $$$$$$41 from "./sections/deprecated/ImageWithParagraph.tsx";
+import * as $$$$$$42 from "./sections/deprecated/Integrations.tsx";
+import * as $$$$$$43 from "./sections/deprecated/Logos.tsx";
+import * as $$$$$$44 from "./sections/deprecated/Pricing.tsx";
+import * as $$$$$$45 from "./sections/deprecated/PrivacySecurity.tsx";
+import * as $$$$$$46 from "./sections/deprecated/Statement.tsx";
+import * as $$$$$$47 from "./sections/deprecated/Testimonials.tsx";
+import * as $$$$$$48 from "./sections/deprecated/UseCases.tsx";
+import * as $$$$$$49 from "./sections/deprecated/Whitelabel.tsx";
+import * as $$$$$$7 from "./sections/Footer.tsx";
+import * as $$$$$$8 from "./sections/HackathonAbout.tsx";
+import * as $$$$$$9 from "./sections/HackathonBenefits.tsx";
+import * as $$$$$$10 from "./sections/HackathonChallenges.tsx";
+import * as $$$$$$11 from "./sections/HackathonFaq.tsx";
+import * as $$$$$$12 from "./sections/HackathonHero.tsx";
+import * as $$$$$$13 from "./sections/HackathonPartners.tsx";
+import * as $$$$$$14 from "./sections/HackathonProcess.tsx";
+import * as $$$$$$15 from "./sections/HackathonRegistration.tsx";
+import * as $$$$$$16 from "./sections/Header.tsx";
+import * as $$$$$$17 from "./sections/MainPost.tsx";
+import * as $$$$$$18 from "./sections/Manifesto.tsx";
+import * as $$$$$$50 from "./sections/new-home/NewHomeCTA.tsx";
+import * as $$$$$$51 from "./sections/new-home/NewHomeFeatures.tsx";
+import * as $$$$$$52 from "./sections/new-home/NewHomeHero.tsx";
+import * as $$$$$$53 from "./sections/new-home/NewHomeHow.tsx";
+import * as $$$$$$54 from "./sections/new-home/NewHomeMCPTemplates.tsx";
+import * as $$$$$$55 from "./sections/new-home/NewHomeUseCases.tsx";
+import * as $$$$$$56 from "./sections/new-home/NewHomeWhatsAppCommunity.tsx";
+import * as $$$$$$19 from "./sections/PrivacyPolicy.tsx";
+import * as $$$$$$20 from "./sections/RelatedBlogPosts.tsx";
+import * as $$$$$$21 from "./sections/TermsAndConditions.tsx";
+import * as $$$$$$22 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$23 from "./sections/VibeCodeCTA.tsx";
+import * as $$$$$$24 from "./sections/VibeCodeFAQ.tsx";
+import * as $$$$$$25 from "./sections/VibeCodeFeatures.tsx";
+import * as $$$$$$26 from "./sections/VibeCodeFooter.tsx";
+import * as $$$$$$27 from "./sections/VibeCodeHeader.tsx";
+import * as $$$$$$28 from "./sections/VibeCodeHero.tsx";
+import * as $$$$$$29 from "./sections/VibeCodeIntegrations.tsx";
+import * as $$$$$$30 from "./sections/VibeCodeLogos.tsx";
 
 const manifest = {
   "sections": {
     "site/sections/BlogCategories.tsx": $$$$$$0,
     "site/sections/BlogPost.tsx": $$$$$$1,
     "site/sections/BlogPosts.tsx": $$$$$$2,
-    "site/sections/deprecated/ChatSupport.tsx": $$$$$$19,
-    "site/sections/deprecated/Communications.tsx": $$$$$$20,
-    "site/sections/deprecated/CTASection.tsx": $$$$$$18,
-    "site/sections/deprecated/Faq.tsx": $$$$$$21,
-    "site/sections/deprecated/FeaturesBento.tsx": $$$$$$22,
-    "site/sections/deprecated/Hero.tsx": $$$$$$23,
-    "site/sections/deprecated/IconDemo.tsx": $$$$$$24,
-    "site/sections/deprecated/ImageWithParagraph.tsx": $$$$$$25,
-    "site/sections/deprecated/Integrations.tsx": $$$$$$26,
-    "site/sections/deprecated/Logos.tsx": $$$$$$27,
-    "site/sections/deprecated/Pricing.tsx": $$$$$$28,
-    "site/sections/deprecated/PrivacySecurity.tsx": $$$$$$29,
-    "site/sections/deprecated/Statement.tsx": $$$$$$30,
-    "site/sections/deprecated/Testimonials.tsx": $$$$$$31,
-    "site/sections/deprecated/UseCases.tsx": $$$$$$32,
-    "site/sections/deprecated/Whitelabel.tsx": $$$$$$33,
-    "site/sections/Footer.tsx": $$$$$$3,
-    "site/sections/HackathonAbout.tsx": $$$$$$4,
-    "site/sections/HackathonBenefits.tsx": $$$$$$5,
-    "site/sections/HackathonChallenges.tsx": $$$$$$6,
-    "site/sections/HackathonFaq.tsx": $$$$$$7,
-    "site/sections/HackathonHero.tsx": $$$$$$8,
-    "site/sections/HackathonPartners.tsx": $$$$$$9,
-    "site/sections/HackathonProcess.tsx": $$$$$$10,
-    "site/sections/HackathonRegistration.tsx": $$$$$$11,
-    "site/sections/Header.tsx": $$$$$$12,
-    "site/sections/MainPost.tsx": $$$$$$13,
-    "site/sections/new-home/NewHomeCTA.tsx": $$$$$$34,
-    "site/sections/new-home/NewHomeFeatures.tsx": $$$$$$35,
-    "site/sections/new-home/NewHomeHero.tsx": $$$$$$36,
-    "site/sections/new-home/NewHomeHow.tsx": $$$$$$37,
-    "site/sections/new-home/NewHomeMCPTemplates.tsx": $$$$$$38,
-    "site/sections/new-home/NewHomeUseCases.tsx": $$$$$$39,
-    "site/sections/new-home/NewHomeWhatsAppCommunity.tsx": $$$$$$40,
-    "site/sections/PrivacyPolicy.tsx": $$$$$$14,
-    "site/sections/RelatedBlogPosts.tsx": $$$$$$15,
-    "site/sections/TermsAndConditions.tsx": $$$$$$16,
-    "site/sections/Theme/Theme.tsx": $$$$$$17,
+    "site/sections/deco-cx/DarkModeCTA.tsx": $$$$$$31,
+    "site/sections/deco-cx/DarkModeFooter.tsx": $$$$$$32,
+    "site/sections/deco-cx/DarkModeHeader.tsx": $$$$$$33,
+    "site/sections/DecoCxConnections.tsx": $$$$$$6,
+    "site/sections/DecoCXFeatures.tsx": $$$$$$3,
+    "site/sections/DecoCXHero.tsx": $$$$$$4,
+    "site/sections/DecoCXLogos.tsx": $$$$$$5,
+    "site/sections/deprecated/ChatSupport.tsx": $$$$$$35,
+    "site/sections/deprecated/Communications.tsx": $$$$$$36,
+    "site/sections/deprecated/CTASection.tsx": $$$$$$34,
+    "site/sections/deprecated/Faq.tsx": $$$$$$37,
+    "site/sections/deprecated/FeaturesBento.tsx": $$$$$$38,
+    "site/sections/deprecated/Hero.tsx": $$$$$$39,
+    "site/sections/deprecated/IconDemo.tsx": $$$$$$40,
+    "site/sections/deprecated/ImageWithParagraph.tsx": $$$$$$41,
+    "site/sections/deprecated/Integrations.tsx": $$$$$$42,
+    "site/sections/deprecated/Logos.tsx": $$$$$$43,
+    "site/sections/deprecated/Pricing.tsx": $$$$$$44,
+    "site/sections/deprecated/PrivacySecurity.tsx": $$$$$$45,
+    "site/sections/deprecated/Statement.tsx": $$$$$$46,
+    "site/sections/deprecated/Testimonials.tsx": $$$$$$47,
+    "site/sections/deprecated/UseCases.tsx": $$$$$$48,
+    "site/sections/deprecated/Whitelabel.tsx": $$$$$$49,
+    "site/sections/Footer.tsx": $$$$$$7,
+    "site/sections/HackathonAbout.tsx": $$$$$$8,
+    "site/sections/HackathonBenefits.tsx": $$$$$$9,
+    "site/sections/HackathonChallenges.tsx": $$$$$$10,
+    "site/sections/HackathonFaq.tsx": $$$$$$11,
+    "site/sections/HackathonHero.tsx": $$$$$$12,
+    "site/sections/HackathonPartners.tsx": $$$$$$13,
+    "site/sections/HackathonProcess.tsx": $$$$$$14,
+    "site/sections/HackathonRegistration.tsx": $$$$$$15,
+    "site/sections/Header.tsx": $$$$$$16,
+    "site/sections/MainPost.tsx": $$$$$$17,
+    "site/sections/Manifesto.tsx": $$$$$$18,
+    "site/sections/new-home/NewHomeCTA.tsx": $$$$$$50,
+    "site/sections/new-home/NewHomeFeatures.tsx": $$$$$$51,
+    "site/sections/new-home/NewHomeHero.tsx": $$$$$$52,
+    "site/sections/new-home/NewHomeHow.tsx": $$$$$$53,
+    "site/sections/new-home/NewHomeMCPTemplates.tsx": $$$$$$54,
+    "site/sections/new-home/NewHomeUseCases.tsx": $$$$$$55,
+    "site/sections/new-home/NewHomeWhatsAppCommunity.tsx": $$$$$$56,
+    "site/sections/PrivacyPolicy.tsx": $$$$$$19,
+    "site/sections/RelatedBlogPosts.tsx": $$$$$$20,
+    "site/sections/TermsAndConditions.tsx": $$$$$$21,
+    "site/sections/Theme/Theme.tsx": $$$$$$22,
+    "site/sections/VibeCodeCTA.tsx": $$$$$$23,
+    "site/sections/VibeCodeFAQ.tsx": $$$$$$24,
+    "site/sections/VibeCodeFeatures.tsx": $$$$$$25,
+    "site/sections/VibeCodeFooter.tsx": $$$$$$26,
+    "site/sections/VibeCodeHeader.tsx": $$$$$$27,
+    "site/sections/VibeCodeHero.tsx": $$$$$$28,
+    "site/sections/VibeCodeIntegrations.tsx": $$$$$$29,
+    "site/sections/VibeCodeLogos.tsx": $$$$$$30,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,
