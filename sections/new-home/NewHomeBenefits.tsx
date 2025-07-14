@@ -75,7 +75,7 @@ export default function NewHomeBenefits({
       <div class="w-full max-w-[1440px] mx-auto flex flex-col gap-14">
         {/* Header */}
         <div class="w-full flex flex-col items-center gap-6">
-          <h2 class="text-center text-dc-800 text-3xl md:text-5xl lg:text-6xl font-medium leading-tight max-w-4xl">
+          <h2 class="text-center text-dc-800 text-3xl md:text-5xl lg:text-6xl font-medium leading-tight max-w-4xl whitespace-pre-line">
             {title}
           </h2>
           <p class="text-center text-dc-500 text-base md:text-lg leading-relaxed max-w-3xl">

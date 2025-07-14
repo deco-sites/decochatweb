@@ -9,9 +9,9 @@
       "__resolveType": "site/sections/new-home/NewHomeHero.tsx",
       "announcementText": "Vibecode high-performance storefronts: deco.cx",
       "announcementHref": "https://deco.cx",
-      "title": "Vibecode your\nAgentic Workforce",
-      "italicSubtitle": "Full-typescript, no Python allowed",
-      "subtitle": "Build and launch agents, set up workflows, and connect to any tool. Become the kind of engineer everyone's looking for.",
+      "title": "Vibecode Agentic Workforces",
+      "italicSubtitle": "Full-typescript, no Python allowed ;)",
+      "subtitle": "The opensource platform to build and monetize apps, agents and workflows on top of MCPs.",
       "primaryButtonText": "Try for free",
       "primaryButtonHref": "https://deco.chat/login",
       "cliCommand": "deno -A jsr:@deco/cli create",
@@ -99,8 +99,8 @@
     },
     {
       "__resolveType": "site/sections/new-home/NewHomeBenefits.tsx",
-      "title": "Built for the future of work",
-      "description": "Everything you need to build, deploy, and manage your agentic workforce in one unified platform.",
+      "title": "Your first and last\nagentic engine",
+      "description": "Everything you need to build, deploy, and manage your agentic workforce with governance, logs, FinOps, audit trail—all baked in.",
       "mainBenefits": [
         {
           "avatar": "https://assets.decocache.com/decochatweb/a4a28b55-d864-45aa-8ea9-4489feb156a1/unifiedplatform.svg",
