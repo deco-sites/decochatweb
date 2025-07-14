@@ -98,38 +98,35 @@
       "decorativeImage": "https://assets.decocache.com/decochatweb/de91ed96-cd52-445b-a3cf-a8b583ba2d61/handglobe.svg"
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/new-home/NewHomeBenefits.tsx",
-        "title": "Built for the future of work",
-        "description": "Everything you need to build, deploy, and manage your agentic workforce in one unified platform.",
-        "mainBenefits": [
-          {
-            "avatar": "https://assets.decocache.com/decochatweb/a4a28b55-d864-45aa-8ea9-4489feb156a1/unifiedplatform.svg",
-            "title": "Unified MCP Provider",
-            "description": "Build, test, and manage MCPs right from your browser, connecting your agents and workflows securely and with full control to any system or service you want.",
-            "mediaType": "image",
-            "mainImage": "https://assets.decocache.com/decochatweb/9669ceb2-8338-4ed7-a5b0-7e7cb726fb9c/unified-mcp.png",
-            "imagePosition": "left"
-          },
-          {
-            "avatar": "https://assets.decocache.com/decochatweb/cecc58d3-8f13-4089-a418-971039a4c077/wallet.svg",
-            "title": "Easy to consume LLM",
-            "description": "Use language models easily and only pay for what you use. Just add your balance and start building—no complicated billing or surprises.",
-            "mediaType": "image",
-            "mainImage": "https://assets.decocache.com/decochatweb/7265af8d-be51-4793-b5bb-0bf1d96cf4fd/wallet.png",
-            "imagePosition": "right"
-          },
-          {
-            "avatar": "https://assets.decocache.com/decochatweb/d647d9f9-d86a-4d89-9c88-3b5fc5e7ff35/marketplace.svg",
-            "title": "Easy to sell MCP Apps",
-            "description": "List your apps, set your price, and get paid directly from users' wallets. You build, you earn, it's that simple.",
-            "mediaType": "image",
-            "mainImage": "https://assets.decocache.com/decochatweb/8660306e-53b9-4baf-936e-0e68f351112c/marketplace.png",
-            "imagePosition": "left"
-          }
-        ]
-      }
+      "__resolveType": "site/sections/new-home/NewHomeBenefits.tsx",
+      "title": "Built for the future of work",
+      "description": "Everything you need to build, deploy, and manage your agentic workforce in one unified platform.",
+      "mainBenefits": [
+        {
+          "avatar": "https://assets.decocache.com/decochatweb/a4a28b55-d864-45aa-8ea9-4489feb156a1/unifiedplatform.svg",
+          "title": "Unified MCP Provider",
+          "description": "Build, test, and manage MCPs right from your browser, connecting your agents and workflows securely and with full control to any system or service you want.",
+          "mediaType": "image",
+          "mainImage": "https://assets.decocache.com/decochatweb/9669ceb2-8338-4ed7-a5b0-7e7cb726fb9c/unified-mcp.png",
+          "imagePosition": "left"
+        },
+        {
+          "avatar": "https://assets.decocache.com/decochatweb/cecc58d3-8f13-4089-a418-971039a4c077/wallet.svg",
+          "title": "Easy to consume LLM",
+          "description": "Use language models easily and only pay for what you use. Just add your balance and start building—no complicated billing or surprises.",
+          "mediaType": "image",
+          "mainImage": "https://assets.decocache.com/decochatweb/7265af8d-be51-4793-b5bb-0bf1d96cf4fd/wallet.png",
+          "imagePosition": "right"
+        },
+        {
+          "avatar": "https://assets.decocache.com/decochatweb/d647d9f9-d86a-4d89-9c88-3b5fc5e7ff35/marketplace.svg",
+          "title": "Easy to sell MCP Apps",
+          "description": "List your apps, set your price, and get paid directly from users' wallets. You build, you earn, it's that simple.",
+          "mediaType": "image",
+          "mainImage": "https://assets.decocache.com/decochatweb/8660306e-53b9-4baf-936e-0e68f351112c/marketplace.png",
+          "imagePosition": "left"
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/new-home/NewHomeFeatures.tsx",
