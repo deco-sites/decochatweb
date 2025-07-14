@@ -7,6 +7,7 @@ export default {
   safelist: [
     // Font classes
     "font-main",
+    "font-instrument-serif",
 
     // Animation classes
     "animate-spin",

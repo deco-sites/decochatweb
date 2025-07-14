@@ -106,7 +106,7 @@ export default function NewHomeFeatures({
             )}
 
             {/* Title */}
-            <h2 class="text-center text-dc-200 text-3xl md:text-5xl lg:text-6xl font-medium leading-tight max-w-4xl">
+            <h2 class="text-center text-dc-200 text-3xl md:text-5xl lg:text-6xl font-medium leading-tight max-w-4xl whitespace-pre-line">
               {title}
             </h2>
 
@@ -258,7 +258,7 @@ function FeatureCardComponent({
   return (
     <div
       class={`relative bg-dc-800 rounded-2xl overflow-hidden feature-card transition-all duration-300 flex flex-col ${
-        isWide ? "h-[600px]" : "h-[500px]"
+        isWide ? "md:h-[600px]" : "md:h-[500px]"
       }`}
     >
       {/* Content - at top, flexible height */}
@@ -283,8 +283,8 @@ function FeatureCardComponent({
         )}
       </div>
 
-      {/* Spacer to push media to bottom */}
-      <div class="flex-1"></div>
+      {/* Spacer to push media to bottom - only on desktop */}
+      <div class="hidden md:block flex-1"></div>
 
       {/* Media Container - always at bottom with fixed aspect ratio */}
       <div class="flex-shrink-0 overflow-hidden">

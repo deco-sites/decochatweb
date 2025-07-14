@@ -35,13 +35,14 @@ import * as $$$$$$10 from "./sections/HackathonProcess.tsx";
 import * as $$$$$$11 from "./sections/HackathonRegistration.tsx";
 import * as $$$$$$12 from "./sections/Header.tsx";
 import * as $$$$$$13 from "./sections/MainPost.tsx";
-import * as $$$$$$34 from "./sections/new-home/NewHomeCTA.tsx";
-import * as $$$$$$35 from "./sections/new-home/NewHomeFeatures.tsx";
-import * as $$$$$$36 from "./sections/new-home/NewHomeHero.tsx";
-import * as $$$$$$37 from "./sections/new-home/NewHomeHow.tsx";
-import * as $$$$$$38 from "./sections/new-home/NewHomeMCPTemplates.tsx";
-import * as $$$$$$39 from "./sections/new-home/NewHomeUseCases.tsx";
-import * as $$$$$$40 from "./sections/new-home/NewHomeWhatsAppCommunity.tsx";
+import * as $$$$$$34 from "./sections/new-home/NewHomeBenefits.tsx";
+import * as $$$$$$35 from "./sections/new-home/NewHomeCTA.tsx";
+import * as $$$$$$36 from "./sections/new-home/NewHomeFeatures.tsx";
+import * as $$$$$$37 from "./sections/new-home/NewHomeHero.tsx";
+import * as $$$$$$38 from "./sections/new-home/NewHomeHow.tsx";
+import * as $$$$$$39 from "./sections/new-home/NewHomeMCPTemplates.tsx";
+import * as $$$$$$40 from "./sections/new-home/NewHomeUseCases.tsx";
+import * as $$$$$$41 from "./sections/new-home/NewHomeWhatsAppCommunity.tsx";
 import * as $$$$$$14 from "./sections/PrivacyPolicy.tsx";
 import * as $$$$$$15 from "./sections/RelatedBlogPosts.tsx";
 import * as $$$$$$16 from "./sections/TermsAndConditions.tsx";
@@ -79,13 +80,14 @@ const manifest = {
     "site/sections/HackathonRegistration.tsx": $$$$$$11,
     "site/sections/Header.tsx": $$$$$$12,
     "site/sections/MainPost.tsx": $$$$$$13,
-    "site/sections/new-home/NewHomeCTA.tsx": $$$$$$34,
-    "site/sections/new-home/NewHomeFeatures.tsx": $$$$$$35,
-    "site/sections/new-home/NewHomeHero.tsx": $$$$$$36,
-    "site/sections/new-home/NewHomeHow.tsx": $$$$$$37,
-    "site/sections/new-home/NewHomeMCPTemplates.tsx": $$$$$$38,
-    "site/sections/new-home/NewHomeUseCases.tsx": $$$$$$39,
-    "site/sections/new-home/NewHomeWhatsAppCommunity.tsx": $$$$$$40,
+    "site/sections/new-home/NewHomeBenefits.tsx": $$$$$$34,
+    "site/sections/new-home/NewHomeCTA.tsx": $$$$$$35,
+    "site/sections/new-home/NewHomeFeatures.tsx": $$$$$$36,
+    "site/sections/new-home/NewHomeHero.tsx": $$$$$$37,
+    "site/sections/new-home/NewHomeHow.tsx": $$$$$$38,
+    "site/sections/new-home/NewHomeMCPTemplates.tsx": $$$$$$39,
+    "site/sections/new-home/NewHomeUseCases.tsx": $$$$$$40,
+    "site/sections/new-home/NewHomeWhatsAppCommunity.tsx": $$$$$$41,
     "site/sections/PrivacyPolicy.tsx": $$$$$$14,
     "site/sections/RelatedBlogPosts.tsx": $$$$$$15,
     "site/sections/TermsAndConditions.tsx": $$$$$$16,

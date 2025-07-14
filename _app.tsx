@@ -26,9 +26,21 @@ export const Layout = ({ children, revision, hmrUniqueId }: {
         {/* Adobe Fonts - Helvetica Neue */}
         <link rel="stylesheet" href="https://use.typekit.net/nad8kqx.css" />
 
+        {/* Google Fonts - Instrument Serif */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&display=swap"
+          rel="stylesheet"
+        />
+
         {/* Custom Fonts CSS */}
         <link href="/fonts.css" rel="stylesheet" />
-
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin="anonymous"
+        />
         {/* Material Design Icons - Filled Version */}
         <link
           rel="stylesheet"

@@ -151,3 +151,8 @@
 .font-main {
   font-family: helvetica-neue-lt-pro, 'Helvetica Neue', Helvetica, Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
 } 
+
+/* Instrument Serif Font Class */
+.font-instrument-serif {
+  font-family: 'Instrument Serif', serif;
+}

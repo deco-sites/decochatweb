@@ -246,14 +246,14 @@ export default function NewHomeCTA({
 }
 
 const defaultProps: Props = {
-  title: "Transforme sua empresa em AI First",
+  title: "Join our thriving community of AI builders",
   primaryButton: {
-    text: "Veja nossos agents em ação, agende uma demo agora",
-    url: "#demo",
+    text: "Join our Discord community",
+    url: "https://deco.cx/discord",
   },
   secondaryButton: {
-    text: "Entre em contato",
-    url: "#contact",
+    text: "Get started building",
+    url: "#get-started",
   },
 };
 

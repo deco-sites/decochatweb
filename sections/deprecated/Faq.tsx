@@ -22,37 +22,37 @@ interface Props {
   eyebrow?: string;
   /** @title Título principal */
   /** @description Título principal da seção */
-  title: string;
+  title?: string;
   /** @title Descrição */
   /** @description Descrição da seção */
-  description: string;
+  description?: string;
   /** @title Logo das respostas */
   /** @description Logo que aparece ao lado das respostas do FAQ */
-  answerLogo: ImageWidget;
+  answerLogo?: ImageWidget;
   /** @title Perguntas frequentes */
   /** @description Lista de perguntas e respostas */
-  faqItems: FAQItem[];
+  faqItems?: FAQItem[];
 }
 
 export default function FAQ({
   eyebrow = "FAQ",
-  title,
-  description,
-  answerLogo,
-  faqItems,
+  title = "Frequently Asked Questions",
+  description =
+    "Everything you need to build, run, and scale AI across your organization with control and confidence.",
+  answerLogo = "https://placehold.co/48x48",
+  faqItems = [],
 }: Props) {
   return (
     <div class="w-full bg-dc-50 py-16 md:py-32">
       <div class="w-full max-w-[1440px] mx-auto px-4 md:px-8 flex flex-col justify-start items-center gap-8 md:gap-14">
-        <div class="w-full max-w-[650px] flex flex-col justify-start items-center gap-6 md:gap-10">
-          <FadeUp>
-            <div class="self-stretch flex flex-col justify-start items-center gap-6">
-              <Eyebrow variant="primary-light" iconName="info" text={eyebrow} />
-              <h2 class="text-center text-dc-800 text-3xl md:text-5xl font-semibold font-main leading-normal">
-                {title}
-              </h2>
-            </div>
-          </FadeUp>
+        {/* Header */}
+        <div class="w-full flex flex-col items-center gap-6">
+          <h2 class="text-center text-dc-800 text-3xl md:text-5xl lg:text-6xl font-medium leading-tight max-w-4xl">
+            {title}
+          </h2>
+          <p class="text-center text-dc-500 text-base md:text-lg leading-relaxed max-w-3xl">
+            {description}
+          </p>
         </div>
 
         <FadeUp delay={400}>
@@ -71,7 +71,7 @@ export default function FAQ({
                     </div>
                   </div>
                   <div class="max-w-[500px] p-6 bg-dc-100 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl flex flex-col justify-center items-start">
-                    <div class="self-stretch text-dc-600 text-xl font-medium font-main leading-normal">
+                    <div class="self-stretch text-dc-600 text-base md:text-lg lg:text-xl font-medium font-main leading-normal">
                       {item.question}
                     </div>
                   </div>
@@ -92,7 +92,7 @@ export default function FAQ({
                       />
                     </div>
                     <div class="max-w-[500px] p-6 bg-primary-dark rounded-tl-2xl rounded-tr-2xl rounded-br-2xl flex flex-col justify-center items-start">
-                      <div class="self-stretch text-primary-light text-xl font-medium font-main leading-normal">
+                      <div class="self-stretch text-primary-light text-base md:text-lg lg:text-xl font-medium font-main leading-normal">
                         {item.answer}
                       </div>
                     </div>
@@ -172,7 +172,7 @@ const defaultProps: Props = {
   eyebrow: "FAQ",
   title: "Frequently Asked Questions",
   description:
-    "Everything you need to build, run, and scale AI across your\norganization with control and confidence.",
+    "Everything you need to build, run, and scale AI across your organization with control and confidence.",
   answerLogo: "https://placehold.co/48x48",
   faqItems: [
     {
