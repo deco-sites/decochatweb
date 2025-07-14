@@ -5,8 +5,8 @@
       "section": {
         "__resolveType": "site/sections/deco-cx/DarkModeHeader.tsx",
         "navItems": [],
-        "ctaText": "Join the waitlist",
-        "ctaHref": "https://deco.chat/login",
+        "ctaText": "Save your spot",
+        "ctaHref": "https://deco.day/",
         "navigation": {
           "links": [
             {
@@ -32,10 +32,11 @@
       "section": {
         "__resolveType": "site/sections/DecoCXHero.tsx",
         "title": "Vibecode high-performance storefronts",
-        "subtitle": "Create shopping experiences by chatting with AI",
+        "subtitle": "Create shopping experiences by chatting with AI. Join us August 25 to see what’s next.",
         "inputPlaceholder": "Enter your email",
-        "buttonText": "Join the waitlist",
-        "heroImage": "https://assets.decocache.com/decochatweb/ed349b6c-9542-4938-b45f-1f7527adb8a2/imagem-hero-decocx2.png"
+        "buttonText": "Save your spot",
+        "heroImage": "https://assets.decocache.com/decochatweb/ed349b6c-9542-4938-b45f-1f7527adb8a2/imagem-hero-decocx2.png",
+        "buttonHref": "https://deco.day/"
       }
     },
     {
@@ -134,10 +135,11 @@
       "section": {
         "__resolveType": "site/sections/deco-cx/DarkModeCTA.tsx",
         "title": "Be one of the first to use it!",
-        "description": "Join the waiting list to gain early access to the platform that will transform how you create storefronts.",
+        "description": "Deco’s new chapter starts August 25.",
         "emailPlaceholder": "Enter your email",
-        "buttonText": "Join the waitlist",
-        "actionUrl": "sdfsdf"
+        "actionUrl": "sdfsdf",
+        "buttonText": "Save your spot",
+        "buttonHref": "https://deco.day/"
       }
     },
     {

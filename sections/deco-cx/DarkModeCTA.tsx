@@ -12,28 +12,22 @@ export interface Props {
    */
   description: string;
   /**
-   * @title Placeholder do email
-   * @description Texto placeholder para o input de email
-   */
-  emailPlaceholder: string;
-  /**
    * @title Texto do botão
-   * @description Texto do botão de submit
+   * @description Texto do botão de ação
    */
   buttonText: string;
   /**
-   * @title URL de ação
-   * @description URL para onde o formulário deve ser enviado
+   * @title URL do botão
+   * @description URL para onde o botão deve direcionar
    */
-  actionUrl: string;
+  buttonHref: string;
 }
 
 export default function NewHomeCTA({
   title = defaultProps.title,
   description = defaultProps.description,
-  emailPlaceholder = defaultProps.emailPlaceholder,
   buttonText = defaultProps.buttonText,
-  actionUrl = defaultProps.actionUrl,
+  buttonHref = defaultProps.buttonHref,
 }: Props) {
   const sectionId = `new-home-cta-${Math.random().toString(36).substr(2, 9)}`;
 
@@ -41,11 +35,11 @@ export default function NewHomeCTA({
     <section class="w-full bg-dc-900">
       <div class="relative z-10 pt-20 md:pt-40 px-4 md:px-8 lg:px-16 mb-[-100px]">
         <div class="w-full max-w-[1440px] mx-auto">
-          <div class="bg-primary-light rounded-[20px] md:rounded-[40px] flex flex-col justify-center items-start overflow-hidden relative">
+          <div class="bg-primary-light rounded-[20px] md:rounded-[40px] flex flex-col justify-center items-center overflow-hidden relative">
             {/* Main Content */}
-            <div class="w-full p-8 md:p-12 lg:p-20 flex flex-col lg:flex-row justify-start items-center gap-8 lg:gap-28 relative z-10">
-              {/* Left Content - Title and Description */}
-              <div class="flex-1 flex flex-col justify-start items-start gap-6 lg:gap-10">
+            <div class="w-full p-8 md:p-12 lg:p-20 flex flex-col justify-center items-center gap-8 lg:gap-10 text-center relative z-10">
+              {/* Title and Description */}
+              <div class="flex flex-col justify-center items-center gap-6 lg:gap-8 max-w-4xl">
                 <h2 class="text-primary-dark text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium leading-tight lg:leading-[56px]">
                   {title.split("deco.cx").map((part, index) => (
                     index === 0 ? part : (
@@ -63,30 +57,16 @@ export default function NewHomeCTA({
                 </p>
               </div>
 
-              {/* Right Content - Email Form */}
-              <div class="flex-1 flex flex-col justify-start items-start gap-2 w-full">
-                <form method="POST" action={actionUrl} class="w-full flex flex-col gap-2">
-                  {/* Email Input */}
-                  <div class="w-full p-2 bg-dc-50 rounded-2xl shadow-[0px_3px_7px_0px_rgba(39,37,36,0.12)] shadow-[0px_12px_12px_0px_rgba(39,37,36,0.10)] shadow-[0px_27px_16px_0px_rgba(39,37,36,0.06)] shadow-[0px_49px_19px_0px_rgba(39,37,36,0.02)] shadow-[0px_76px_21px_0px_rgba(39,37,36,0.00)] outline outline-1 outline-offset-[-0.50px] outline-dc-200 flex justify-start items-center">
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder={emailPlaceholder}
-                      required
-                      class="flex-1 px-4 py-2 rounded-full bg-transparent border-none outline-none text-dc-900 text-base placeholder:text-dc-400 placeholder:font-normal font-normal leading-tight"
-                    />
-                  </div>
-
-                  {/* Submit Button */}
-                  <button
-                    type="submit"
-                    class="w-full h-12 px-4 py-2 bg-primary-dark rounded-xl flex justify-center items-center gap-2 hover:bg-primary-dark/90 transition-colors duration-300"
-                  >
-                    <span class="text-primary-light text-base font-medium leading-tight">
-                      {buttonText}
-                    </span>
-                  </button>
-                </form>
+              {/* CTA Button */}
+              <div class="flex justify-center">
+                <a
+                  href={buttonHref}
+                  class="px-8 py-4 bg-primary-dark rounded-xl flex justify-center items-center gap-2 hover:bg-primary-dark/90 transition-colors duration-300"
+                >
+                  <span class="text-primary-light text-base font-medium leading-tight">
+                    {buttonText}
+                  </span>
+                </a>
               </div>
             </div>
 
@@ -250,9 +230,8 @@ export default function NewHomeCTA({
 const defaultProps: Props = {
   title: "Be one of the first to use the new deco.cx",
   description: "Join the waiting list to gain early access to the platform that will transform how you create online stores.",
-  emailPlaceholder: "Enter your email",
   buttonText: "I want early access",
-  actionUrl: "#waitlist",
+  buttonHref: "#waitlist",
 };
 
 export function Preview() {
