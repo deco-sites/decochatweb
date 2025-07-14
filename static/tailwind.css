@@ -7600,8 +7600,14 @@ input.tab:checked + .tab-content,
 .text-right {
   text-align: right;
 }
+.font-instrument-serif {
+  font-family: Instrument Serif, serif;
+}
 .font-main {
   font-family: helvetica-neue-lt-pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.font-manrope {
+  font-family: Manrope, sans-serif;
 }
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;

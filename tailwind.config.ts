@@ -8,6 +8,7 @@ export default {
     // Font classes
     "font-main",
     "font-instrument-serif",
+    "font-manrope",
 
     // Animation classes
     "animate-spin",
@@ -227,6 +228,7 @@ export default {
           "sans-serif",
         ],
         manrope: ["Manrope", "sans-serif"],
+        "instrument-serif": ["Instrument Serif", "serif"],
         sans: [
           "helvetica-neue-lt-pro",
           "Helvetica Neue",
