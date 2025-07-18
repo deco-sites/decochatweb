@@ -29,6 +29,11 @@ interface Props {
    */
   logo: ImageWidget;
   /**
+   * @title Link da Logo
+   * @description URL para onde a logo irá direcionar quando clicada (opcional)
+   */
+  logoHref?: string;
+  /**
    * @title Itens de navegação
    * @description Lista de itens que serão exibidos no menu de navegação
    */
@@ -47,6 +52,7 @@ interface Props {
 
 export default function Header({
   logo = defaultProps.logo,
+  logoHref = defaultProps.logoHref,
   navItems = defaultProps.navItems,
   ctaText = defaultProps.ctaText,
   ctaHref = defaultProps.ctaHref,
@@ -62,13 +68,27 @@ export default function Header({
         >
           {/* Logo */}
           <div class="px-2 flex flex-col justify-start items-start gap-2.5 logo-container lg:opacity-0">
-            <Image
-              src={logo}
-              alt="deco.chat Logo"
-              width={111}
-              height={24}
-              class="w-28 h-6"
-            />
+            {logoHref
+              ? (
+                <a href={logoHref} class="block">
+                  <Image
+                    src={logo}
+                    alt="deco.chat Logo"
+                    width={111}
+                    height={24}
+                    class="w-28 h-6"
+                  />
+                </a>
+              )
+              : (
+                <Image
+                  src={logo}
+                  alt="deco.chat Logo"
+                  width={111}
+                  height={24}
+                  class="w-28 h-6"
+                />
+              )}
           </div>
 
           {/* Desktop Navigation */}
@@ -303,6 +323,7 @@ export default function Header({
 
 const defaultProps: Props = {
   logo: "https://placehold.co/111x24/D0EC1A/07401A?text=deco.chat",
+  logoHref: "/",
   navItems: [
     {
       label: "Blog",

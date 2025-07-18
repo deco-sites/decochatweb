@@ -23,8 +23,9 @@
       "href": "/blog"
     },
     {
-      "label": "Use Cases",
-      "disabled": true
+      "label": "Pricing",
+      "disabled": false,
+      "href": "/pricing"
     },
     {
       "label": "Integrations",
