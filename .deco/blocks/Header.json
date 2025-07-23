@@ -24,7 +24,7 @@
     },
     {
       "label": "Pricing",
-      "disabled": false,
+      "disabled": true,
       "href": "/pricing"
     },
     {
