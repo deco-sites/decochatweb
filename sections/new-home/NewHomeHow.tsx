@@ -41,6 +41,21 @@ interface FeatureCard {
    * @description Texto que será copiado quando o botão CLI for clicado
    */
   cliCopyText?: string;
+  /**
+   * @title Parte 1 do comando CLI
+   * @description Primeira parte do comando (ex: "deno -A jsr:@")
+   */
+  cliCommandPart1?: string;
+  /**
+   * @title Parte 2 do comando CLI
+   * @description Segunda parte do comando (ex: "deco")
+   */
+  cliCommandPart2?: string;
+  /**
+   * @title Parte 3 do comando CLI
+   * @description Terceira parte do comando (ex: "/cli create")
+   */
+  cliCommandPart3?: string;
 }
 
 interface Props {
@@ -288,9 +303,9 @@ function FeatureCardComponent({
             style={{ minWidth: "fit-content" }}
           >
             <div class="text-dc-200 text-sm md:text-base font-normal font-mono leading-normal whitespace-nowrap">
-              <span class="text-dc-200">deno -A jsr:@</span>
-              <span class="text-primary-light">deco</span>
-              <span class="text-dc-200">/cli create</span>
+              <span class="text-dc-200">{card.cliCommandPart1 || "deno -A jsr:@"}</span>
+              <span class="text-primary-light">{card.cliCommandPart2 || "deco"}</span>
+              <span class="text-dc-200">{card.cliCommandPart3 || "/cli create"}</span>
             </div>
             <div class="copy-feedback text-dc-600 text-xs md:text-sm font-normal font-mono leading-normal whitespace-nowrap hidden">
               copied!
@@ -327,6 +342,9 @@ const defaultProps: Props = {
       hasCliCommand: true,
       cliCommand: "deno -A jsr:@deco/cli create",
       cliCopyText: "deno -A jsr:@deco/cli create",
+      cliCommandPart1: "deno -A jsr:@",
+      cliCommandPart2: "deco",
+      cliCommandPart3: "/cli create",
     },
   ],
   decorativeImage: "https://via.placeholder.com/671x924?text=Decorative+SVG",
