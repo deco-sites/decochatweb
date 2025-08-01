@@ -91,8 +91,8 @@
           "description": "Forget the complicated setup. Get up and running in minutes, and spend your time actually building.",
           "image": "https://assets.decocache.com/decochatweb/a8e20d72-6fd2-4ef2-9cce-418ca883206b/decocli.svg",
           "hasCliCommand": true,
-          "cliCommand": "deno -A jsr:@deco/cli create",
-          "cliCopyText": "deno -A jsr:@deco/cli create"
+          "cliCommand": "npm i -g deco-cli",
+          "cliCopyText": "npm i -g deco-cli"
         }
       ],
       "decorativeImage": "https://assets.decocache.com/decochatweb/de91ed96-cd52-445b-a3cf-a8b583ba2d61/handglobe.svg"
