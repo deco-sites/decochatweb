@@ -69,9 +69,9 @@
       "unifiedPlatformTitle": "Unified MCP Platform",
       "unifiedPlatformDescription": "Centralize integrations, monitor and control, cost and logs",
       "unifiedPlatformIcon": "https://assets.decocache.com/decochatweb/a4a28b55-d864-45aa-8ea9-4489feb156a1/unifiedplatform.svg",
-      "secondaryButtonText": "deno -A jsr:@deco/cli create",
+      "secondaryButtonText": "npm i -g deco-cli",
       "secondaryButtonType": "copy",
-      "secondaryButtonCopyText": "deno -A jsr:@deco/cli create"
+      "secondaryButtonCopyText": "npm i -g deco-cli"
     },
     {
       "__resolveType": "site/sections/new-home/NewHomeHow.tsx",
