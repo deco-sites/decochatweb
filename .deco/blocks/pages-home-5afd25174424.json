@@ -14,7 +14,7 @@
       "subtitle": "The opensource platform to build and monetize apps, agents and workflows on top of MCPs.",
       "primaryButtonText": "Try for free",
       "primaryButtonHref": "https://deco.chat/login",
-      "cliCommand": "deno -A jsr:@deco/cli create",
+      "cliCommand": "npm i -g deco-cli",
       "integrationIcons": [
         {
           "title": "Google Drive",
@@ -279,7 +279,7 @@
           },
           {
             "question": "How do I get started?",
-            "answer": "Just run 'deno -A jsr:@deco/cli create' in your terminal and you'll have a working agent setup in minutes. No complicated configuration or setup required."
+            "answer": "Just run 'npm i -g deco-cli' in your terminal and you'll have a working agent setup in minutes. No complicated configuration or setup required."
           },
           {
             "question": "Is this suitable for enterprise use?",
