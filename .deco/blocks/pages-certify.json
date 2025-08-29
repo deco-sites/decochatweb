@@ -1,0 +1,29 @@
+{
+  "name": "Certify Landing Page",
+  "path": "/certify",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/CertifyHeader.tsx"
+      }
+    },
+    {
+      "__resolveType": "site/sections/CertifyLandingPage.tsx"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/CertifyFinalCTA.tsx"
+      }
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "type": "website",
+    "title": "Certify — Open-source Digital Certificates on deco",
+    "description": "Generate, manage, and verify certificates at scale. Build your own Certify in minutes on deco—the home for all your AI projects. Start for free with $5 credit.",
+    "canonical": "https://deco.cx/certify"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Use Case: Farm Rio Storefront",
+  "path": "/farm-rio-case",
+  "sections": [],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
