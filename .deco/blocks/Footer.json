@@ -38,7 +38,8 @@
         },
         {
           "text": "Documentation",
-          "disabled": true
+          "disabled": false,
+          "url": "https://docs.deco.page/en/introduction/"
         },
         {
           "text": "Tutorials",
