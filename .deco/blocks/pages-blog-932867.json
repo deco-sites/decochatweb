@@ -6,12 +6,22 @@
       "__resolveType": "Header"
     },
     {
-      "__resolveType": "site/sections/BlogCategories.tsx",
-      "useCategoryPath": true,
-      "posts": {
-        "__resolveType": "blog/loaders/BlogpostList.ts",
-        "count": 50
-      }
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/BlogCategories.tsx",
+            "useCategoryPath": true,
+            "posts": {
+              "__resolveType": "blog/loaders/BlogpostList.ts",
+              "count": 50
+            }
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/BlogPosts.tsx",
