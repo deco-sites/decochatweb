@@ -4,9 +4,9 @@
   "sections": [
     {
       "__resolveType": "website/sections/HackathonHero.tsx",
-      "topTag": "deco.chat apresenta",
-      "title": "Os Melhores\nAgents Vencem!",
-      "subtitle": "Participe do Hackathon deco.chat e crie agentes inteligentes para e-commerce, conteúdo e storefront que transformam experiências digitais.",
+      "topTag": "Hackathon Enterprise",
+      "title": "Implemente AI\nPara Empresas Líderes",
+      "subtitle": "Tenha a chance de implementar projetos de AI com as enterprises líderes do mercado. Resolva casos reais, apresente para C-Level e seja contratado para atender esses clientes.",
       "ctas": [
         {
           "text": "Inscreva sua equipe",
@@ -19,16 +19,16 @@
           "variant": "secondary"
         }
       ],
-      "eventDate": "2025-07-10T00:00:00",
+      "eventDate": "2025-11-02T00:00:00",
       "countdownText": "Evento começa em",
       "stats": [
         {
-          "value": "R$ 30K",
-          "label": "Prize Pool"
+          "value": "C-Level",
+          "label": "Pitch Direto"
         },
         {
-          "value": "4",
-          "label": "Categorias"
+          "value": "5+",
+          "label": "Empresas Participantes"
         },
         {
           "value": "2",
@@ -43,14 +43,14 @@
     {
       "__resolveType": "website/sections/HackathonAbout.tsx",
       "eyebrow": "Sobre o evento",
-      "title": "Sobre o Hackathon",
-      "description": "Durante 2 dias, desenvolvedores vão explorar o poder da deco.chat para criar agentes que automatizam tarefas reais no ecossistema digital: geração de conteúdo, SEO, análise de dados, CMS customizados e muito mais.",
+      "title": "Hackathon Enterprise",
+      "description": "Durante 2 dias, você terá a oportunidade única de trabalhar em casos reais de empresas líderes de mercado. Cada desafio é patrocinado por uma empresa que está ativamente buscando soluções de AI para seus problemas reais.",
       "eventDetails": [
         {
           "iconName": "calendar",
           "label": "Data",
-          "value": "10 a 11 de julho 2025",
-          "description": "Dois dias intensos de desenvolvimento e inovação"
+          "value": "2 de novembro de 2025",
+          "description": "Dois dias intensos resolvendo desafios corporativos reais"
         },
         {
           "iconName": "location",
@@ -61,103 +61,103 @@
         {
           "iconName": "prize",
           "label": "Premiação",
-          "value": "R$ 30.000 em dinheiro e créditos",
-          "description": "▫ destaque na vitrine oficial da deco.chat"
+          "value": "Pitch para C-Level das Empresas",
+          "description": "Oportunidade de ser contratado para implementar sua solução"
         }
       ],
       "backgroundColor": "dc-50"
     },
     {
       "__resolveType": "website/sections/HackathonChallenges.tsx",
-      "eyebrow": "Desafios disponíveis",
-      "title": "Categorias de Desafio",
-      "description": "Escolha uma categoria e desenvolva agentes inteligentes que resolvem problemas reais",
+      "eyebrow": "Desafios Enterprise",
+      "title": "Casos Reais com Sponsors",
+      "description": "Cada desafio é um caso real que essas empresas estão resolvendo. Escolha o desafio do sponsor que mais te interessa",
       "challenges": [
         {
-          "title": "Agente de CMS customizados",
-          "description": "Crie agentes que automatizam a criação e gestão de conteúdo personalizado",
-          "iconName": "edit",
+          "title": "Automatização de Atendimento - Sponsor: Empresa A",
+          "description": "Desenvolva um agente AI que automatiza o atendimento ao cliente em múltiplos canais",
+          "iconName": "support_agent",
           "cardColor": "primary",
           "suggestions": [
-            "Geração automática de posts",
-            "Otimização de metadados",
-            "Curadoria de conteúdo",
-            "Templates inteligentes"
+            "Integração omnichannel",
+            "Respostas contextualizadas",
+            "Escalação inteligente",
+            "Analytics de sentimento"
           ]
         },
         {
-          "title": "Agente de SEO + Analytics",
-          "description": "Desenvolva soluções inteligentes para otimização e análise",
+          "title": "Análise Preditiva - Sponsor: Empresa B",
+          "description": "Crie agentes que preveem tendências e comportamentos usando dados históricos",
           "iconName": "analytics",
           "cardColor": "purple",
           "suggestions": [
-            "Análise de keywords",
-            "Relatórios automáticos",
-            "Otimização on-page",
-            "Monitoring de ranking"
+            "Previsão de demanda",
+            "Detecção de anomalias",
+            "Recomendações personalizadas",
+            "Otimização de estoque"
           ]
         },
         {
-          "title": "Agente de Storefront Inteligente",
-          "description": "Construa agentes que melhoram a experiência de e-commerce",
-          "iconName": "shopping_cart",
+          "title": "Personalização em Tempo Real - Sponsor: Empresa C",
+          "description": "Construa sistemas de personalização que se adaptam ao comportamento do usuário",
+          "iconName": "person_search",
           "cardColor": "yellow",
           "suggestions": [
-            "Recomendações personalizadas",
-            "Chat de vendas",
-            "Gestão de estoque",
-            "Análise de comportamento"
+            "Recomendações dinâmicas",
+            "A/B testing automático",
+            "Segmentação inteligente",
+            "Experiências adaptativas"
           ]
         },
         {
-          "title": "Agente de Onboarding",
-          "description": "Crie experiências de suporte e onboarding automatizadas",
-          "iconName": "school",
+          "title": "Otimização de Processos - Sponsor: Empresa D",
+          "description": "Desenvolva agentes que identificam e otimizam gargalos operacionais",
+          "iconName": "speed",
           "cardColor": "neutral",
           "suggestions": [
-            "Guias interativos",
-            "Suporte 24/7",
-            "Tutoriais personalizados",
-            "FAQ inteligente"
+            "Mapeamento de processos",
+            "Identificação de bottlenecks",
+            "Automação de workflows",
+            "ROI tracking"
           ]
         }
       ]
     },
     {
       "__resolveType": "website/sections/HackathonBenefits.tsx",
-      "eyebrow": "Benefícios para os Participantes",
-      "title": "Além da premiação, você ganha\nreconhecimento e oportunidades únicas na comunidade",
-      "description": "Participe e tenha acesso a benefícios exclusivos que vão além da competição",
+      "eyebrow": "Benefícios Exclusivos",
+      "title": "Oportunidade de Ser Contratado\npelas Empresas Participantes",
+      "description": "Além de resolver casos reais, você tem acesso direto aos decision makers dessas empresas",
       "benefits": [
         {
-          "title": "Badge oficial \"Certified Agent Builder\"",
-          "description": "Certificação reconhecida pela comunidade deco.chat",
-          "iconName": "verified"
+          "title": "Pitch Direto para C-Level",
+          "description": "Apresente sua solução diretamente para CEOs, CTOs e VPs das empresas",
+          "iconName": "present_to_all"
         },
         {
-          "title": "Mentoria da equipe deco.chat",
-          "description": "Acesso direto aos especialistas da plataforma",
-          "iconName": "group"
+          "title": "Oportunidade de Contratação",
+          "description": "Seja contratado para implementar sua solução no ambiente real da empresa",
+          "iconName": "work"
         },
         {
-          "title": "Divulgação oficial",
-          "description": "Destaque no blog e redes sociais da deco.chat",
-          "iconName": "campaign"
+          "title": "Mentoria com Especialistas",
+          "description": "Acesso a mentores das empresas participantes durante o evento",
+          "iconName": "school"
         },
         {
-          "title": "Networking tech-first",
-          "description": "Conecte-se com outras agências inovadoras",
+          "title": "Network Enterprise",
+          "description": "Conecte-se com líderes e tomadores de decisão de grandes empresas",
           "iconName": "connect_without_contact"
         },
         {
-          "title": "Acesso exclusivo",
-          "description": "Early access a novas features da plataforma",
-          "iconName": "lock_open"
+          "title": "Visibilidade de Mercado",
+          "description": "Destaque para sua solução nas redes das empresas participantes",
+          "iconName": "campaign"
         },
         {
-          "title": "Oportunidades de carreira",
-          "description": "Destaque para oportunidades em empresas parceiras",
-          "iconName": "work"
+          "title": "Acesso a Recursos Premium",
+          "description": "Créditos e acesso a ferramentas enterprise durante e após o evento",
+          "iconName": "stars"
         }
       ],
       "backgroundColor": "dc-50"
@@ -165,101 +165,111 @@
     {
       "__resolveType": "website/sections/HackathonProcess.tsx",
       "eyebrow": "Como Funciona",
-      "title": "Um processo simples e estruturado para maximizar seu aprendizado e resultados",
-      "description": "Siga estes passos para participar do hackathon e ter a melhor experiência possível",
+      "title": "Do Desafio Real à Implementação Enterprise",
+      "description": "Um processo estruturado para você impressionar as empresas e conquistar oportunidades reais",
       "processSteps": [
         {
           "stepNumber": "1",
-          "title": "Inscreva sua equipe",
-          "description": "Registre-se e forme seu time de até 4 desenvolvedores",
-          "iconName": "group_add"
+          "title": "Escolha o Desafio e Sponsor",
+          "description": "Selecione o caso real da empresa que mais te interessa",
+          "iconName": "task_alt"
         },
         {
           "stepNumber": "2",
-          "title": "Receba os desafios",
-          "description": "Acesse a documentação e escolha sua categoria favorita",
-          "iconName": "assignment"
-        },
-        {
-          "stepNumber": "3",
-          "title": "Crie, teste e publique",
-          "description": "Desenvolva seus agents usando a plataforma deco.chat",
+          "title": "Desenvolva a Solução",
+          "description": "Trabalhe com mentoria das empresas sponsors durante 2 dias",
           "iconName": "code"
         },
         {
-          "stepNumber": "4",
-          "title": "Demo Day",
-          "description": "Apresente sua solução para o time deco.cx e comunidade",
+          "stepNumber": "3",
+          "title": "Pitch para C-Level",
+          "description": "Apresente sua solução para os executivos das empresas",
           "iconName": "present_to_all"
+        },
+        {
+          "stepNumber": "4",
+          "title": "Oportunidade de Contratação",
+          "description": "Seja contratado para implementar seu projeto no ambiente real",
+          "iconName": "handshake"
         }
       ],
       "backgroundColor": "dc-50"
     },
     {
       "__resolveType": "website/sections/HackathonPartners.tsx",
-      "eyebrow": "Nossos parceiros",
-      "title": "Patrocinadores e Apoiadores",
-      "description": "Empresas que acreditam no futuro da inteligência artificial e inovação",
+      "eyebrow": "Empresas Participantes",
+      "title": "Sponsors com Casos Reais",
+      "description": "Empresas líderes que estão buscando soluções inovadoras de AI e talentos excepcionais",
       "partners": [
         {
-          "name": "NVIDIA",
-          "logo": "https://placehold.co/160x80/00d2df/ffffff?text=NVIDIA",
+          "name": "Empresa A",
+          "logo": "https://placehold.co/160x80/0066cc/ffffff?text=Empresa+A",
           "type": "principal",
-          "url": "https://nvidia.com"
+          "url": "https://empresa-a.com"
         },
         {
-          "name": "AWS",
-          "logo": "https://placehold.co/120x60/ff9900/ffffff?text=AWS",
-          "type": "cloud",
-          "url": "https://aws.amazon.com"
-        },
-        {
-          "name": "Google",
-          "logo": "https://placehold.co/120x60/4285f4/ffffff?text=Google",
+          "name": "Empresa B",
+          "logo": "https://placehold.co/160x80/ff6600/ffffff?text=Empresa+B",
           "type": "technology",
-          "url": "https://google.com"
+          "url": "https://empresa-b.com"
         },
         {
-          "name": "Alura",
-          "logo": "https://placehold.co/120x60/1c4ed8/ffffff?text=Alura",
-          "type": "educational",
-          "url": "https://alura.com.br"
+          "name": "Empresa C",
+          "logo": "https://placehold.co/160x80/00cc66/ffffff?text=Empresa+C",
+          "type": "enterprise",
+          "url": "https://empresa-c.com"
+        },
+        {
+          "name": "Empresa D",
+          "logo": "https://placehold.co/160x80/cc0066/ffffff?text=Empresa+D",
+          "type": "innovation",
+          "url": "https://empresa-d.com"
+        },
+        {
+          "name": "Empresa E",
+          "logo": "https://placehold.co/160x80/6600cc/ffffff?text=Empresa+E",
+          "type": "principal",
+          "url": "https://empresa-e.com"
         }
       ],
-      "ctaText": "Quer se tornar um patrocinador?",
-      "ctaLink": "mailto:partnerships@deco.chat",
+      "ctaText": "Sua empresa quer participar como sponsor?",
+      "ctaLink": "mailto:enterprise@deco.chat",
       "backgroundColor": "dc-50"
     },
     {
       "__resolveType": "website/sections/HackathonFaq.tsx",
       "eyebrow": "Perguntas Frequentes",
-      "title": "Tire suas dúvidas sobre o hackathon",
-      "description": "Tudo que você precisa saber para participar e ter sucesso no evento",
+      "title": "Tire suas dúvidas sobre o Hackathon Enterprise",
+      "description": "Tudo que você precisa saber sobre o evento e as oportunidades disponíveis",
       "answerLogo": "https://placehold.co/48x48/d0ec1a/07401a?text=🤖",
       "faqItems": [
         {
-          "question": "Quem pode participar?",
-          "answer": "Desenvolvedores de todos os níveis podem participar! Desde iniciantes até experts em IA. O importante é ter vontade de aprender e criar."
+          "question": "Quem pode participar do Hackathon Enterprise?",
+          "answer": "Desenvolvedores, cientistas de dados e profissionais de AI de todos os níveis podem participar. O foco é em resolver problemas reais de empresas, então experiência prática é valorizada."
         },
         {
-          "question": "É preciso já conhecer o deco.chat?",
-          "answer": "Não é necessário! Forneceremos toda a documentação e tutoriais para você começar. Também teremos sessões de onboarding antes do evento."
+          "question": "Como funciona a contratação após o evento?",
+          "answer": "As empresas sponsors avaliam as soluções apresentadas e podem fazer ofertas diretas para implementação. Isso pode ser como freelancer, consultoria ou até contratação direta, dependendo da empresa e do projeto."
         },
         {
-          "question": "Como será feita a avaliação?",
-          "answer": "Os projetos serão avaliados por critérios como inovação, utilidade prática, qualidade técnica e apresentação. Detalhes completos no regulamento."
+          "question": "Preciso ter experiência com as tecnologias das empresas?",
+          "answer": "Não necessariamente. Cada desafio terá documentação detalhada e você terá acesso a mentores das empresas durante o evento. O importante é sua capacidade de resolver problemas."
         },
         {
-          "question": "Posso usar LLMs diferentes?",
-          "answer": "Sim! O deco.chat suporta mais de 60 modelos de IA diferentes. Você pode usar OpenAI, Claude, Gemini, Llama e muitos outros através da nossa API unificada."
+          "question": "Posso trabalhar em múltiplos desafios?",
+          "answer": "Recomendamos focar em um desafio para garantir qualidade e profundidade na solução. Porém, se sua equipe for grande o suficiente, podem dividir em sub-times."
         },
         {
-          "question": "Qual o tamanho máximo da equipe?",
-          "answer": "Equipes podem ter até 4 desenvolvedores. Você também pode participar sozinho se preferir. Incentivamos a colaboração!"
+          "question": "Qual o formato do pitch para C-Level?",
+          "answer": "Cada equipe terá 10 minutos para apresentar sua solução, seguido de 5 minutos de Q&A. A apresentação deve focar no valor de negócio e impacto prático da solução."
         },
         {
-          "question": "Posso participar de múltiplas categorias?",
-          "answer": "Cada equipe pode se inscrever em apenas uma categoria para focar melhor no desenvolvimento e garantir qualidade do projeto."
+          "question": "Os projetos precisam estar 100% funcionais?",
+          "answer": "Não necessariamente. MVPs e protótipos funcionais são aceitos. O mais importante é demonstrar a viabilidade da solução e o entendimento profundo do problema."
+        },
+        {
+          "question": "Há algum custo para participar?",
+          "answer": "Não! O Hackathon Enterprise é 100% gratuito. Além disso, as empresas sponsors fornecem créditos e acesso a ferramentas premium para os participantes."
         }
       ],
       "backgroundColor": "dc-50"
@@ -267,9 +277,9 @@
     {
       "__resolveType": "website/sections/HackathonRegistration.tsx",
       "eyebrow": "Inscrição",
-      "title": "Registre sua equipe e garanta sua vaga no hackathon",
-      "description": "Preencha os dados da sua equipe para participar do maior hackathon de agentes AI do mundo",
-      "formAction": "https://forms.deco.chat/hackathon-registration",
+      "title": "Garanta sua vaga no Hackathon Enterprise",
+      "description": "Vagas limitadas para garantir qualidade e atenção personalizada de cada empresa sponsor",
+      "formAction": "https://forms.deco.chat/hackathon-enterprise-registration",
       "formMethod": "POST",
       "backgroundColor": "dc-50"
     }
