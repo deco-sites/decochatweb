@@ -3,7 +3,7 @@
   "path": "/hackathon",
   "sections": [
     {
-      "__resolveType": "website/sections/HackathonHero.tsx",
+      "__resolveType": "site/sections/HackathonHero.tsx",
       "topTag": "Hackathon Enterprise",
       "title": "Implemente AI\nPara Empresas Líderes",
       "subtitle": "Tenha a chance de implementar projetos de AI com as enterprises líderes do mercado. Resolva casos reais, apresente para C-Level e seja contratado para atender esses clientes.",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "__resolveType": "website/sections/HackathonAbout.tsx",
+      "__resolveType": "site/sections/HackathonAbout.tsx",
       "eyebrow": "Sobre o evento",
       "title": "Hackathon Enterprise",
       "description": "Durante 2 dias, você terá a oportunidade única de trabalhar em casos reais de empresas líderes de mercado. Cada desafio é patrocinado por uma empresa que está ativamente buscando soluções de AI para seus problemas reais.",
@@ -68,7 +68,7 @@
       "backgroundColor": "dc-50"
     },
     {
-      "__resolveType": "website/sections/HackathonChallenges.tsx",
+      "__resolveType": "site/sections/HackathonChallenges.tsx",
       "eyebrow": "Desafios Enterprise",
       "title": "Casos Reais com Sponsors",
       "description": "Cada desafio é um caso real que essas empresas estão resolvendo. Escolha o desafio do sponsor que mais te interessa",
@@ -121,10 +121,12 @@
             "ROI tracking"
           ]
         }
-      ]
+      ],
+      "ctaLink": "#",
+      "ctaText": "Inscrever minha equipe"
     },
     {
-      "__resolveType": "website/sections/HackathonBenefits.tsx",
+      "__resolveType": "site/sections/HackathonBenefits.tsx",
       "eyebrow": "Benefícios Exclusivos",
       "title": "Oportunidade de Ser Contratado\npelas Empresas Participantes",
       "description": "Além de resolver casos reais, você tem acesso direto aos decision makers dessas empresas",
@@ -163,7 +165,7 @@
       "backgroundColor": "dc-50"
     },
     {
-      "__resolveType": "website/sections/HackathonProcess.tsx",
+      "__resolveType": "site/sections/HackathonProcess.tsx",
       "eyebrow": "Como Funciona",
       "title": "Do Desafio Real à Implementação Enterprise",
       "description": "Um processo estruturado para você impressionar as empresas e conquistar oportunidades reais",
@@ -196,7 +198,7 @@
       "backgroundColor": "dc-50"
     },
     {
-      "__resolveType": "website/sections/HackathonPartners.tsx",
+      "__resolveType": "site/sections/HackathonPartners.tsx",
       "eyebrow": "Empresas Participantes",
       "title": "Sponsors com Casos Reais",
       "description": "Empresas líderes que estão buscando soluções inovadoras de AI e talentos excepcionais",
@@ -237,7 +239,7 @@
       "backgroundColor": "dc-50"
     },
     {
-      "__resolveType": "website/sections/HackathonFaq.tsx",
+      "__resolveType": "site/sections/HackathonFaq.tsx",
       "eyebrow": "Perguntas Frequentes",
       "title": "Tire suas dúvidas sobre o Hackathon Enterprise",
       "description": "Tudo que você precisa saber sobre o evento e as oportunidades disponíveis",
@@ -275,7 +277,7 @@
       "backgroundColor": "dc-50"
     },
     {
-      "__resolveType": "website/sections/HackathonRegistration.tsx",
+      "__resolveType": "site/sections/HackathonRegistration.tsx",
       "eyebrow": "Inscrição",
       "title": "Garanta sua vaga no Hackathon Enterprise",
       "description": "Vagas limitadas para garantir qualidade e atenção personalizada de cada empresa sponsor",
@@ -283,5 +285,12 @@
       "formMethod": "POST",
       "backgroundColor": "dc-50"
     }
-  ]
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Hackathon Enterprise - deco.chat",
+    "description": "Implemente AI para empresas líderes. Resolva casos reais, apresente para C-Level e seja contratado para atender esses clientes.",
+    "type": "website"
+  }
 }
