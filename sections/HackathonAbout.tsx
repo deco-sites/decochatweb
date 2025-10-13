@@ -112,10 +112,10 @@ export default function HackathonAbout({
               {/* Large Calendar */}
               <div class="w-44 h-44 sm:w-52 sm:h-52 md:w-56 md:h-56 rounded-[20px] md:rounded-[24px] overflow-hidden bg-primary-light border-4 border-primary-light">
                 <div class="h-[66px] sm:h-[78px] md:h-[84px] flex justify-center items-center text-center bg-primary-light font-main text-[28px] sm:text-[32px] md:text-[36px] uppercase text-primary-dark font-semibold">
-                  Jul
+                  Nov
                 </div>
                 <div class="h-[110px] sm:h-[130px] md:h-[140px] flex justify-center items-center text-center bg-primary-dark font-main text-3xl sm:text-4xl md:text-5xl uppercase text-primary-light font-semibold">
-                  10-11
+                  3-4
                 </div>
               </div>
 
@@ -186,7 +186,7 @@ const defaultProps: Props = {
     {
       iconName: "calendar",
       label: "Data",
-      value: "10 a 11 de julho 2025",
+      value: "3 a 4 de novembro 2025",
       description: "Dois dias intensos de desenvolvimento e inovação",
     },
     {
