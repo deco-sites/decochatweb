@@ -94,9 +94,8 @@ export default function HackathonHero({
                     </div>
                   )}
 
-                  <h1 class="text-center text-primary-light text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[100px] font-black font-main uppercase leading-tight md:leading-[1.1] lg:leading-[100px] tracking-tight">
-                    <div class="whitespace-nowrap">OS MELHORES</div>
-                    <div class="whitespace-nowrap">AGENTS VENCEM!</div>
+                  <h1 class="text-center text-primary-light text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[100px] font-black font-main uppercase leading-tight md:leading-[1.1] lg:leading-[100px] tracking-tight whitespace-pre-line">
+                    {title}
                   </h1>
 
                   <p class="text-center text-white opacity-80 text-lg md:text-xl lg:text-2xl font-normal font-main leading-relaxed max-w-4xl">
