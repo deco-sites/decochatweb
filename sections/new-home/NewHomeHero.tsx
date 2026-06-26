@@ -690,7 +690,7 @@ const defaultProps: Props = {
     {
       title: "Google Drive",
       image:
-        "https://assets.decocache.com/decochatweb/14108bc0-7b5c-4b64-ac7e-ec07cc836801/drive.svg",
+        "https://decoims.com/decochatweb/275c5ff3-59a4-404b-8873-d49dd063cd78/drive.svg",
       positionX: 5,
       positionY: 70,
       rotation: -15,
@@ -699,7 +699,7 @@ const defaultProps: Props = {
     {
       title: "AI Assistant",
       image:
-        "https://assets.decocache.com/decochatweb/90e6f9bf-b27d-47e5-b43e-6c61640ec777/smart_toy.svg",
+        "https://decoims.com/decochatweb/8534fefd-1ab2-4e5f-8e9a-a5625161e24d/smart_toy.svg",
       positionX: 25,
       positionY: 15,
       rotation: -15,
@@ -708,7 +708,7 @@ const defaultProps: Props = {
     {
       title: "Slack",
       image:
-        "https://assets.decocache.com/decochatweb/83a9769d-e67f-4166-90c8-3a51475efc41/slack.svg",
+        "https://decoims.com/decochatweb/1cbe53db-6b87-4860-8949-61cda6534b76/slack.svg",
       positionX: 95,
       positionY: 75,
       rotation: 30,
@@ -717,7 +717,7 @@ const defaultProps: Props = {
     {
       title: "WhatsApp",
       image:
-        "https://assets.decocache.com/decochatweb/6a63040b-e08f-40b2-8243-7aaf21280844/whatsapp.svg",
+        "https://decoims.com/decochatweb/64f3d742-ba9f-47c5-bb3d-db3b81cb7f70/whatsapp.svg",
       positionX: 90,
       positionY: 20,
       rotation: 15,
@@ -726,7 +726,7 @@ const defaultProps: Props = {
     {
       title: "Jira",
       image:
-        "https://assets.decocache.com/decochatweb/07456829-aa1f-4661-ab67-5d2bbbd42616/jira.svg",
+        "https://decoims.com/decochatweb/f0f1d15e-675c-4137-84f8-82a35e06f55b/jira.svg",
       positionX: 2,
       positionY: 5,
       rotation: -15,

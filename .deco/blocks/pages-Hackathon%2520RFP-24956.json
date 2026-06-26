@@ -39,7 +39,7 @@
           "label": "Online"
         }
       ],
-      "logo": "https://assets.decocache.com/decochatweb/faffff75-b48c-4340-9563-c64635690ba2/decochatlogoneg.svg"
+      "logo": "https://decoims.com/decochatweb/3d3ef03d-2f3f-4d6a-bbf4-64b8c8ebacc2/decochatlogoneg.svg"
     },
     {
       "__resolveType": "site/sections/HackathonAbout.tsx",
@@ -232,7 +232,7 @@
       "eyebrow": "Perguntas Frequentes",
       "title": "FAQ",
       "description": "Tudo que você precisa saber para participar e ter sucesso no evento",
-      "answerLogo": "https://assets.decocache.com/decochatweb/cebb6b63-37c8-48a8-870e-0bad65e6e1fb/logo-agnet-deco.png",
+      "answerLogo": "https://decoims.com/decochatweb/fa6b5106-4dcb-4fc9-91e1-eb9ad95cd19b/logo-agnet-deco.png",
       "faqItems": [
         {
           "question": "Quem pode participar?",

@@ -40,13 +40,13 @@ const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "We believe in a web that is simple, scalable, and collaborative. A web where anyone can test ideas and build without fear. Let's make that vision a reality.",
     image:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9",
+      "https://decoims.com/decochatweb/e1cc0e1b-ac25-48ed-86bf-694fe763e9d3/682eb374-def2-4e85-a45d-b3a7ff8a31a9.png",
     date: "2024-04-10",
     authors: [{
       name: "Deco Team",
       email: "author@deco.cx",
       avatar:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e",
+        "https://decoims.com/decochatweb/5871f2a0-2f9b-4d9f-a38f-be8ccd2839f7/7286de42-e9c5-4fcb-ae8b-b992eea4b78e.png",
     }],
     categories: [{ name: "Culture", slug: "culture" }],
     content: "<p>Lorem ipsum dolor sit amet</p>",
@@ -62,7 +62,7 @@ const BLOG_POSTS: BlogPost[] = [
       name: "Jane Smith",
       email: "jane@deco.cx",
       avatar:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e",
+        "https://decoims.com/decochatweb/5871f2a0-2f9b-4d9f-a38f-be8ccd2839f7/7286de42-e9c5-4fcb-ae8b-b992eea4b78e.png",
     }],
     categories: [{ name: "Technology", slug: "technology" }, {
       name: "E-commerce",
@@ -81,7 +81,7 @@ const BLOG_POSTS: BlogPost[] = [
       name: "John Developer",
       email: "john@deco.cx",
       avatar:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e",
+        "https://decoims.com/decochatweb/5871f2a0-2f9b-4d9f-a38f-be8ccd2839f7/7286de42-e9c5-4fcb-ae8b-b992eea4b78e.png",
     }],
     categories: [{ name: "Technology", slug: "technology" }, {
       name: "Performance",
@@ -100,7 +100,7 @@ const BLOG_POSTS: BlogPost[] = [
       name: "Alice Designer",
       email: "alice@deco.cx",
       avatar:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e",
+        "https://decoims.com/decochatweb/5871f2a0-2f9b-4d9f-a38f-be8ccd2839f7/7286de42-e9c5-4fcb-ae8b-b992eea4b78e.png",
     }],
     categories: [{ name: "Design", slug: "design" }],
     content: "<p>Lorem ipsum dolor sit amet</p>",
@@ -117,13 +117,13 @@ const BLOG_POSTS: BlogPost[] = [
         name: "Tech Team",
         email: "tech@deco.cx",
         avatar:
-          "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e",
+          "https://decoims.com/decochatweb/5871f2a0-2f9b-4d9f-a38f-be8ccd2839f7/7286de42-e9c5-4fcb-ae8b-b992eea4b78e.png",
       },
       {
         name: "Sam Developer",
         email: "sam@deco.cx",
         avatar:
-          "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e",
+          "https://decoims.com/decochatweb/5871f2a0-2f9b-4d9f-a38f-be8ccd2839f7/7286de42-e9c5-4fcb-ae8b-b992eea4b78e.png",
       },
     ],
     categories: [{ name: "Technology", slug: "technology" }, {
@@ -144,19 +144,19 @@ const BLOG_POSTS: BlogPost[] = [
         name: "Mark Analyst",
         email: "mark@deco.cx",
         avatar:
-          "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e",
+          "https://decoims.com/decochatweb/5871f2a0-2f9b-4d9f-a38f-be8ccd2839f7/7286de42-e9c5-4fcb-ae8b-b992eea4b78e.png",
       },
       {
         name: "AI Team",
         email: "ai@deco.cx",
         avatar:
-          "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e",
+          "https://decoims.com/decochatweb/5871f2a0-2f9b-4d9f-a38f-be8ccd2839f7/7286de42-e9c5-4fcb-ae8b-b992eea4b78e.png",
       },
       {
         name: "E-commerce Team",
         email: "ecomm@deco.cx",
         avatar:
-          "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e",
+          "https://decoims.com/decochatweb/5871f2a0-2f9b-4d9f-a38f-be8ccd2839f7/7286de42-e9c5-4fcb-ae8b-b992eea4b78e.png",
       },
     ],
     categories: [{ name: "E-commerce", slug: "ecommerce" }, {

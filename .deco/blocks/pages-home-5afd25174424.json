@@ -18,7 +18,7 @@
       "integrationIcons": [
         {
           "title": "Google Drive",
-          "image": "https://assets.decocache.com/decochatweb/14108bc0-7b5c-4b64-ac7e-ec07cc836801/drive.svg",
+          "image": "https://decoims.com/decochatweb/275c5ff3-59a4-404b-8873-d49dd063cd78/drive.svg",
           "positionX": 5,
           "positionY": 70,
           "rotation": -15,
@@ -26,7 +26,7 @@
         },
         {
           "title": "Slack",
-          "image": "https://assets.decocache.com/decochatweb/83a9769d-e67f-4166-90c8-3a51475efc41/slack.svg",
+          "image": "https://decoims.com/decochatweb/1cbe53db-6b87-4860-8949-61cda6534b76/slack.svg",
           "positionX": 95,
           "positionY": 75,
           "rotation": 30,
@@ -34,7 +34,7 @@
         },
         {
           "title": "WhatsApp",
-          "image": "https://assets.decocache.com/decochatweb/6a63040b-e08f-40b2-8243-7aaf21280844/whatsapp.svg",
+          "image": "https://decoims.com/decochatweb/64f3d742-ba9f-47c5-bb3d-db3b81cb7f70/whatsapp.svg",
           "positionX": 90,
           "positionY": 20,
           "rotation": 15,
@@ -42,7 +42,7 @@
         },
         {
           "title": "Jira",
-          "image": "https://assets.decocache.com/decochatweb/07456829-aa1f-4661-ab67-5d2bbbd42616/jira.svg",
+          "image": "https://decoims.com/decochatweb/f0f1d15e-675c-4137-84f8-82a35e06f55b/jira.svg",
           "positionX": 2,
           "positionY": 5,
           "rotation": -15,
@@ -53,22 +53,22 @@
         {
           "title": "AI Chat",
           "description": "All company tools and knowledge",
-          "icon": "https://assets.decocache.com/decochatweb/9ea11970-f47d-4d4a-a3b2-9b348e7cec3b/aichat.svg"
+          "icon": "https://decoims.com/decochatweb/0c1f12c0-d5cc-470a-b604-9954ab48acbd/aichat.svg"
         },
         {
           "title": "AI Agents",
           "description": "Autonomous workers with total context",
-          "icon": "https://assets.decocache.com/decochatweb/3948fc5b-2fc8-4389-b20c-0c30bd6c2a05/agent.svg"
+          "icon": "https://decoims.com/decochatweb/25a3fb34-6b28-4e87-9a13-c0a4e746c6f6/agent.svg"
         },
         {
           "title": "Workflows & Views",
           "description": "Web-native deterministic flows and UIs",
-          "icon": "https://assets.decocache.com/decochatweb/8c5bdac6-e797-4a72-8ee9-0688867296ca/workflow.svg"
+          "icon": "https://decoims.com/decochatweb/dcee47ce-336f-4d71-a359-997d8f285b3d/workflow.svg"
         }
       ],
       "unifiedPlatformTitle": "Unified MCP Platform",
       "unifiedPlatformDescription": "Centralize integrations, monitor and control, cost and logs",
-      "unifiedPlatformIcon": "https://assets.decocache.com/decochatweb/a4a28b55-d864-45aa-8ea9-4489feb156a1/unifiedplatform.svg",
+      "unifiedPlatformIcon": "https://decoims.com/decochatweb/039ec740-40bf-4bdc-994e-b10990c2b0c7/unifiedplatform.svg",
       "secondaryButtonText": "npm i -g deco-cli",
       "secondaryButtonType": "copy",
       "secondaryButtonCopyText": "npm i -g deco-cli"
@@ -81,7 +81,7 @@
         {
           "title": "All-in-one architecture",
           "description": "Build prompts, agents, workflows, MCPs, manage content, set permissions, control costs, track logs, and more. All in one place.",
-          "image": "https://assets.decocache.com/decochatweb/fd955be7-1b03-45e8-94bf-6f1048712591/aiadoption.svg",
+          "image": "https://decoims.com/decochatweb/c7bacb92-e7ae-45a7-84f6-f7ed9e18ac61/aiadoption.svg",
           "hasCliCommand": false,
           "category": "AI ADOPTION"
         },
@@ -89,7 +89,7 @@
           "category": "DECO CLI",
           "title": "Simple to get started",
           "description": "Forget the complicated setup. Get up and running in minutes, and spend your time actually building.",
-          "image": "https://assets.decocache.com/decochatweb/a8e20d72-6fd2-4ef2-9cce-418ca883206b/decocli.svg",
+          "image": "https://decoims.com/decochatweb/62d72a24-f031-4c3b-80e5-30e40acd99b0/decocli.svg",
           "hasCliCommand": true,
           "cliCommandPart1": "npm i -g ",
           "cliCommandPart2": "deco",
@@ -98,7 +98,7 @@
           "cliCopyText": "npm i -g deco-cli "
         }
       ],
-      "decorativeImage": "https://assets.decocache.com/decochatweb/de91ed96-cd52-445b-a3cf-a8b583ba2d61/handglobe.svg"
+      "decorativeImage": "https://decoims.com/decochatweb/3d814827-8bae-4be8-afbf-191b59435c2f/handglobe.svg"
     },
     {
       "__resolveType": "site/sections/new-home/NewHomeBenefits.tsx",
@@ -106,27 +106,27 @@
       "description": "Everything you need to build, deploy, and manage your agentic workforce with governance, logs, FinOps, audit trail—all baked in.",
       "mainBenefits": [
         {
-          "avatar": "https://assets.decocache.com/decochatweb/a4a28b55-d864-45aa-8ea9-4489feb156a1/unifiedplatform.svg",
+          "avatar": "https://decoims.com/decochatweb/039ec740-40bf-4bdc-994e-b10990c2b0c7/unifiedplatform.svg",
           "title": "Unified MCP Provider",
           "description": "Build, test, and manage MCPs right from your browser, connecting your agents and workflows securely and with full control to any system or service you want.",
           "mediaType": "image",
-          "mainImage": "https://assets.decocache.com/decochatweb/9669ceb2-8338-4ed7-a5b0-7e7cb726fb9c/unified-mcp.png",
+          "mainImage": "https://decoims.com/decochatweb/588a90ca-f495-4d8f-afce-6b9eadfe8bc5/unified-mcp.png",
           "imagePosition": "left"
         },
         {
-          "avatar": "https://assets.decocache.com/decochatweb/cecc58d3-8f13-4089-a418-971039a4c077/wallet.svg",
+          "avatar": "https://decoims.com/decochatweb/84ac5b57-44cd-4cc6-b5fa-09809b275e74/wallet.svg",
           "title": "Easy to consume LLM",
           "description": "Use language models easily and only pay for what you use. Just add your balance and start building—no complicated billing or surprises.",
           "mediaType": "image",
-          "mainImage": "https://assets.decocache.com/decochatweb/7265af8d-be51-4793-b5bb-0bf1d96cf4fd/wallet.png",
+          "mainImage": "https://decoims.com/decochatweb/754fd63b-bb96-4b26-beb3-4818a9e487ce/wallet.png",
           "imagePosition": "right"
         },
         {
-          "avatar": "https://assets.decocache.com/decochatweb/d647d9f9-d86a-4d89-9c88-3b5fc5e7ff35/marketplace.svg",
+          "avatar": "https://decoims.com/decochatweb/c5e95e4b-f8fb-47d9-a2a5-3aff225104a5/marketplace.svg",
           "title": "Easy to sell MCP Apps",
           "description": "List your apps, set your price, and get paid directly from users' wallets. You build, you earn, it's that simple.",
           "mediaType": "image",
-          "mainImage": "https://assets.decocache.com/decochatweb/8660306e-53b9-4baf-936e-0e68f351112c/marketplace.png",
+          "mainImage": "https://decoims.com/decochatweb/5ce3d5cd-040b-4da6-ab1c-872670185506/marketplace.png",
           "imagePosition": "left"
         }
       ]
@@ -135,7 +135,7 @@
       "__resolveType": "site/sections/new-home/NewHomeFeatures.tsx",
       "title": "From first prompt to\ncomplete automation",
       "description": "Your open-source operating system for governed AI agents",
-      "icon": "https://assets.decocache.com/decochatweb/315a119f-dfcc-46a1-a2a0-f9ee7ac54565/decologoblack.svg",
+      "icon": "https://decoims.com/decochatweb/dd98aed6-e46e-4581-ae99-45aa81fa13a4/decologoblack.svg",
       "featureCards": [
         {
           "category": "OPEN-SOURCE",
@@ -145,8 +145,8 @@
           "size": "small",
           "imageAspectRatio": "426/322",
           "mediaType": "video",
-          "lottieUrl": "https://assets.decocache.com/decochatweb/a01f0fa1-a82a-4339-bc2d-19f2000beb32/Opensource.json",
-          "videoUrl": "https://assets.decocache.com/decochatweb/83b5fdb7-c079-43e4-a47f-e64e4a8577cf/open-source.webm"
+          "lottieUrl": "https://decoims.com/decochatweb/35f21bff-4af3-4d70-a534-c494ce3a7ec4/Opensource.json",
+          "videoUrl": "https://decoims.com/decochatweb/3fb5d169-f8be-42c7-a480-17c40dbb2b7c/open-source.webm"
         },
         {
           "category": "TOOLS",
@@ -156,8 +156,8 @@
           "size": "small",
           "imageAspectRatio": "426/322",
           "mediaType": "video",
-          "lottieUrl": "https://assets.decocache.com/decochatweb/b860e497-e79a-4cb1-802d-4e22d9fb775b/Integracoes.json",
-          "videoUrl": "https://assets.decocache.com/decochatweb/95a7b198-c3f9-4546-a61f-4254a9d58897/Integracoes.webm"
+          "lottieUrl": "https://decoims.com/decochatweb/14435dff-0316-45e2-9acf-b3d880e3eed3/Integracoes.json",
+          "videoUrl": "https://decoims.com/decochatweb/495d3eb9-47da-463b-89c7-867d82e26bf5/Integracoes.webm"
         },
         {
           "category": "MONITOR",
@@ -167,8 +167,8 @@
           "size": "small",
           "imageAspectRatio": "426/322",
           "mediaType": "video",
-          "lottieUrl": "https://assets.decocache.com/decochatweb/6d8fa90d-4419-42c6-a2fd-bf21ca2385d9/Governance.json",
-          "videoUrl": "https://assets.decocache.com/decochatweb/ce0fce00-b3de-46c4-bde7-8c69cc1ebf31/Governance.webm"
+          "lottieUrl": "https://decoims.com/decochatweb/0998df9b-6eed-456d-b286-472e9dce4fca/Governance.json",
+          "videoUrl": "https://decoims.com/decochatweb/1fc93b0e-2256-4d04-9345-9a24e5c39e17/Governance.webm"
         },
         {
           "category": "APPS",
@@ -178,8 +178,8 @@
           "size": "wide",
           "imageAspectRatio": "643/531",
           "mediaType": "video",
-          "lottieUrl": "https://assets.decocache.com/decochatweb/344ef815-dfb5-4970-95c4-a134e131d0a2/Views.json",
-          "videoUrl": "https://assets.decocache.com/decochatweb/12514d1f-53e9-4591-8bb5-46963c0ed33a/Views.webm"
+          "lottieUrl": "https://decoims.com/decochatweb/ea0d454e-1047-495b-80de-1556206c545a/Views.json",
+          "videoUrl": "https://decoims.com/decochatweb/483dbac6-23bc-47ed-882e-6ed703a91f2f/Views.webm"
         },
         {
           "category": "WORKFLOWS",
@@ -189,8 +189,8 @@
           "size": "wide",
           "imageAspectRatio": "643/595",
           "mediaType": "video",
-          "lottieUrl": "https://assets.decocache.com/decochatweb/f1f3263c-1d38-4285-8fca-4f05067cce11/Workflows.json",
-          "videoUrl": "https://assets.decocache.com/decochatweb/07b2b2c6-58cd-45c5-8abe-86764ac4cc77/Workflows.webm"
+          "lottieUrl": "https://decoims.com/decochatweb/9405cdf5-2e68-4fad-b9ce-74f501c0e806/Workflows.json",
+          "videoUrl": "https://decoims.com/decochatweb/6ef306fd-9357-4930-8e9b-2fdc2fc2a945/Workflows.webm"
         },
         {
           "category": "LOGS",
@@ -199,8 +199,8 @@
           "size": "small",
           "imageAspectRatio": "426/322",
           "mediaType": "video",
-          "lottieUrl": "https://assets.decocache.com/decochatweb/bbb351bf-069a-44a3-8a00-423d7ecf98f9/Modelos.json",
-          "videoUrl": "https://assets.decocache.com/decochatweb/446aeea2-2fbb-4296-a5e2-409f6c0396ef/Logs.webm"
+          "lottieUrl": "https://decoims.com/decochatweb/1e5c5d18-af92-452e-8525-0d036e1bd8af/Modelos.json",
+          "videoUrl": "https://decoims.com/decochatweb/d0a9e24f-b5bf-4ba7-a479-19e7729023c0/Logs.webm"
         },
         {
           "category": "CHANNELS",
@@ -210,8 +210,8 @@
           "size": "small",
           "imageAspectRatio": "426/322",
           "mediaType": "video",
-          "lottieUrl": "https://assets.decocache.com/decochatweb/5fbf2756-a451-4548-a280-f5466cd73ea2/channels.json",
-          "videoUrl": "https://assets.decocache.com/decochatweb/588bd824-6111-4c4b-8fda-cc12ab21b0ea/channels.webm"
+          "lottieUrl": "https://decoims.com/decochatweb/9fe07a1d-fef7-43ad-8d09-3af0aa94011f/channels.json",
+          "videoUrl": "https://decoims.com/decochatweb/3503ff8c-9641-41e2-8c68-f47536d24365/channels.webm"
         },
         {
           "category": "WHITE-LABEL",
@@ -220,9 +220,9 @@
           "image": "https://placehold.co/426x322?text=White+Label",
           "size": "small",
           "imageAspectRatio": "426/322",
-          "lottieUrl": "https://assets.decocache.com/decochatweb/ce73e3d6-bf57-4f33-9a0f-603b8c5993ae/Whitelabel.json",
+          "lottieUrl": "https://decoims.com/decochatweb/feaf14db-41c9-490b-80dc-e091acadcc45/Whitelabel.json",
           "mediaType": "video",
-          "videoUrl": "https://assets.decocache.com/decochatweb/d440a1a3-8dbd-4b32-ae98-f76ffad0515f/Whitelabel.webm"
+          "videoUrl": "https://decoims.com/decochatweb/b08e60e9-6309-47e9-89b7-a39dc361fe9f/Whitelabel.webm"
         }
       ]
     },
@@ -237,9 +237,9 @@
               "title": "WhatsApp Community",
               "description": "Direct networking with leaders, real AI demos, and current best practices.",
               "qrCodeText": "Join the community",
-              "qrCodeImage": "https://assets.decocache.com/decochatweb/a36d9548-2372-478f-a6e7-e60a63c5d67c/qrcodelp.svg",
+              "qrCodeImage": "https://decoims.com/decochatweb/eb736b06-1cd3-495d-8f49-46d07b3eb451/qrcodelp.svg",
               "communityHref": "https://whatsapp.com/community/example",
-              "phoneImage": "https://assets.decocache.com/decochatweb/66875c65-feb1-4a8c-b48a-23a88e569fbe/zapzap.png"
+              "phoneImage": "https://decoims.com/decochatweb/c8df2847-1d6f-4cce-961d-bb4b968578ae/zapzap.png"
             }
           },
           "rule": {
@@ -255,7 +255,7 @@
         "eyebrow": "FAQ",
         "title": "Frequently Asked Questions",
         "description": "Everything you need to build, run, and scale AI across your organization with control and confidence.",
-        "answerLogo": "https://assets.decocache.com/decochatweb/cebb6b63-37c8-48a8-870e-0bad65e6e1fb/logo-agnet-deco.png",
+        "answerLogo": "https://decoims.com/decochatweb/fa6b5106-4dcb-4fc9-91e1-eb9ad95cd19b/logo-agnet-deco.png",
         "faqItems": [
           {
             "question": "What exactly is deco.chat?",

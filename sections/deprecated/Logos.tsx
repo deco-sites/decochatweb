@@ -14,7 +14,7 @@ export interface Props {
 
 const IMG_PLACEHODLER = Array(30).fill(0).map(() => ({
   src:
-    "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/03fbcc78-ca86-4616-a59a-b8aa18331a9c",
+    "https://decoims.com/decochatweb/b7363eb7-95a9-4bd4-92f3-aa987aaa88d0/03fbcc78-ca86-4616-a59a-b8aa18331a9c.svg",
   altText: "Logo",
 }));
 
