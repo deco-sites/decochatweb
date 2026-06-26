@@ -508,7 +508,7 @@ export default function HackathonHero({
 
 const defaultProps: Props = {
   logo:
-    "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/ff6bb37e-0eab-40e1-a454-86856efc278e",
+    "https://decoims.com/decochatweb/cb931624-4d21-4e16-8a27-f46d7ba0ccd6/ff6bb37e-0eab-40e1-a454-86856efc278e.png",
   title: "Os melhores agentes vencem!",
   subtitle:
     "Participe do Hackathon deco.chat e crie agentes inteligentes para e-commerce, conteúdo e storefront que transformam experiências digitais.",

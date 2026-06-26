@@ -15,7 +15,7 @@
           "price": 0,
           "seats": 1,
           "description": "For hobbyist projects by solo devs.",
-          "image": "https://assets.decocache.com/decochatweb/09f53b34-1d83-4a02-bc65-b0d62ebd1728/Free-Plan.svg",
+          "image": "https://decoims.com/decochatweb/e10b667b-bda5-4fe8-ab37-84bdc0256a3d/Free-Plan.svg",
           "buttonText": "Start for free",
           "buttonUrl": "https://deco.chat/login",
           "features": [
@@ -41,7 +41,7 @@
           "priceText": "converted into AI credits",
           "seats": 10,
           "description": "Small product teams ready for launch",
-          "image": "https://assets.decocache.com/decochatweb/ffc1cf73-7160-4e76-b4d3-7bdf5ba54316/Starter-Plan.svg",
+          "image": "https://decoims.com/decochatweb/0adc5cbc-4c00-4994-a4ab-ae1e84d59836/Starter-Plan.svg",
           "buttonText": "Choose plan",
           "buttonUrl": "https://deco.chat/login",
           "features": [
@@ -71,7 +71,7 @@
           "priceText": "converted into AI credits",
           "seats": 50,
           "description": "For businesses growing AI operations",
-          "image": "https://assets.decocache.com/decochatweb/4176c9dd-a2df-4b97-8c17-6438a9e9193d/Growth-Plan.svg",
+          "image": "https://decoims.com/decochatweb/622d72b0-d6fa-46e4-86f8-2fd102a7674b/Growth-Plan.svg",
           "buttonText": "Choose plan",
           "buttonUrl": "https://deco.chat/login",
           "features": [
@@ -105,7 +105,7 @@
           "priceText": "converted into AI credits",
           "seats": 100,
           "description": "For organizations deploying AI at scale",
-          "image": "https://assets.decocache.com/decochatweb/f6a8c324-9c71-4b90-8d77-5d2b3e2b1f61/Scale-Plan.svg",
+          "image": "https://decoims.com/decochatweb/56f16630-2c77-48c0-8076-2fec0a3c2d18/Scale-Plan.svg",
           "buttonText": "Choose plan",
           "buttonUrl": "https://deco.chat/login",
           "features": [
@@ -136,7 +136,7 @@
       ],
       "customPlan": {
         "title": "Need more scale?",
-        "backgroundImage": "https://assets.decocache.com/decochatweb/94564998-9caf-4388-a4f6-5a8eeb83efe0/Custom.svg",
+        "backgroundImage": "https://decoims.com/decochatweb/cffd7efb-2716-4d3d-a54a-1df382f93dbf/Custom.svg",
         "features": [
           {
             "name": "500+ Builder Seats",
@@ -177,22 +177,22 @@
       "providerConfigs": [
         {
           "name": "OpenAI",
-          "customIcon": "https://assets.decocache.com/decochatweb/766a5ca9-693d-4838-ad21-4fce95533993/OpenAI.svg"
+          "customIcon": "https://decoims.com/decochatweb/fe12f1e9-be6f-4d85-b35e-cbf11d19c2b1/OpenAI.svg"
         },
         {
           "name": "Anthropic",
-          "customIcon": "https://assets.decocache.com/decochatweb/3387feba-78a7-4561-95fa-91a2fe896feb/Claude-3.5-Sonnet.svg"
+          "customIcon": "https://decoims.com/decochatweb/60320db3-492f-478b-93a3-51c1993b78c1/Claude-3.5-Sonnet.svg"
         },
         {
           "name": "Vertex",
-          "customIcon": "https://assets.decocache.com/decochatweb/0d0bc5a6-0c21-4d16-9c09-a3ad37297eec/google-gemini.svg"
+          "customIcon": "https://decoims.com/decochatweb/c5ec8e36-df00-49d1-9621-c4a38d582751/google-gemini.svg"
         },
         {
           "name": "Google"
         },
         {
           "name": "xAI",
-          "customIcon": "https://assets.decocache.com/decochatweb/4ad8453a-7e4b-44a2-810e-6cb0543edd6c/xai.svg"
+          "customIcon": "https://decoims.com/decochatweb/2e530976-2a86-4290-8f51-0ba3a6c768cc/xai.svg"
         }
       ]
     },
